@@ -12,7 +12,7 @@ The CPTS is not just a test of tool usage or following an enumeration checklist.
 
 # Notetaking
 
-***Tip 1:** Effective CPTS notetaking isn’t just about documenting every exploit or command, but about building structured, methodology-focused notes that guide what to enumerate next at each stage when your memory fails.*
+Effective CPTS notetaking isn’t just about documenting every exploit or command, but about building structured, methodology-focused notes that guide what to enumerate next at each stage when your memory fails.
 
 The CPTS path contains 28 modules, and it is extremely difficult to retain everything while progressing through the material. Notetaking is essential not only to reinforce understanding, but also to serve as a reference when you inevitably forget an attack, enumeration technique, or decision point.
 
