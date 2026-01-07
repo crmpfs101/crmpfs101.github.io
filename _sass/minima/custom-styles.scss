@@ -1,0 +1,197 @@
+/* ============================
+   Heading color gradient
+   h1 (darkest) → h6 (lightest)
+   ============================ */
+
+   h1 { color: #5b2d8b; }  /* darkest purple */
+   h2 { color: #6d3aa6; }
+   h3 { color: #7f4fc9; }
+   h4 { color: #9f7aea; }
+   h5 { color: #b9a3ff; }
+   h6 { color: #d6ccff; }  /* lightest purple */
+   
+   
+   /* ============================
+      Obsidian-style emphasis
+      ============================ */
+   
+   /* Bold */
+   strong,
+   b {
+     color: #7CFC00;   /* Obsidian green */
+   }
+   
+   /* Italic */
+   em,
+   i {
+     color: #7CFC00;
+   }
+   
+   /* External links (optional but matches Obsidian nicely) */
+   a[href^="http"]:not([href*="{{ site.url }}"]) {
+     color: #53DFDD;
+   }
+   
+   a[href^="http"]:not([href*="{{ site.url }}"]):hover {
+     color: #53DFDD;
+   }
+   
+/* =========================================================
+   Shell-only "Kali" code theme (Rouge/Minima v3)
+   Applies ONLY to bash/sh/zsh/shell fenced code blocks.
+   ========================================================= */
+
+   :root {
+    --kali-fg: rgb(255, 255, 255);
+    --kali-blue: rgb(54, 123, 240);   /* commands */
+    --kali-cyan: rgb(73, 174, 230);   /* args / prompt / values */
+    --kali-yellow: rgb(254, 164, 76); /* paths */
+    --kali-white: rgb(230, 230, 230); /* comments */
+  }
+  
+  /* Match common Rouge wrappers for language-specific blocks */
+  .language-bash .highlight,
+  .language-sh .highlight,
+  .language-shell .highlight,
+  .language-zsh .highlight,
+  .language-console .highlight,
+  .language-terminal .highlight,
+  .language-powershell .highlight,
+  .language-ps1 .highlight,
+  .language-cmd .highlight {
+    background-color: #0d1117;
+    color: var(--kali-fg);
+  }
+  
+  /* Also style the <pre> inside those wrappers (some layouts apply bg on <pre>) */
+  .language-bash pre,
+  .language-sh pre,
+  .language-shell pre,
+  .language-zsh pre,
+  .language-console pre,
+  .language-terminal pre,
+  .language-powershell pre,
+  .language-ps1 pre,
+  .language-cmd pre {
+    background-color: #0d1117;
+    color: var(--kali-fg);
+  }
+  
+  /* -------------------------
+     Rouge token mapping (shell-only)
+     ------------------------- */
+  
+  /* Comments */
+  .language-bash .highlight .c,
+  .language-bash .highlight .cm,
+  .language-bash .highlight .c1,
+  .language-bash .highlight .cs,
+  .language-sh .highlight .c,
+  .language-sh .highlight .cm,
+  .language-sh .highlight .c1,
+  .language-sh .highlight .cs,
+  .language-shell .highlight .c,
+  .language-shell .highlight .cm,
+  .language-shell .highlight .c1,
+  .language-shell .highlight .cs,
+  .language-zsh .highlight .c,
+  .language-zsh .highlight .cm,
+  .language-zsh .highlight .c1,
+  .language-zsh .highlight .cs {
+    color: var(--kali-white);
+    opacity: 0.7;
+    font-style: italic;
+  }
+  
+  /* Commands / functions / builtins */
+  .language-bash .highlight .nf,
+  .language-bash .highlight .nb,
+  .language-sh .highlight .nf,
+  .language-sh .highlight .nb,
+  .language-shell .highlight .nf,
+  .language-shell .highlight .nb,
+  .language-zsh .highlight .nf,
+  .language-zsh .highlight .nb {
+    color: var(--kali-blue);
+    font-weight: 600;
+  }
+  
+  /* Strings / args / values */
+  .language-bash .highlight .s,
+  .language-bash .highlight .s1,
+  .language-bash .highlight .s2,
+  .language-bash .highlight .sb,
+  .language-bash .highlight .sh,
+  .language-bash .highlight .si,
+  .language-sh .highlight .s,
+  .language-sh .highlight .s1,
+  .language-sh .highlight .s2,
+  .language-sh .highlight .sb,
+  .language-sh .highlight .sh,
+  .language-sh .highlight .si,
+  .language-shell .highlight .s,
+  .language-shell .highlight .s1,
+  .language-shell .highlight .s2,
+  .language-shell .highlight .sb,
+  .language-shell .highlight .sh,
+  .language-shell .highlight .si,
+  .language-zsh .highlight .s,
+  .language-zsh .highlight .s1,
+  .language-zsh .highlight .s2,
+  .language-zsh .highlight .sb,
+  .language-zsh .highlight .sh,
+  .language-zsh .highlight .si {
+    color: var(--kali-cyan);
+  }
+  
+  /* “Path-ish” bucket (Rouge doesn’t label paths perfectly; this is the closest useful set) */
+  .language-bash .highlight .na,
+  .language-bash .highlight .nn,
+  .language-bash .highlight .nc,
+  .language-bash .highlight .nt,
+  .language-sh .highlight .na,
+  .language-sh .highlight .nn,
+  .language-sh .highlight .nc,
+  .language-sh .highlight .nt,
+  .language-shell .highlight .na,
+  .language-shell .highlight .nn,
+  .language-shell .highlight .nc,
+  .language-shell .highlight .nt,
+  .language-zsh .highlight .na,
+  .language-zsh .highlight .nn,
+  .language-zsh .highlight .nc,
+  .language-zsh .highlight .nt {
+    color: var(--kali-yellow);
+  }
+  
+  /* Numbers */
+  .language-bash .highlight .m,
+  .language-bash .highlight .mi,
+  .language-bash .highlight .mf,
+  .language-sh .highlight .m,
+  .language-sh .highlight .mi,
+  .language-sh .highlight .mf,
+  .language-shell .highlight .m,
+  .language-shell .highlight .mi,
+  .language-shell .highlight .mf,
+  .language-zsh .highlight .m,
+  .language-zsh .highlight .mi,
+  .language-zsh .highlight .mf {
+    color: var(--kali-yellow);
+  }
+  
+  /* Prompt/output tokens (Rouge sometimes emits these) */
+  .language-bash .highlight .gp,
+  .language-sh .highlight .gp,
+  .language-shell .highlight .gp,
+  .language-zsh .highlight .gp {
+    color: var(--kali-cyan);
+    font-weight: 500;
+  }
+  .language-bash .highlight .go,
+  .language-sh .highlight .go,
+  .language-shell .highlight .go,
+  .language-zsh .highlight .go {
+    color: var(--kali-fg);
+  }
+  

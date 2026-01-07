@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+/* Always-dark skin */
+$color-scheme-auto: false;
+$color-scheme-dark: true;
+
+/* ---- Backgrounds ---- */
+$dm-background-color:      #0b0f14;
+$dm-code-background-color: #0d1117;
+
+/* ---- Brand / accents (Obsidian-inspired) ---- */
+$dm-brand-color:           #C11C84;   // Obsidian link pink
+$dm-site-title-color:      #e6edf3;;
+
+/* ---- Text ---- */
+$dm-text-color:            #e6edf3;
+
+/* Base heading color (actual gradient applied in custom-styles.scss) */
+$dm-heading-color:         #9f7aea;
+
+/* ---- Links ---- */
+$dm-link-base-color:       #C11C84;
+$dm-link-visited-color:    #C11C84;
+$dm-link-hover-color:      #C11C84;
+
+/* ---- Borders ---- */
+$dm-border-color-01:       rgba(255, 255, 255, 0.14);
+$dm-border-color-02:       rgba(255, 255, 255, 0.10);
+$dm-border-color-03:       rgba(255, 255, 255, 0.06);
+
+/* ---- Tables ---- */
+$dm-table-zebra-color:     rgba(255, 255, 255, 0.03);
+$dm-table-header-bg-color: rgba(255, 255, 255, 0.06);
+$dm-table-header-border:   rgba(255, 255, 255, 0.10);
+
+/* Apply Minima dark logic + syntax highlighting */
+@import "minima/skins/auto";

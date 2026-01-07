@@ -5,12 +5,12 @@ date:   2026-01-07 12:59:00 +0000
 categories: tips
 ---
 
-# Introduction
+## Introduction
 There is no shortage of excellent reviews covering the HTB CPTS certification. Rather than repeating what has already been said, this post focuses on **practical strategies for passing the exam** while deliberately using the course material to become a **more effective and methodical penetration tester**.
 
 The CPTS is not just a test of tool usage or following an enumeration checklist. It evaluates your ability to think critically, enumerate thoroughly, and produce a professional-quality report under exam conditions. The tips below are drawn from my hands-on experience with the CPTS learning path and are intended to help you approach both the exam and real-world engagements with greater confidence and efficiency.
 
-# Notetaking
+## Notetaking
 
 Effective CPTS notetaking isn’t just about documenting every exploit or command, but about building structured, methodology-focused notes that guide what to enumerate next at each stage when your memory fails.
 
@@ -33,7 +33,7 @@ Code blocks improve the quality of your reports by preserving exact commands tha
 
 It's also a good idea to make sure your terminal output is saved in a log in case a terminal goes down. Tmux and Kali's default terminal both capabilities to store the terminal log, allowing you to go back and find any commands you might have missed in your notes. 
 
-# Practice Labs
+## Practice Labs
 When reading CPTS reviews online, you’ll often see wildly different advice. Some people claim “the course is all you need,” while others recommend completing 100+ boxes and multiple Pro Labs before attempting the exam.
 
 Overall, I think the CPTS exam is fair, and I do believe that the HTB Academy CPTS modules teach all the attack paths, or at least the enumeration skills needed to discover them. Some people disagree and argue that certain exam attack paths are out of scope. While I understand that perspective, I still think the Academy material provides the enumeration logic required to identify those paths, keeping them reasonably within scope.
@@ -89,7 +89,7 @@ If you’re completing boxes after finishing the CPTS modules (excluding AEN), I
 
     If Active Directory is a weak point, complete the Windows boxes from Season 8. Some of these boxes involve ADCS techniques, which are technically out of scope for CPTS. However, I still recommend completing those portions as ADCS knowledge is extremely valuable long-term and strengthens your AD fundamentals.
 
-# Tooling
+## Tooling
 
 The CPTS modules will walk you through a multitude of tools, and it is important to understand the nuances of each tool and to practice using multiple tools for the same enumeration tasks. Sometimes, tools will fail but knowing multiple tools for the job will allow you to switch to a tool that works. Understanding the limitation and backend of the tools will also help you identify what certain errors mean and if some defense is blocking the attack. There are also some tools that the CPTS doesn't cover extensively but is very useful for both the exam as well as pentesting in general. I will go over the tools that I personally find to be the most helpful.
 
@@ -161,7 +161,7 @@ For example, during virtual host discovery, I like to start with bitquark-subdom
 
 If you end up stuck in an engagement or exam, try switching to alternative wordlists. SecLists also offers consolidated wordlists for each category, prefixed with "combined_". As an example, for subdomain enumeration, combined_subdomains.txt provides broad coverage by merging multiple popular lists into a single file.
 
-# Reporting
+## Reporting
 Everyone recommends SysReptor, and I strongly agree. It automates report formatting and organization, removing a significant amount of overhead during both labs and the CPTS exam. More importantly, it helps prevent common mistakes, such as forgetting required sections or inconsistently structuring findings.
 
 I highly recommend practicing with SysReptor during the Attacking Enterprise Networks (AEN) module, as it most closely simulates the CPTS exam reporting workflow. Becoming comfortable with SysReptor ahead of time will significantly speed up report writing during the exam. You could also further streamline your workflow, by creating custom templates for common CWEs or recurring findings. 
@@ -174,7 +174,7 @@ Make sure you document every step in the walkthrough, including how you got a fo
 
 Finally, don’t hesitate to use AI-assisted tooling on exams to help systematically redact passwords, hashes, and other sensitive data within code blocks. In a real engagement, you probably wouldn't want to do this, but on the CPTS exam, it will help save you time.
 
-# Mentality
+## Mentality
 #### Going through the CTPS Path
 The CPTS learning path can feel long and information-dense, and it is easy to become mentally fatigued from reading the material, completing skill assessments, and constantly refactoring notes. It led me to take shortcuts in my note-taking and, worse, to undermine the value of the skill assessments by searching for hints instead of methodically working through my full approach.
 
@@ -187,7 +187,7 @@ Taking regular breaks is essential. Whenever I hit a wall, I stepped away, often
 
 Finally, don’t be afraid of failing. It’s far more common than many people admit. Although I was fortunate enough to pass on my first attempt, I approached the exam with the mindset of simply securing an initial foothold and treating the rest as a learning opportunity. As with any engagement, view the CPTS exam as another chance to sharpen your skills, and make sure to reflect on your approach and improve your notes afterward, regardless of the outcome.
 
-# When are you ready to take the exam?
+## When are you ready to take the exam?
 It's pretty difficult to gauge when someone is ready for the exam. Because you do have two attempts in the same environment, many people say to view the first attempt as a trial run and to not procrastinate taking the exam. If you have the time, I would at least try to complete the suggested practice labs above and use the following bullet points as a rough guide for when you are ready.
 
 1. Can complete AEN completely blind on the first run through with only a few hints.
@@ -196,5 +196,5 @@ It's pretty difficult to gauge when someone is ready for the exam. Because you d
 4. Comfortable with using BloodHound to discover abuse paths and exploiting them.
 5. Practiced the various web attacks mentioned in the CPTS path on HTB Labs.
 
-# Conclusion
+## Conclusion
 I hope this blog post was helpful for your CPTS journey. I wrote a previous blog post on the HTB box [Fluffy]({% post_url 2025-12-23-fluffy-walkthrough %}) (the first box in the HTB CPTS Preparation track) if you would like further insight on how I tackled boxes in preparation for the CPTS exam. If you have questions, feel free to ping me on Discord or discuss with me in the HTB official discord.

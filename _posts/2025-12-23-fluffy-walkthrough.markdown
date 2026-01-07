@@ -4,10 +4,10 @@ title:  "Fluffy"
 date:   2025-12-29 6:30:00 +0000
 categories: walkthroughs
 ---
-# Introduction
+## Introduction
 Fluffy is an easy HTB Labs machine and is also the first box in the CPTS Preparation Track. The box takes place in an assumed breach scenario where we are given the credentials of an Active Directory domain user. This walkthrough will focus on tackling the box as preparation for the CPTS exam, and so will go more in depth behind the thought process and tooling.
 
-# user.txt
+## user.txt
 Start by setting an enviornment variable `IP` to the target's public IP. This approach avoids repeatedly typing or copy-pasting the IP address, reduces the risk of accidentally targeting the wrong host, and makes it easy to automatically censor the IP in reports.
 ```bash
 ┌──(kali㉿kali)-[~/htb/fluffy]
@@ -761,7 +761,7 @@ With the NTLM hash for winrm_svc, we can WINRM into the host using the [evil-win
 *Evil-WinRM* PS C:\Users\winrm_svc\Desktop> cat user.txt
 ```
 
-# root.txt
+## root.txt
 Returning to the BloodHound graph, we can see that the ca_svc user is a member of the Cert Publishers group. According to Microsoft [documentation](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-groups#cert-publishers), members of this group are permitted “to publish certificates for user objects in Active Directory.” This strongly suggests that the environment is running Active Directory Certificate Services (AD CS) and that the ca_svc account has sufficient privileges to interact with it. Given this, ca_svc is a good candidate for enumerating the certificate services configuration and identifying potentially vulnerable certificate templates.
 
 We begin by repeating the Shadow Credentials attack against the ca_svc account to recover its NTLM hash. Before doing so, we re-add p.agila to the Service Accounts group, as the environment’s cleanup script had reset the group membership and removed the required permissions.
