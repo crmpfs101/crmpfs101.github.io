@@ -5,7 +5,7 @@ date:   2025-12-29 6:30:00 +0000
 categories: walkthroughs
 ---
 # Introduction
-Fluffy is an easy HTB Labs machine and is also the first box in the CPTS Preparation Track. The box takes place in an assumed breach scenario where we are given the credentials of an Active Directory domain user. This walkthrough will focus on tackling the box as preparation for the CPTS exam, and so will go more in depth behind the thought process, tooling, and reporting.
+Fluffy is an easy HTB Labs machine and is also the first box in the CPTS Preparation Track. The box takes place in an assumed breach scenario where we are given the credentials of an Active Directory domain user. This walkthrough will focus on tackling the box as preparation for the CPTS exam, and so will go more in depth behind the thought process and tooling.
 
 # user.txt
 Start by setting an enviornment variable `IP` to the target's public IP. This approach avoids repeatedly typing or copy-pasting the IP address, reduces the risk of accidentally targeting the wrong host, and makes it easy to automatically censor the IP in reports.
@@ -1015,5 +1015,5 @@ With the administrator NTLM, we are able to WINRM onto the host.
 fluffy\administrator
 ```
 
-We now have full compromise of the host.
+We now have full compromise of the host and domain.
 
