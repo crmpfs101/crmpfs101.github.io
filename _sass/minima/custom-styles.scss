@@ -27,7 +27,7 @@
      color: #7CFC00;
    }
    
-   /* External links (optional but matches Obsidian nicely) */
+   /* External links */
    a[href^="http"]:not([href*="{{ site.url }}"]) {
      color: #53DFDD;
    }

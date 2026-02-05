@@ -1,0 +1,15 @@
+[
+    {
+      "id": "access-control",
+      "term": "Access Control",
+      "layman": "Rules that decide who is allowed to use or see something.",
+      "technical": "Mechanisms that enforce authorization decisions for subjects accessing objects (e.g., ACLs, RBAC, ABAC)."
+    },
+    {
+      "id": "lateral-movement",
+      "term": "Lateral Movement",
+      "layman": "Moving from one computer to another after getting into a network once.",
+      "technical": "Post-compromise movement between hosts/accounts to expand access, often via credential reuse, remote services, and Active Directory abuse."
+    }
+  ]
+  
