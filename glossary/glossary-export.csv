@@ -1,0 +1,9 @@
+---
+permalink: /assets/data/glossary.csv
+layout: null
+---
+
+id,term,layman,technical
+{% for item in site.data.glossary -%}
+{{ item.term | escape }},{{ item.layman | escape }},{{ item.technical | escape }}
+{% endfor %}

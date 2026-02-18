@@ -1,43 +1,69 @@
 .glossary-controls {
-    margin: 1rem 0 1.25rem 0;
-}
-
-.glossary-toggle {
-    --toggle-text: #cfcfcf;
-    --toggle-inactive: #9a9a9a;
-    --toggle-active: #f0f0f0;
-
-    padding: 0.5rem 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 0.75rem 0 1.25rem 0;
+  }
+  
+  .glossary-mode-label {
+    color: #cfcfcf;
+    font-size: 0.85rem;
+  }
+  
+  .glossary-mode-select {
+    padding: 0.4rem 0.6rem;
     border-radius: 0.75rem;
     border: 1px solid rgba(128, 128, 128, 0.35);
     background: transparent;
+    color: #cfcfcf;
+    font-size: 0.85rem;
     cursor: pointer;
+  }
+  
+  .glossary-mode-select:focus-visible {
+    outline: 2px solid rgba(200, 200, 200, 0.6);
+    outline-offset: 2px;
+  }
+  
+  .glossary-download {
+    display: flex;
+    flex-direction: column;   /* stack vertically */
+    gap: 0.5rem;              /* spacing between buttons */
+    align-items: flex-start;  /* align left */
+  }
 
-    color: var(--toggle-text); /* overall button text */
-
-    .mode {
-        color: var(--toggle-inactive);
-    
-        &.active {
-          color: var(--toggle-active);
-        }
-    }
-}
-.glossary-item {
-    padding: 0.75rem 0;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
-}
-
-.glossary-term {
-    margin-bottom: 0.35rem;
-}
-
-.glossary-list[data-mode="layman"] .glossary-def--technical {
-    display: none;
-}
-
-.glossary-list[data-mode="technical"] .glossary-def--layman {
-    display: none;
-}
-
-
+  .glossary-badge {
+    display: inline-block;
+    margin-right: 0.5rem;
+    padding: 0.15rem 0.5rem;
+  
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  
+    border-radius: 999px;
+    border: 1px solid rgba(128, 128, 128, 0.35);
+  
+    background: rgba(255, 255, 255, 0.04);
+    color: #cfcfcf;
+  }
+  
+  /* Optional subtle differentiation */
+  .glossary-badge--technical {
+    border-color: rgba(110, 110, 110, 0.5);
+  }
+  .glossary-badge--layman {
+    border-color: rgba(150, 150, 150, 0.4);
+  }
+  
+  /* Mode logic: 0=technical, 1=layman, 2=both */
+  .glossary-list[data-mode="0"] {
+    .glossary-def--layman { display: none !important; }
+    .glossary-badge { display: none; }
+  }
+  .glossary-list[data-mode="1"] {
+    .glossary-def--technical { display: none !important; }
+    .glossary-badge { display: none; }
+  }
+  /* data-mode="2" shows both, so no hiding rules */

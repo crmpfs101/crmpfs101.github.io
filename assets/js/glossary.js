@@ -1,35 +1,27 @@
 (() => {
-    const STORAGE_KEY = "glossaryMode"; // 0 = technical, 1 = layman
+    const STORAGE_KEY = "glossaryMode"; // 0=technical, 1=layman, 2=both
   
     const list = document.querySelector(".glossary-list");
-    const toggleBtn = document.getElementById("glossaryToggle");
-    const layman = toggleBtn?.querySelector(".mode-layman");
-    const technical = toggleBtn?.querySelector(".mode-technical");
+    const select = document.getElementById("glossaryModeSelect");
   
-    if (!list || !toggleBtn || !layman || !technical) return;
+    if (!list || !select) return;
   
-    const setMode = (mode) => {
-      const m = Number(mode) === 0 ? 0 : 1; // normalize
-  
-      // data attribute for CSS
-      list.setAttribute("data-mode", m === 1 ? "layman" : "technical");
-  
-      // ARIA
-      toggleBtn.setAttribute("aria-pressed", String(m === 0));
-  
-      // visual state
-      layman.classList.toggle("active", m === 1);
-      technical.classList.toggle("active", m === 0);
-  
-      localStorage.setItem(STORAGE_KEY, m);
+    const normalize = (v) => {
+      const n = Number(v);
+      return (n === 0 || n === 1 || n === 2) ? n : 2;
     };
   
-    // initialize
-    setMode(localStorage.getItem(STORAGE_KEY) ?? 1);
+    const setMode = (mode) => {
+      const m = normalize(mode);
+      list.setAttribute("data-mode", String(m));
+      select.value = String(m);
+      localStorage.setItem(STORAGE_KEY, String(m));
+    };
   
-    toggleBtn.addEventListener("click", () => {
-      const current = Number(localStorage.getItem(STORAGE_KEY) ?? 1);
-      setMode(current ^ 1); // bitwise toggle: 1 -> 0, 0 -> 1
+    // Default to BOTH (2)
+    setMode(localStorage.getItem(STORAGE_KEY) ?? 2);
+  
+    select.addEventListener("change", () => {
+      setMode(select.value);
     });
   })();
-  
