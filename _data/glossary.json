@@ -1,1736 +1,1646 @@
 [
-  {
-    "id": "access-control",
-    "term": "Access Control",
-    "layman": "A security technique that decides who is allowed to use or see something.",
-    "technical": "A security technique that authenticates and decides and enforces the authorization a subject has over an object."
-  },
-  {
-    "id": "access-control-entry-ace",
-    "term": "Access Control Entry (ACE)",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "access-control-list-acl",
-    "term": "Access Control List (ACL)",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "acl-abuse",
-    "term": "ACL Abuse",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "administrative-access",
-    "term": "Administrative Access",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "agent",
-    "term": "Agent",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "alerting",
-    "term": "Alerting",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "aquatone",
-    "term": "Aquatone",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "as-rep-roasting",
-    "term": "AS-REP Roasting",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "attack-infrastructure",
-    "term": "Attack Infrastructure",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "attack-lifecycle",
-    "term": "Attack Lifecycle",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "attack-path",
-    "term": "Attack Path",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "authentication",
-    "term": "Authentication",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "authorization",
-    "term": "Authorization",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "authorization-misconfiguration",
-    "term": "Authorization Misconfiguration",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "backdoor",
-    "term": "Backdoor",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "beaconing",
-    "term": "Beaconing",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "bind-shell",
-    "term": "Bind Shell",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "blast-radius",
-    "term": "Blast Radius",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "bloodyad",
-    "term": "bloodyAD",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "bloodhound-ce",
-    "term": "BloodHound-CE",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "bloodhound-legacy",
-    "term": "BloodHound-Legacy",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "bluehound",
-    "term": "BlueHound",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "buffer-overflow",
-    "term": "Buffer Overflow",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "business-impact",
-    "term": "Business Impact",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "callback",
-    "term": "Callback",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "chisel",
-    "term": "Chisel",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "cleartext-credential-exposure",
-    "term": "Cleartext Credential Exposure",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "cloud-storage-exfiltration",
-    "term": "Cloud Storage Exfiltration",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "cobalt-strike",
-    "term": "Cobalt Strike",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "command-and-control-c2",
-    "term": "Command and Control (C2)",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "command-injection",
-    "term": "Command Injection",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "component-object-model-com-abuse",
-    "term": "Component Object Model (COM) Abuse",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "computer-object",
-    "term": "Computer Object",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "control-access-right",
-    "term": "Control Access Right",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "control-gap",
-    "term": "Control Gap",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "crackmapexec",
-    "term": "CrackMapExec",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "credential-dumping",
-    "term": "Credential Dumping",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "credential-exfiltration",
-    "term": "Credential Exfiltration",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "credential-reuse",
-    "term": "Credential Reuse",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "credential-stealer",
-    "term": "Credential Stealer",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "cross-site-request-forgery-csrf",
-    "term": "Cross-Site Request Forgery (CSRF)",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "cross-site-scripting-xss",
-    "term": "Cross-Site Scripting (XSS)",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "csv-injection",
-    "term": "CSV Injection",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "data-compression",
-    "term": "Data Compression",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "data-encoding",
-    "term": "Data Encoding",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "data-encryption",
-    "term": "Data Encryption",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "data-exfiltration",
-    "term": "Data Exfiltration",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "data-staging",
-    "term": "Data Staging",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "defense-evasion",
-    "term": "Defense Evasion",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "delegation",
-    "term": "Delegation",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "deserialization-attack",
-    "term": "Deserialization Attack",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "detection-capability",
-    "term": "Detection Capability",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "detection-evasion",
-    "term": "Detection Evasion",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "directory-traversal",
-    "term": "Directory Traversal",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "distinguished-name-dn",
-    "term": "Distinguished Name (DN)",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "dll-hijacking",
-    "term": "DLL Hijacking",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "dns",
-    "term": "DNS",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "dom-based-xss",
-    "term": "DOM-Based XSS",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "domain",
-    "term": "Domain",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "domain-controller-dc",
-    "term": "Domain Controller (DC)",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "domain-local-group",
-    "term": "Domain Local Group",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "domain-trust",
-    "term": "Domain Trust",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "dropper",
-    "term": "Dropper",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "dynamic-library-hijacking",
-    "term": "Dynamic Library Hijacking",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "email-header-injection",
-    "term": "Email Header Injection",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "encrypted-c2",
-    "term": "Encrypted C2",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "enterprise-admin",
-    "term": "Enterprise Admin",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "environment-variable-hijacking",
-    "term": "Environment Variable Hijacking",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "executable-search-path-hijacking",
-    "term": "Executable Search Path Hijacking",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "exfiltration-channel",
-    "term": "Exfiltration Channel",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "exploit",
-    "term": "Exploit",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "exploit-chain",
-    "term": "Exploit Chain",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "exploitation",
-    "term": "Exploitation",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "external-threat",
-    "term": "External Threat",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "eyewitness",
-    "term": "Eyewitness",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "ffuf",
-    "term": "ffuf",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "feroxbuster",
-    "term": "feroxbuster",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "file-upload-vulnerability",
-    "term": "File Upload Vulnerability",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "fileless-malware",
-    "term": "Fileless Malware",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "finger",
-    "term": "Finger",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "forensic-visibility",
-    "term": "Forensic Visibility",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "forest",
-    "term": "Forest",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "foreign-principal-object-fpo",
-    "term": "Foreign Principal Object (FPO)",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "formula-injection",
-    "term": "Formula Injection",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "ftp",
-    "term": "FTP",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "full-environment-compromise",
-    "term": "Full Environment Compromise",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "fsmo-role",
-    "term": "FSMO Role",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "global-catalog-gc",
-    "term": "Global Catalog (GC)",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "global-group",
-    "term": "Global Group",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "golden-ticket-attack",
-    "term": "Golden Ticket Attack",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "governance-gap",
-    "term": "Governance Gap",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "gpp-decrypt",
-    "term": "GPP-Decrypt",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "gobuster",
-    "term": "Gobuster",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "grpc",
-    "term": "gRPC",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "group",
-    "term": "Group",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "group-managed-service-account-gmsa",
-    "term": "Group Managed Service Account (gMSA)",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "group-membership",
-    "term": "Group Membership",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "group-policy",
-    "term": "Group Policy",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "group-policy-object-gpo",
-    "term": "Group Policy Object (GPO)",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "hashcat",
-    "term": "Hashcat",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "heartbeat",
-    "term": "Heartbeat",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "html-injection",
-    "term": "HTML Injection",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "http",
-    "term": "HTTP",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "http-header-injection",
-    "term": "HTTP Header Injection",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "https",
-    "term": "HTTPS",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "hydra",
-    "term": "Hydra",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "imap",
-    "term": "IMAP",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "implant",
-    "term": "Implant",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "impacket",
-    "term": "Impacket",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "inbound-trust",
-    "term": "Inbound Trust",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "incident-response",
-    "term": "Incident Response",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "indicators-of-compromise-iocs",
-    "term": "Indicators of Compromise (IOCs)",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "insecure-automation-script",
-    "term": "Insecure Automation Script",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "insecure-deserialization",
-    "term": "Insecure Deserialization",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "insecure-service-configuration",
-    "term": "Insecure Service Configuration",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "insecure-software-update-mechanism",
-    "term": "Insecure Software Update Mechanism",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "inter-process-communication-ipc-abuse",
-    "term": "Inter-Process Communication (IPC) Abuse",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "ipmi",
-    "term": "IPMI",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "javascript-injection",
-    "term": "JavaScript Injection",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "john-the-ripper-jtr",
-    "term": "John the Ripper (JtR)",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "json-injection",
-    "term": "JSON Injection",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "kerberoasting",
-    "term": "Kerberoasting",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "kerberos",
-    "term": "Kerberos",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "kerbrute",
-    "term": "Kerbrute",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "keylogger",
-    "term": "Keylogger",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "kill-chain",
-    "term": "Kill Chain",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "kill-switch",
-    "term": "Kill Switch",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "lazagne",
-    "term": "LaZagne",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "lateral-movement",
-    "term": "Lateral Movement",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "ldap",
-    "term": "LDAP",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "ldap-enumeration",
-    "term": "LDAP Enumeration",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "ldap-injection",
-    "term": "LDAP Injection",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "least-privilege",
-    "term": "Least Privilege",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "likelihood",
-    "term": "Likelihood",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "loader",
-    "term": "Loader",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "local-privilege-escalation",
-    "term": "Local Privilege Escalation",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "living-off-the-land-lolbins",
-    "term": "Living-off-the-Land (LOLBins)",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "logging",
-    "term": "Logging",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "malware",
-    "term": "Malware",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "material-risk",
-    "term": "Material Risk",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "mean-time-to-detect-mttd",
-    "term": "Mean Time to Detect (MTTD)",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "mean-time-to-respond-mttr",
-    "term": "Mean Time to Respond (MTTR)",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "memory-corruption",
-    "term": "Memory Corruption",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "metasploit-framework",
-    "term": "Metasploit Framework",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "mimikatz",
-    "term": "Mimikatz",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "mimipenguin",
-    "term": "mimipenguin",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "monitoring",
-    "term": "Monitoring",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "msfvenom",
-    "term": "MSFVenom",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "msrpc",
-    "term": "MSRPC",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "mssql",
-    "term": "MSSQL",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "mysql",
-    "term": "MySQL",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "named-pipe-impersonation",
-    "term": "Named Pipe Impersonation",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "n-day-vulnerability",
-    "term": "N-Day Vulnerability",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "net-ntlmv2",
-    "term": "Net-NTLMv2",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "netbios",
-    "term": "NetBIOS",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "netexec",
-    "term": "NetExec",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "network-enumeration",
-    "term": "Network Enumeration",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "nfs",
-    "term": "NFS",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "nmap",
-    "term": "Nmap",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "nosql-injection",
-    "term": "NoSQL Injection",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "ntlm",
-    "term": "NTLM",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "ntlm-relay",
-    "term": "NTLM Relay",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "object-class",
-    "term": "Object Class",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "ognl-injection",
-    "term": "OGNL Injection",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "openvas",
-    "term": "OpenVAS",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "operational-security-opsec",
-    "term": "Operational Security (OpSec)",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "opportunistic-attacker",
-    "term": "Opportunistic Attacker",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "oracle-tns",
-    "term": "Oracle TNS",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "organizational-unit-ou",
-    "term": "Organizational Unit (OU)",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "outbound-filtering-bypass",
-    "term": "Outbound Filtering Bypass",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "outbound-trust",
-    "term": "Outbound Trust",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "overprivileged-account",
-    "term": "Overprivileged Account",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "pass-the-hash",
-    "term": "Pass-the-Hash",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "pass-the-ticket",
-    "term": "Pass-the-Ticket",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "password-policy",
-    "term": "Password Policy",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "password-spraying",
-    "term": "Password Spraying",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "path-traversal",
-    "term": "Path Traversal",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "payload",
-    "term": "Payload",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "payload-delivery",
-    "term": "Payload Delivery",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "persistence",
-    "term": "Persistence",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "petitpotam",
-    "term": "PetitPotam",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "pkinittools",
-    "term": "PKINITtools",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "pop3",
-    "term": "POP3",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "post-exploitation",
-    "term": "Post-Exploitation",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "powerupsql",
-    "term": "PowerUpSQL",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "powerview",
-    "term": "PowerView",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "primary-domain-controller-pdc",
-    "term": "Primary Domain Controller (PDC)",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "privilege",
-    "term": "Privilege",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "privilege-escalation",
-    "term": "Privilege Escalation",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "privilege-token-abuse",
-    "term": "Privilege Token Abuse",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "privileged-account",
-    "term": "Privileged Account",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "proof-of-concept-poc",
-    "term": "Proof of Concept (PoC)",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "proxychains",
-    "term": "ProxyChains",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "race-condition",
-    "term": "Race Condition",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "rat-remote-access-trojan",
-    "term": "RAT (Remote Access Trojan)",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "rdp",
-    "term": "RDP",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "read-only-domain-controller-rodc",
-    "term": "Read-Only Domain Controller (RODC)",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "reflected-xss",
-    "term": "Reflected XSS",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "registry-permission-misconfiguration",
-    "term": "Registry Permission Misconfiguration",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "relative-distinguished-name-rdn",
-    "term": "Relative Distinguished Name (RDN)",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "relative-identifier-rid",
-    "term": "Relative Identifier (RID)",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "remote-code-execution-rce",
-    "term": "Remote Code Execution (RCE)",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "replication",
-    "term": "Replication",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "residual-risk",
-    "term": "Residual Risk",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "responder",
-    "term": "Responder",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "reverse-shell",
-    "term": "Reverse Shell",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "risk",
-    "term": "Risk",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "risk-acceptance",
-    "term": "Risk Acceptance",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "risk-appetite",
-    "term": "Risk Appetite",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "risk-rating",
-    "term": "Risk Rating",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "risk-tolerance",
-    "term": "Risk Tolerance",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "rootkit",
-    "term": "Rootkit",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "rpc",
-    "term": "RPC",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "rservices",
-    "term": "Rservices",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "rsync",
-    "term": "Rsync",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "rubeus",
-    "term": "Rubeus",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "schema",
-    "term": "Schema",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "schema-master",
-    "term": "Schema Master",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "scheduled-task-misconfiguration",
-    "term": "Scheduled Task Misconfiguration",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "secretsdump",
-    "term": "secretsdump",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "security-control",
-    "term": "Security Control",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "security-descriptor",
-    "term": "Security Descriptor",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "security-identifier-sid",
-    "term": "Security Identifier (SID)",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "security-misconfiguration",
-    "term": "Security Misconfiguration",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "security-enabled-group",
-    "term": "Security-Enabled Group",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "sensitive-data",
-    "term": "Sensitive Data",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "separation-of-duties",
-    "term": "Separation of Duties",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "server-side-includes-ssi-injection",
-    "term": "Server-Side Includes (SSI) Injection",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "server-side-template-injection-ssti",
-    "term": "Server-Side Template Injection (SSTI)",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "service-account",
-    "term": "Service Account",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "service-principal-name-spn",
-    "term": "Service Principal Name (SPN)",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "session",
-    "term": "Session",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "shared-account",
-    "term": "Shared Account",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "shellcode",
-    "term": "Shellcode",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "sharphound",
-    "term": "SharpHound",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "sharpview",
-    "term": "SharpView",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "shodan",
-    "term": "Shodan",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "silver-ticket-attack",
-    "term": "Silver Ticket Attack",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "single-point-of-failure",
-    "term": "Single Point of Failure",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "sliver",
-    "term": "Sliver",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "smb",
-    "term": "SMB",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "smbmap",
-    "term": "SMBMap",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "smtp",
-    "term": "SMTP",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "snmp",
-    "term": "SNMP",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "snaffler",
-    "term": "Snaffler",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "snmpwalk",
-    "term": "snmpwalk",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "sql-injection",
-    "term": "SQL Injection",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "ssh",
-    "term": "SSH",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "stager",
-    "term": "Stager",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "startup-execution-misconfiguration",
-    "term": "Startup Execution Misconfiguration",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "stored-credential-exposure",
-    "term": "Stored Credential Exposure",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "stored-xss",
-    "term": "Stored XSS",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "subbrute",
-    "term": "subbrute",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "subfinder",
-    "term": "subfinder",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "sysvol",
-    "term": "SYSVOL",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "targeted-attack",
-    "term": "Targeted Attack",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "telnet",
-    "term": "Telnet",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "template-injection",
-    "term": "Template Injection",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "tftp",
-    "term": "TFTP",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "threat-actor",
-    "term": "Threat Actor",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "threat-scenario",
-    "term": "Threat Scenario",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "ticket-granting-ticket-tgt",
-    "term": "Ticket-Granting Ticket (TGT)",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "time-of-check-time-of-use-toctou",
-    "term": "Time-of-Check Time-of-Use (TOCTOU)",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "transitive-trust",
-    "term": "Transitive Trust",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "trojan",
-    "term": "Trojan",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "trust",
-    "term": "Trust",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "trusted-domain-object-tdo",
-    "term": "Trusted Domain Object (TDO)",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "universal-group",
-    "term": "Universal Group",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "use-after-free",
-    "term": "Use-After-Free",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "user-access",
-    "term": "User Access",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "user-object",
-    "term": "User Object",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "user-principal-name-upn",
-    "term": "User Principal Name (UPN)",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "virtualization-escape",
-    "term": "Virtualization Escape",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "webdav",
-    "term": "WebDAV",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "whisker",
-    "term": "Whisker",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "wireshark",
-    "term": "Wireshark",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "winrm",
-    "term": "WinRM",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "winpeas",
-    "term": "winpeas",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "wmi",
-    "term": "WMI",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "x11",
-    "term": "X11",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "xml-injection",
-    "term": "XML Injection",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "xml-external-entity-xxe-injection",
-    "term": "XML External Entity (XXE) Injection",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "xmlrpc",
-    "term": "XMLRPC",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "xpath-injection",
-    "term": "XPath Injection",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "xslt-injection",
-    "term": "XSLT Injection",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "xsstrike",
-    "term": "XSStrike",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "yaml-injection",
-    "term": "YAML Injection",
-    "layman": "",
-    "technical": ""
-  },
-  {
-    "id": "zero-day",
-    "term": "Zero-Day",
-    "layman": "",
-    "technical": ""
-  }
+    {
+      "id": "access-control-entry-ace",
+      "term": "Access Control Entry (ACE)",
+      "layman": "A single rule that says whether a specific person or group is allowed or denied a certain action, like reading or changing a file.",
+      "technical": "A single rule within an Access Control List (ACL) that grants or denies specific permissions to a user, group, or computer on an object."
+    },
+    {
+      "id": "access-control-list-acl",
+      "term": "Access Control List (ACL)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "active-directory",
+      "term": "Active Directory",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "agent",
+      "term": "Agent",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "aquatone",
+      "term": "Aquatone",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "as-rep-roasting",
+      "term": "AS-REP Roasting",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "assessment-summary",
+      "term": "Assessment Summary",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "attack-path",
+      "term": "Attack Path",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "attribute",
+      "term": "Attribute",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "authentication",
+      "term": "Authentication",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "authorization",
+      "term": "Authorization",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "backdoor",
+      "term": "Backdoor",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "beaconing",
+      "term": "Beaconing",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "bind-shell",
+      "term": "Bind Shell",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "black-box-test",
+      "term": "Black Box Test",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "bloodhound-ce",
+      "term": "BloodHound-CE",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "bloodhound-legacy",
+      "term": "BloodHound-Legacy",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "bloodhound-py",
+      "term": "BloodHound.py",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "bloodyad",
+      "term": "bloodyAD",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "bluehound",
+      "term": "BlueHound",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "brute-force",
+      "term": "Brute Force",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "buffer-overflow",
+      "term": "Buffer Overflow",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "burp-suite",
+      "term": "Burp Suite",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "cache-poisoning",
+      "term": "Cache Poisoning",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "callback",
+      "term": "Callback",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "cewl",
+      "term": "CeWL",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "chisel",
+      "term": "chisel",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "clickjacking",
+      "term": "Clickjacking",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "cobalt-strike",
+      "term": "Cobalt Strike",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "code-injection",
+      "term": "Code Injection",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "command-and-control-c2",
+      "term": "Command and Control (C2)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "command-injection",
+      "term": "Command Injection",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "content-spoofing",
+      "term": "Content Spoofing",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "cors-originheaderscrutiny",
+      "term": "CORS OriginHeaderScrutiny",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "crackmapexec",
+      "term": "CrackMapExec",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "credential-dumping",
+      "term": "Credential Dumping",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "credential-stuffing",
+      "term": "Credential stuffing",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "cross-site-request-forgery-csrf",
+      "term": "Cross Site Request Forgery (CSRF)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "cross-site-scripting-xss",
+      "term": "Cross Site Scripting (XSS)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "cryptanalysis",
+      "term": "Cryptanalysis",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "csv-injection",
+      "term": "CSV Injection",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "cvss-common-vulnerability-scoring-system",
+      "term": "CVSS (Common Vulnerability Scoring System)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "cwe-common-weakness-enumeration",
+      "term": "CWE (Common Weakness Enumeration)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "data-compression",
+      "term": "Data Compression",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "data-encoding",
+      "term": "Data Encoding",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "data-encryption",
+      "term": "Data Encryption",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "data-exfiltration",
+      "term": "Data Exfiltration",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "dcsync",
+      "term": "DCSync",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "defense-evasion",
+      "term": "Defense Evasion",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "defense-in-depth",
+      "term": "Defense-in-Depth",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "delegation",
+      "term": "Delegation",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "denial-of-service",
+      "term": "Denial of Service",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "deserialization-attack",
+      "term": "Deserialization Attack",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "detection-capability",
+      "term": "Detection Capability",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "discretionary-access-control-list-dacl",
+      "term": "Discretionary Access Control List (DACL)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "distinguished-name-dn",
+      "term": "Distinguished Name (DN)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "dns",
+      "term": "DNS",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "dns-poisoning",
+      "term": "DNS Poisoning",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "domain",
+      "term": "Domain",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "domain-controller-dc",
+      "term": "Domain Controller (DC)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "dropper",
+      "term": "Dropper",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "engagement-scope",
+      "term": "Engagement Scope",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "enum4linux-ng",
+      "term": "enum4linux-ng",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "enumeration",
+      "term": "Enumeration",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "evidence",
+      "term": "Evidence",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "evil-winrm",
+      "term": "evil-winrm",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "exclusions",
+      "term": "Exclusions",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "executive-summary",
+      "term": "Executive Summary",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "exfiltration-channel",
+      "term": "Exfiltration Channel",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "exiftool",
+      "term": "exiftool",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "exploit",
+      "term": "Exploit",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "exploit-chain",
+      "term": "Exploit Chain",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "exploitation",
+      "term": "Exploitation",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "external-penetration-test",
+      "term": "External Penetration Test",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "eyewitness",
+      "term": "Eyewitness",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "feroxbuster",
+      "term": "feroxbuster",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "ffuf",
+      "term": "ffuf",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "fierce",
+      "term": "fierce",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "finding",
+      "term": "Finding",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "finger",
+      "term": "Finger",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "flooding",
+      "term": "Flooding",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "forced-browsing",
+      "term": "Forced browsing",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "forest",
+      "term": "Forest",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "fping",
+      "term": "fping",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "ftp",
+      "term": "FTP",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "global-catalog-gc",
+      "term": "Global Catalog (GC)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "gobuster",
+      "term": "gobuster",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "golden-ticket",
+      "term": "Golden Ticket",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "gray-box-test",
+      "term": "Gray Box Test",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "group",
+      "term": "Group",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "group-managed-service-account-gmsa",
+      "term": "Group Managed Service Account (gMSA)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "group-membership",
+      "term": "Group Membership",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "group-policy",
+      "term": "Group Policy",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "group-policy-object-gpo",
+      "term": "Group Policy Object (GPO)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "grpc",
+      "term": "gRPC",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "hashcat",
+      "term": "hashcat",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "heartbeat",
+      "term": "Heartbeat",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "http",
+      "term": "HTTP",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "http-response-splitting",
+      "term": "HTTP Response Splitting",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "https",
+      "term": "HTTPS",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "hydra",
+      "term": "hydra",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "imap",
+      "term": "IMAP",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "impacket",
+      "term": "impacket",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "impact",
+      "term": "Impact",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "implant",
+      "term": "Implant",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "indicators-of-compromise-iocs",
+      "term": "Indicators of Compromise (IOCs)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "initial-access",
+      "term": "Initial Access",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "insecure-direct-object-reference-idor",
+      "term": "Insecure Direct Object Reference (IDOR)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "internal-penetration-test",
+      "term": "Internal Penetration Test",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "inveigh",
+      "term": "Inveigh",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "ip-spoofing",
+      "term": "IP Spoofing",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "ipmi",
+      "term": "IPMI",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "iso-27001",
+      "term": "ISO 27001",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "john-the-ripper-jtr",
+      "term": "John the Ripper (JtR)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "kerberoasting",
+      "term": "Kerberoasting",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "kerberos",
+      "term": "Kerberos",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "keylogger",
+      "term": "Keylogger",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "kill-switch",
+      "term": "Kill Switch",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "lateral-movement",
+      "term": "Lateral Movement",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "lazagne",
+      "term": "LaZagne",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "ldap",
+      "term": "LDAP",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "ldap-injection",
+      "term": "LDAP Injection",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "likelihood",
+      "term": "Likelihood",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "linux-exploit-suggester-les",
+      "term": "Linux Exploit Suggester (LES)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "listener",
+      "term": "Listener",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "living-off-the-land-lolbins",
+      "term": "Living-off-the-Land (LOLBins)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "loader",
+      "term": "Loader",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "local-privilege-escalation-lpe",
+      "term": "Local Privilege Escalation (LPE)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "log-injection",
+      "term": "Log Injection",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "logging",
+      "term": "Logging",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "malware",
+      "term": "Malware",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "memory-corruption",
+      "term": "Memory Corruption",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "metasploit-framework",
+      "term": "Metasploit Framework",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "mimikatz",
+      "term": "Mimikatz",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "mimipenguin",
+      "term": "mimipenguin",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "mitre-att-ck",
+      "term": "MITRE ATT&CK",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "monitoring",
+      "term": "Monitoring",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "msfvenom",
+      "term": "MSFVenom",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "msrpc",
+      "term": "MSRPC",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "mssql",
+      "term": "MSSQL",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "mysql",
+      "term": "MySQL",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "net-ntlmv2-ntlmv2",
+      "term": "Net-NTLMv2 (NTLMv2)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "netbios",
+      "term": "NetBIOS",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "netexec",
+      "term": "NetExec",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "network-penetration-test",
+      "term": "Network Penetration Test",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "nfs",
+      "term": "NFS",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "nikto",
+      "term": "nikto",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "nist",
+      "term": "NIST",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "nist-sp-800-115",
+      "term": "NIST SP 800-115",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "nmap",
+      "term": "Nmap",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "ntlm",
+      "term": "NTLM",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "ntlm-relay",
+      "term": "NTLM Relay",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "onesixtyone",
+      "term": "onesixtyone",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "open-redirect",
+      "term": "Open Redirect",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "openvas",
+      "term": "OpenVAS",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "operational-security-opsec",
+      "term": "Operational Security (OpSec)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "oracle-tns",
+      "term": "Oracle TNS",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "organizational-unit-ou",
+      "term": "Organizational Unit (OU)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "overall-risk",
+      "term": "Overall Risk",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "overpass-the-hash-pass-the-key",
+      "term": "Overpass-the-Hash (Pass-the-Key)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "owasp",
+      "term": "OWASP",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "pass-the-hash-pth",
+      "term": "Pass-the-Hash (PtH)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "pass-the-ticket-ptt",
+      "term": "Pass-the-Ticket (PtT)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "password-policy",
+      "term": "Password Policy",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "password-spraying",
+      "term": "Password Spraying",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "path-traversal",
+      "term": "Path Traversal",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "payload",
+      "term": "Payload",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "pci-dss",
+      "term": "PCI DSS",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "pcredz",
+      "term": "Pcredz",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "penetration-testing-pentest",
+      "term": "Penetration Testing (Pentest)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "persistence",
+      "term": "Persistence",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "pkinittools",
+      "term": "PKINITtools",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "pop3",
+      "term": "POP3",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "post-exploitation",
+      "term": "Post-Exploitation",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "powerupsql",
+      "term": "PowerUpSQL",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "powerview",
+      "term": "PowerView",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "primary-domain-controller-pdc",
+      "term": "Primary Domain Controller (PDC)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "printer-bug-petitpotam",
+      "term": "Printer Bug (PetitPotam)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "privilege",
+      "term": "Privilege",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "privilege-escalation",
+      "term": "Privilege Escalation",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "proof-of-concept-poc",
+      "term": "Proof of Concept (PoC)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "proxychains",
+      "term": "ProxyChains",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "ptes-penetration-testing-execution-standard",
+      "term": "PTES (Penetration Testing Execution Standard)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "race-condition",
+      "term": "Race Condition",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "rdp",
+      "term": "RDP",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "read-permission",
+      "term": "Read Permission",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "reconnaissance",
+      "term": "Reconnaissance",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "regular-expression-denial-of-service-redos",
+      "term": "Regular expression Denial of Service (ReDoS)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "relative-identifier-rid",
+      "term": "Relative Identifier (RID)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "remediation",
+      "term": "Remediation",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "remote-code-execution-rce",
+      "term": "Remote Code Execution (RCE)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "replication",
+      "term": "Replication",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "residual-risk",
+      "term": "Residual Risk",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "resource-based-constrained-delegation-rbcd",
+      "term": "Resource-Based Constrained Delegation (RBCD)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "responder",
+      "term": "Responder",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "reverse-shell",
+      "term": "Reverse Shell",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "risk",
+      "term": "Risk",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "risk-assessment",
+      "term": "Risk Assessment",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "risk-rating",
+      "term": "Risk Rating",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "risk-score",
+      "term": "Risk Score",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "risk-severity",
+      "term": "Risk Severity",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "rootkit",
+      "term": "Rootkit",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "rpc",
+      "term": "RPC",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "rsync",
+      "term": "Rsync",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "rubeus",
+      "term": "Rubeus",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "rules-of-engagement-roe",
+      "term": "Rules of Engagement (ROE)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "rusthound",
+      "term": "RustHound",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "rusthound-ce",
+      "term": "RustHound-CE",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "rustscan",
+      "term": "RustScan",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "schema",
+      "term": "Schema",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "scope-limitations",
+      "term": "Scope Limitations",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "security-assessment",
+      "term": "Security Assessment",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "security-governance",
+      "term": "Security Governance",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "security-identifier-sid",
+      "term": "Security Identifier (SID)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "security-posture",
+      "term": "Security Posture",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "sensitive-data",
+      "term": "Sensitive Data",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "server-side-request-forgery-ssrf",
+      "term": "Server Side Request Forgery (SSRF)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "server-side-includes-ssi-injection",
+      "term": "Server-Side Includes (SSI) Injection",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "service-account",
+      "term": "Service Account",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "service-principal-name-spn",
+      "term": "Service Principal Name (SPN)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "session",
+      "term": "Session",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "session-fixation",
+      "term": "Session fixation",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "session-hijacking",
+      "term": "Session hijacking",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "severity",
+      "term": "Severity",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "severity-rating",
+      "term": "Severity Rating",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "shadow-coerce-ms-fsrvp",
+      "term": "Shadow Coerce (MS-FSRVP)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "sharpview",
+      "term": "SharpView",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "shellcode",
+      "term": "Shellcode",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "shodan",
+      "term": "Shodan",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "silver-ticket",
+      "term": "Silver Ticket",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "sliver",
+      "term": "Sliver",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "smb",
+      "term": "SMB",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "smbmap",
+      "term": "SMBMap",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "smtp",
+      "term": "SMTP",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "snaffler",
+      "term": "Snaffler",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "snmp",
+      "term": "SNMP",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "spyware",
+      "term": "Spyware",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "sql-injection",
+      "term": "SQL Injection",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "sqlmap",
+      "term": "sqlmap",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "ssh",
+      "term": "SSH",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "subbrute",
+      "term": "subbrute",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "subfinder",
+      "term": "subfinder",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "summary-of-findings",
+      "term": "Summary of Findings",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "system-access-control-list-sacl",
+      "term": "System Access Control List (SACL)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "sysvol",
+      "term": "SYSVOL",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "telnet",
+      "term": "Telnet",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "testing-window",
+      "term": "Testing Window",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "tftp",
+      "term": "TFTP",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "threat-actor",
+      "term": "Threat Actor",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "ticket-granting-ticket-tgt",
+      "term": "Ticket-Granting Ticket (TGT)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "trojan",
+      "term": "Trojan",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "trust",
+      "term": "Trust",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "trusted-domain-object-tdo",
+      "term": "Trusted Domain Object (TDO)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "unconstrained-delegation",
+      "term": "Unconstrained Delegation",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "unicode-encoding",
+      "term": "Unicode Encoding",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "use-after-free",
+      "term": "Use-After-Free",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "user-principal-name-upn",
+      "term": "User Principal Name (UPN)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "vulnerability-assessment",
+      "term": "Vulnerability Assessment",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "web-application-penetration-test",
+      "term": "Web Application Penetration Test",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "webdav",
+      "term": "WebDAV",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "whatweb",
+      "term": "whatweb",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "white-box-test",
+      "term": "White Box Test",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "windows-exploit-suggester-next-generation-wes-ng",
+      "term": "Windows Exploit Suggester - Next Generation (WES-NG)",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "winpeas",
+      "term": "winpeas",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "winrm",
+      "term": "WinRM",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "wireshark",
+      "term": "Wireshark",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "wmi",
+      "term": "WMI",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "wpscan",
+      "term": "wpscan",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "write-permission",
+      "term": "Write Permission",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "x11",
+      "term": "X11",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "xmlrpc",
+      "term": "XMLRPC",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "xpath-injection",
+      "term": "XPATH Injection",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "xsstrike",
+      "term": "XSStrike",
+      "layman": "",
+      "technical": ""
+    },
+    {
+      "id": "zero-day",
+      "term": "Zero-Day",
+      "layman": "",
+      "technical": ""
+    }
 ]
