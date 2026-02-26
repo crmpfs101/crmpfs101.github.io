@@ -18,20 +18,13 @@
     color: #cfcfcf;
     font-size: 0.85rem;
     cursor: pointer;
+  
+    &:focus-visible {
+      outline: 2px solid rgba(200, 200, 200, 0.6);
+      outline-offset: 2px;
+    }
   }
   
-  .glossary-mode-select:focus-visible {
-    outline: 2px solid rgba(200, 200, 200, 0.6);
-    outline-offset: 2px;
-  }
-  
-  .glossary-download {
-    display: flex;
-    flex-direction: column;   /* stack vertically */
-    gap: 0.5rem;              /* spacing between buttons */
-    align-items: flex-start;  /* align left */
-  }
-
   .glossary-badge {
     display: inline-block;
     margin-right: 0.5rem;
@@ -44,26 +37,64 @@
   
     border-radius: 999px;
     border: 1px solid rgba(128, 128, 128, 0.35);
-  
     background: rgba(255, 255, 255, 0.04);
     color: #cfcfcf;
   }
   
-  /* Optional subtle differentiation */
-  .glossary-badge--technical {
-    border-color: rgba(110, 110, 110, 0.5);
-  }
-  .glossary-badge--layman {
-    border-color: rgba(150, 150, 150, 0.4);
+  .glossary-def {
+    margin-top: 0.5rem;
+    padding: 0.6rem 0.75rem;
+    border-radius: 0.85rem;
+    border: 1px solid rgba(128, 128, 128, 0.28);
+    background: rgba(255, 255, 255, 0.03);
+    color: #cfcfcf;
+    line-height: 1.45;
+    word-break: break-word;
   }
   
-  /* Mode logic: 0=technical, 1=layman, 2=both */
-  .glossary-list[data-mode="0"] {
-    .glossary-def--layman { display: none !important; }
-    .glossary-badge { display: none; }
+  /* Page mode */
+  .glossary-list[data-mode="0"] .glossary-def--layman { display: none; }
+  .glossary-list[data-mode="1"] .glossary-def--technical { display: none; }
+  
+  .glossary-list[data-mode="0"] .glossary-badge,
+  .glossary-list[data-mode="1"] .glossary-badge {
+    display: none;
   }
-  .glossary-list[data-mode="1"] {
-    .glossary-def--technical { display: none !important; }
-    .glossary-badge { display: none; }
+  
+  /* Tooltip styling */
+  .glossary-term--ref {
+    cursor: help;
+    text-decoration: underline dotted;
+    text-underline-offset: 2px;
   }
-  /* data-mode="2" shows both, so no hiding rules */
+  
+  .glossary-tooltip {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    min-width: 280px;
+    max-width: min(520px, 90vw);
+    padding: 0.65rem 0.75rem;
+    border-radius: 0.85rem;
+    border: 1px solid rgba(128, 128, 128, 0.35);
+    background: rgba(20, 20, 20, 0.98);
+    color: #cfcfcf;
+    box-shadow: 0 12px 34px rgba(0, 0, 0, 0.35);
+    line-height: 1.35;
+    word-break: break-word;
+  }
+  
+  .glossary-tooltip-title {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #f0f0f0;
+  }
+  
+  /* Tooltip follows mode */
+  html[data-glossary-mode="0"] .glossary-tooltip .glossary-def--layman { display: none; }
+  html[data-glossary-mode="1"] .glossary-tooltip .glossary-def--technical { display: none; }
+  
+  html[data-glossary-mode="0"] .glossary-tooltip .glossary-badge,
+  html[data-glossary-mode="1"] .glossary-tooltip .glossary-badge {
+    display: none;
+  }

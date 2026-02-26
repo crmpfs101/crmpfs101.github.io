@@ -66,8 +66,8 @@ permalink: /glossary/
   </select>
 </div>
 
-<div class="glossary-list" data-mode="layman">
-  {% for item in site.data.glossary %}
+<div class="glossary-list" data-mode="2">
+  {% for item in site.data.glossary_processed %}
     <section class="glossary-item" id="{{ item.id }}">
       <h4 class="glossary-term">{{ item.term }}</h4>
 
@@ -86,3 +86,4 @@ permalink: /glossary/
 </div>
 
 <script defer src="{{ '/assets/js/glossary.js' | relative_url }}"></script>
+<script defer src="{{ '/assets/js/glossary-tooltips.js' | relative_url }}"></script>

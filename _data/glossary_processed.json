@@ -110,8 +110,8 @@
   {
     "id": "bloodyad",
     "term": "bloodyAD",
-    "technical": "An Active Directory abuse tool focused on modifying ACLs, group memberships, and delegation settings for privilege escalation",
-    "layman": "A tool that changes hidden Active Directory permissions to give you more control than you should have."
+    "technical": "An <span class=\"glossary-term glossary-term--ref\" data-term=\"Active Directory\" data-id=\"active-directory\">Active Directory<div class=\"glossary-tooltip\" role=\"tooltip\" data-for=\"active-directory\">  <div class=\"glossary-tooltip-title\">Active Directory</div>  <div class=\"glossary-def glossary-def--technical\">    <span class=\"glossary-badge glossary-badge--technical\">Technical</span>    Microsoft’s directory service for identity and access management.  </div>  <div class=\"glossary-def glossary-def--layman\">    <span class=\"glossary-badge glossary-badge--layman\">Layman</span>    The system that controls logins and permissions in most Windows company networks.  </div></div></span> abuse tool focused on modifying ACLs, group memberships, and delegation settings for privilege escalation",
+    "layman": "A tool that changes hidden <span class=\"glossary-term glossary-term--ref\" data-term=\"Active Directory\" data-id=\"active-directory\">Active Directory<div class=\"glossary-tooltip\" role=\"tooltip\" data-for=\"active-directory\">  <div class=\"glossary-tooltip-title\">Active Directory</div>  <div class=\"glossary-def glossary-def--technical\">    <span class=\"glossary-badge glossary-badge--technical\">Technical</span>    Microsoft’s directory service for identity and access management.  </div>  <div class=\"glossary-def glossary-def--layman\">    <span class=\"glossary-badge glossary-badge--layman\">Layman</span>    The system that controls logins and permissions in most Windows company networks.  </div></div></span> permissions to give you more control than you should have."
   },
   {
     "id": "bluehound",
