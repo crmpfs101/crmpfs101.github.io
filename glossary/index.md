@@ -49,6 +49,25 @@ permalink: /glossary/
   </a>
 </div>
 
+<h2>Evaluation</h2>
+
+<p>
+  As part of a Georgia Tech capstone project, this glossary is being evaluated
+  to understand whether it improves comprehension of penetration testing reports
+  for both technical and non-technical readers.
+</p>
+
+<p>
+  Participants can view sample reports and complete a short questionnaire.
+</p>
+
+<div class="glossary-download">
+  <a class="glossary-download-link"
+     href="{{ '/glossary/evaluation/' | relative_url }}">
+     Participate in Evaluation
+  </a>
+</div>
+
 <h2>Terms</h2>
 
 <p>
