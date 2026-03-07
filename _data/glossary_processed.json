@@ -110,8 +110,8 @@
   {
     "id": "bloodyad",
     "term": "bloodyAD",
-    "technical": "An AD abuse tool focused on modifying ACLs, group memberships, and delegation settings for privilege escalation",
-    "layman": "A tool that changes hidden Active Directory permissions to give you more control than you should have."
+    "technical": "An <span class=\"glossary-term--ref\" data-id=\"active-directory\">AD</span> abuse tool focused on modifying ACLs, group memberships, and delegation settings for privilege escalation",
+    "layman": "A tool that changes hidden <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> permissions to give you more control than you should have."
   },
   {
     "id": "bluehound",

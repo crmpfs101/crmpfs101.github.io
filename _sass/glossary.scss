@@ -1,37 +1,119 @@
+/* ===== Glossary controls row ===== */
+
 .glossary-controls {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
-    margin: 0.75rem 0 1.25rem 0;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  
+    margin: 0.9rem 0 1.25rem;
+    padding: 0.85rem 0.9rem;
+  
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(6px);
   }
   
-  .glossary-mode-label {
-    color: #cfcfcf;
-    font-size: 0.85rem;
+  .glossary-mode,
+  .glossary-search {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    min-width: 0;
   }
   
-  .glossary-mode-select {
-    padding: 0.4rem 0.6rem;
-    border-radius: 0.75rem;
-    border: 1px solid rgba(128, 128, 128, 0.35);
-    background: transparent;
-    color: #cfcfcf;
-    font-size: 0.85rem;
-    cursor: pointer;
+  /* labels */
+  .glossary-mode-label,
+  .glossary-search-label {
+    font-weight: 600;
+    font-size: 0.95rem;
+    opacity: 0.9;
+    white-space: nowrap;
   }
   
-  .glossary-mode-select:focus-visible {
-    outline: 2px solid rgba(200, 200, 200, 0.6);
-    outline-offset: 2px;
+  /* inputs */
+  .glossary-mode-select,
+  .glossary-search-input {
+    height: 2.35rem;
+    line-height: 1.2;
+    border-radius: 12px;
+  
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: rgba(0, 0, 0, 0.22);
+    color: inherit;
+  
+    padding: 0 0.75rem;
+    outline: none;
+  
+    transition: border-color 160ms ease, box-shadow 160ms ease, background 160ms ease;
   }
   
-  .glossary-download {
-    display: flex;
-    flex-direction: column;   /* stack vertically */
-    gap: 0.5rem;              /* spacing between buttons */
-    align-items: flex-start;  /* align left */
+  .glossary-mode-select:hover,
+  .glossary-search-input:hover {
+    border-color: rgba(255, 255, 255, 0.22);
+    background: rgba(0, 0, 0, 0.28);
+  }
+  
+  .glossary-mode-select:focus-visible,
+  .glossary-search-input:focus-visible,
+  .glossary-mode-select:focus,
+  .glossary-search-input:focus {
+    border-color: rgba(167, 139, 250, 0.65);
+    box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.22);
+  }
+  
+  /* Make search a reasonable size */
+  .glossary-search {
+    flex: 0 1 420px; /* now this actually works */
+  }
+  
+  .glossary-search-input {
+    width: 100%;
+    max-width: 420px;
+    min-width: 0;
+  }
+  
+  .glossary-search-meta {
+    margin-left: auto; /* push meta to the right inside the search group */
+    font-size: 0.95rem;
+    opacity: 0.75;
+    white-space: nowrap;
+  }
+  
+  /* Mobile */
+  @media (max-width: 720px) {
+    .glossary-controls {
+      align-items: stretch;
+    }
+  
+    .glossary-mode,
+    .glossary-search {
+      width: 100%;
+      justify-content: space-between;
+    }
+  
+    .glossary-mode-select {
+      width: min(260px, 100%);
+    }
+  
+    .glossary-search-input {
+      flex: 1 1 auto;
+      max-width: none;
+    }
+  
+    .glossary-search-meta {
+      margin-left: 0;
+    }
+  }
+  
+  /* Optional: tighten vertical rhythm between term sections */
+  .glossary-item {
+    padding-top: 0.25rem;
   }
 
+  
   .glossary-badge {
     display: inline-block;
     margin-right: 0.5rem;
@@ -44,26 +126,64 @@
   
     border-radius: 999px;
     border: 1px solid rgba(128, 128, 128, 0.35);
-  
     background: rgba(255, 255, 255, 0.04);
     color: #cfcfcf;
   }
   
-  /* Optional subtle differentiation */
-  .glossary-badge--technical {
-    border-color: rgba(110, 110, 110, 0.5);
-  }
-  .glossary-badge--layman {
-    border-color: rgba(150, 150, 150, 0.4);
+  .glossary-def {
+    margin-top: 0.5rem;
+    padding: 0.6rem 0.75rem;
+    border-radius: 0.85rem;
+    border: 1px solid rgba(128, 128, 128, 0.28);
+    background: rgba(255, 255, 255, 0.03);
+    color: #cfcfcf;
+    line-height: 1.45;
+    word-break: break-word;
   }
   
-  /* Mode logic: 0=technical, 1=layman, 2=both */
-  .glossary-list[data-mode="0"] {
-    .glossary-def--layman { display: none !important; }
-    .glossary-badge { display: none; }
+  /* Page mode */
+  .glossary-list[data-mode="0"] .glossary-def--layman { display: none; }
+  .glossary-list[data-mode="1"] .glossary-def--technical { display: none; }
+  
+  .glossary-list[data-mode="0"] .glossary-badge,
+  .glossary-list[data-mode="1"] .glossary-badge {
+    display: none;
   }
-  .glossary-list[data-mode="1"] {
-    .glossary-def--technical { display: none !important; }
-    .glossary-badge { display: none; }
+  
+  /* Tooltip styling */
+  .glossary-term--ref {
+    cursor: help;
+    text-decoration: underline dotted;
+    text-underline-offset: 2px;
   }
-  /* data-mode="2" shows both, so no hiding rules */
+  
+  .glossary-tooltip {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    min-width: 280px;
+    max-width: min(520px, 90vw);
+    padding: 0.65rem 0.75rem;
+    border-radius: 0.85rem;
+    border: 1px solid rgba(128, 128, 128, 0.35);
+    background: rgba(20, 20, 20, 0.98);
+    color: #cfcfcf;
+    box-shadow: 0 12px 34px rgba(0, 0, 0, 0.35);
+    line-height: 1.35;
+    word-break: break-word;
+  }
+  
+  .glossary-tooltip-title {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #f0f0f0;
+  }
+  
+  /* Tooltip follows mode */
+  html[data-glossary-mode="0"] .glossary-tooltip .glossary-def--layman { display: none; }
+  html[data-glossary-mode="1"] .glossary-tooltip .glossary-def--technical { display: none; }
+  
+  html[data-glossary-mode="0"] .glossary-tooltip .glossary-badge,
+  html[data-glossary-mode="1"] .glossary-tooltip .glossary-badge {
+    display: none;
+  }

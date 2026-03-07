@@ -36,9 +36,10 @@ remote_theme: jekyll/minima
 minima:
   skin: custom-dark
   date_format: "%b %-d, %Y"
+  nav_pages:
+    - about.md
+    - glossary/index.md
 
-header_pages:
-  - glossary/index.md
 
 # Exclude from processing.
 # The following items will not be processed, by default.

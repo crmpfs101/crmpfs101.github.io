@@ -1,0 +1,47 @@
+{%- assign chunks = include.content | split: "[[" -%}
+{{- chunks.first -}}
+{%- for chunk in chunks offset:1 -%}
+  {%- if chunk contains "]]" -%}
+    {%- assign pair = chunk | split: "]]" -%}
+    {%- assign token = pair.first -%}
+    {%- assign rest = pair | shift | join: "]]" -%}
+
+    {%- if token contains "|" -%}
+      {%- assign token_parts = token | split: "|" -%}
+      {%- assign lookup_term = token_parts.first | strip -%}
+      {%- assign display_name = token_parts | shift | join: "|" | strip -%}
+    {%- else -%}
+      {%- assign lookup_term = token | strip -%}
+      {%- assign display_name = token | strip -%}
+    {%- endif -%}
+
+    {%- assign lookup_norm = lookup_term | downcase | strip -%}
+    {%- assign matched = nil -%}
+
+    {%- for candidate in site.data.glossary_processed -%}
+      {%- assign candidate_full = candidate.term | strip -%}
+      {%- assign candidate_full_norm = candidate_full | downcase -%}
+      {%- assign candidate_base = candidate_full | split: " (" | first | strip -%}
+      {%- assign candidate_base_norm = candidate_base | downcase -%}
+
+      {%- assign candidate_paren = "" -%}
+      {%- if candidate_full contains "(" and candidate_full contains ")" -%}
+        {%- assign candidate_paren = candidate_full | split: "(" | last | split: ")" | first | strip -%}
+      {%- endif -%}
+      {%- assign candidate_paren_norm = candidate_paren | downcase -%}
+
+      {%- if lookup_norm == candidate_full_norm or lookup_norm == candidate_base_norm or lookup_norm == candidate_paren_norm -%}
+        {%- assign matched = candidate -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
+
+    {%- if matched -%}
+      <span class="glossary-term--ref" data-id="{{ matched.id }}">{{ display_name }}</span>{{ rest }}
+    {%- else -%}
+      <span class="glossary-term--missing" title="Glossary term not found">{{ display_name }}</span>{{ rest }}
+    {%- endif -%}
+  {%- else -%}
+    [[{{ chunk }}
+  {%- endif -%}
+{%- endfor -%}

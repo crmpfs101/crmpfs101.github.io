@@ -49,6 +49,25 @@ permalink: /glossary/
   </a>
 </div>
 
+<h2>Evaluation</h2>
+
+<p>
+  As part of a Georgia Tech capstone project, this glossary is being evaluated
+  to understand whether it improves comprehension of penetration testing reports
+  for both technical and non-technical readers.
+</p>
+
+<p>
+  Participants can view sample reports and complete a short questionnaire.
+</p>
+
+<div class="glossary-download">
+  <a class="glossary-download-link"
+     href="{{ '/glossary/evaluation/' | relative_url }}">
+     Participate in Evaluation
+  </a>
+</div>
+
 <h2>Terms</h2>
 
 <p>
@@ -57,18 +76,34 @@ permalink: /glossary/
 </p>
 
 <div class="glossary-controls">
-  <label class="glossary-mode-label" for="glossaryModeSelect">View:</label>
 
-  <select id="glossaryModeSelect" class="glossary-mode-select">
-    <option value="2" selected>Technical + Layman</option>
-    <option value="0">Technical</option>
-    <option value="1">Layman</option>
-  </select>
+  <div class="glossary-mode">
+    <label class="glossary-mode-label" for="glossaryModeSelect">View:</label>
+    <select id="glossaryModeSelect" class="glossary-mode-select">
+      <option value="2" selected>Technical + Layman</option>
+      <option value="0">Technical</option>
+      <option value="1">Layman</option>
+    </select>
+  </div>
+
+  <div class="glossary-search">
+    <label class="glossary-search-label" for="glossarySearch">Search:</label>
+    <input
+      id="glossarySearch"
+      class="glossary-search-input"
+      type="search"
+      placeholder="Search by term…"
+      autocomplete="off"
+      spellcheck="false"
+    />
+    <div id="glossarySearchMeta" class="glossary-search-meta" aria-live="polite"></div>
+  </div>
+
 </div>
 
-<div class="glossary-list" data-mode="layman">
-  {% for item in site.data.glossary %}
-    <section class="glossary-item" id="{{ item.id }}">
+<div class="glossary-list" data-mode="2">
+  {% for item in site.data.glossary_processed %}
+    <section class="glossary-item" id="{{ item.id }}" data-term="{{ item.term | escape }}">
       <h4 class="glossary-term">{{ item.term }}</h4>
 
       <div class="glossary-def glossary-def--technical">
@@ -86,3 +121,5 @@ permalink: /glossary/
 </div>
 
 <script defer src="{{ '/assets/js/glossary.js' | relative_url }}"></script>
+<script defer src="{{ '/assets/js/glossary-tooltips.js' | relative_url }}"></script>
+<script defer src="{{ '/assets/js/glossary-search.js' | relative_url }}"></script>

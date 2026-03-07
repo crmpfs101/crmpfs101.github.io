@@ -3,7 +3,6 @@
   
     const list = document.querySelector(".glossary-list");
     const select = document.getElementById("glossaryModeSelect");
-  
     if (!list || !select) return;
   
     const normalize = (v) => {
@@ -13,15 +12,17 @@
   
     const setMode = (mode) => {
       const m = normalize(mode);
+  
+      // Main glossary list mode
       list.setAttribute("data-mode", String(m));
       select.value = String(m);
       localStorage.setItem(STORAGE_KEY, String(m));
+  
+      // Make tooltip follow mode even though it's appended to <body>
+      document.documentElement.setAttribute("data-glossary-mode", String(m));
     };
   
-    // Default to BOTH (2)
     setMode(localStorage.getItem(STORAGE_KEY) ?? 2);
   
-    select.addEventListener("change", () => {
-      setMode(select.value);
-    });
+    select.addEventListener("change", () => setMode(select.value));
   })();
