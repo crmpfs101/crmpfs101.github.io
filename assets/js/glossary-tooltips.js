@@ -3,12 +3,14 @@
 
 (() => {
   const GLOSSARY_URL = "{{ '/assets/data/glossary.json' | relative_url }}";
-  const HIDE_DELAY = 500;
+  const SHOW_DELAY = 300;
+  const HIDE_DELAY = 200;
 
   let glossaryMap = null;
   let glossaryPromise = null;
   let currentAnchor = null;
-  let hideTimer = null;
+  let hoverTimer = null;
+  let hoverAction = null;
 
   const tooltip = document.createElement("div");
   tooltip.className = "glossary-tooltip";
@@ -63,6 +65,14 @@
     return glossaryPromise;
   }
 
+  function clearHoverTimer() {
+    if (hoverTimer) {
+      clearTimeout(hoverTimer);
+      hoverTimer = null;
+    }
+    hoverAction = null;
+  }
+
   function setTooltipContent(entry) {
     const technical = entry.technical?.trim() || "(Not defined)";
     const layman = entry.layman?.trim() || "(Not defined)";
@@ -81,18 +91,12 @@
   }
 
   function showTooltip() {
-    if (hideTimer) {
-      clearTimeout(hideTimer);
-      hideTimer = null;
-    }
+    clearHoverTimer();
     tooltip.style.display = "block";
   }
 
   function hideTooltip() {
-    if (hideTimer) {
-      clearTimeout(hideTimer);
-      hideTimer = null;
-    }
+    clearHoverTimer();
     tooltip.style.display = "none";
     currentAnchor = null;
   }
@@ -153,7 +157,14 @@
     if (!ref || ref.classList.contains("glossary-term--missing")) return;
     if (currentAnchor === ref) return;
 
-    showForReference(ref);
+    clearHoverTimer();
+    hoverAction = "show";
+
+    hoverTimer = setTimeout(() => {
+      if (hoverAction === "show") {
+        showForReference(ref);
+      }
+    }, SHOW_DELAY);
   });
 
   document.addEventListener("pointerout", (event) => {
@@ -165,18 +176,29 @@
     if (to && (tooltip.contains(to) || to.closest?.(".glossary-tooltip"))) return;
     if (to && to.closest?.(".glossary-term--ref")) return;
 
-    hideTimer = setTimeout(hideTooltip, HIDE_DELAY);
+    clearHoverTimer();
+    hoverAction = "hide";
+
+    hoverTimer = setTimeout(() => {
+      if (hoverAction === "hide") {
+        hideTooltip();
+      }
+    }, HIDE_DELAY);
   });
 
   tooltip.addEventListener("pointerover", () => {
-    if (hideTimer) {
-      clearTimeout(hideTimer);
-      hideTimer = null;
-    }
+    clearHoverTimer();
   });
 
   tooltip.addEventListener("pointerleave", () => {
-    hideTimer = setTimeout(hideTooltip, HIDE_DELAY);
+    clearHoverTimer();
+    hoverAction = "hide";
+
+    hoverTimer = setTimeout(() => {
+      if (hoverAction === "hide") {
+        hideTooltip();
+      }
+    }, HIDE_DELAY);
   });
 
   document.addEventListener("pointerdown", (event) => {
