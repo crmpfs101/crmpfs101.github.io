@@ -2,1657 +2,1645 @@
   {
     "id": "access-control-entry-ace",
     "term": "Access Control Entry (ACE)",
-    "technical": "",
-    "layman": ""
+    "technical": "An individual permission entry within an ACL.",
+    "layman": "A single rule in a permissions list."
   },
   {
     "id": "access-control-list-acl",
     "term": "Access Control List (ACL)",
-    "technical": "",
-    "layman": ""
+    "technical": "A list defining which users or groups have permissions on an object.",
+    "layman": "A list that shows who can access something."
   },
   {
     "id": "active-directory",
     "term": "Active Directory",
-    "technical": "Microsoft’s directory service for identity and access management.",
-    "layman": "The system that controls logins and permissions in most Windows company networks."
+    "technical": "Microsoft’s centralized directory service for managing identities and resources in Windows environments.",
+    "layman": "The system Windows organizations use to manage user accounts, computers, and permissions."
   },
   {
     "id": "agent",
     "term": "Agent",
-    "technical": "",
-    "layman": ""
+    "technical": "A small software component on a compromised system that communicates with command servers.",
+    "layman": "A small program on an infected machine that talks to the attacker."
   },
   {
     "id": "aquatone",
     "term": "Aquatone",
-    "technical": "",
-    "layman": ""
+    "technical": "A web reconnaissance and reporting tool for visual inspection of web services. Aquatone scans for web service ports, generates screenshots of responsive web endpoints, and outputs page headers and metadata.",
+    "layman": "A tool used to automatically visit many websites and take screenshots of each page that responds. It creates a single visual report showing all the pages found, grouped by similarity, so testers can quickly see and compare the publicly visible websites of a target."
   },
   {
     "id": "as-rep-roasting",
     "term": "AS-REP Roasting",
-    "technical": "",
-    "layman": ""
+    "technical": "An attack targeting accounts that do not require Kerberos preauthentication to obtain crackable authentication data.",
+    "layman": "An attack that targets misconfigured accounts to steal data that can be used to guess passwords offline."
   },
   {
     "id": "assessment-summary",
     "term": "Assessment Summary",
-    "technical": "",
-    "layman": ""
+    "technical": "A summary describing the scope, methodology, and overall results of an assessment.",
+    "layman": "A brief explanation of what was tested and what was found."
   },
   {
     "id": "attack-path",
     "term": "Attack Path",
-    "technical": "",
-    "layman": ""
+    "technical": "A chain of steps an attacker takes to capture the target asset. This might involve multiple vulnerabilities chained together to reach the final desired asset, such as achieving domain administrator.",
+    "layman": "A chain of steps an attacker takes to the target asset. This might involve multiple vulnerabilities chained together to reach the final desired asset, such as getting the credentials to the most privileged administrative account."
   },
   {
     "id": "attribute",
     "term": "Attribute",
-    "technical": "",
-    "layman": ""
+    "technical": "A named property associated with an object in a directory service.",
+    "layman": "A specific piece of information about a user or object."
   },
   {
     "id": "authentication",
     "term": "Authentication",
-    "technical": "",
-    "layman": ""
+    "technical": "The process of verifying an identity.",
+    "layman": "Proving you are who you claim to be."
   },
   {
     "id": "authorization",
     "term": "Authorization",
-    "technical": "",
-    "layman": ""
+    "technical": "The process of granting permissions after authentication.",
+    "layman": "Determining what you are allowed to do."
   },
   {
     "id": "backdoor",
     "term": "Backdoor",
-    "technical": "",
-    "layman": ""
+    "technical": "A hidden method of bypassing authentication or access controls.",
+    "layman": "A secret way to access a system without normal login."
   },
   {
     "id": "beaconing",
     "term": "Beaconing",
-    "technical": "",
-    "layman": ""
+    "technical": "Periodic communication from malware to a command server.",
+    "layman": "A regular check-in message sent from infected systems to the attacker."
   },
   {
     "id": "bind-shell",
     "term": "Bind Shell",
-    "technical": "",
-    "layman": ""
+    "technical": "A shell where the compromised system listens for incoming connections.",
+    "layman": "A remote command line where the attacker connects directly to the victim."
   },
   {
     "id": "black-box-test",
     "term": "Black Box Test",
-    "technical": "",
-    "layman": ""
+    "technical": "A penetration test conducted with no prior internal knowledge provided to the tester.",
+    "layman": "A penetration test specification where the tester starts with no inside information."
   },
   {
     "id": "bloodhound-ce",
     "term": "BloodHound-CE",
-    "technical": "",
-    "layman": ""
+    "technical": "A graph-based Active Directory and Azure AD attack path analysis platform that models relationships between users, groups, computers, permissions, and trusts. BloodHound-CE ingests collected directory data and uses graph queries to identify privilege escalation paths, delegated rights abuse, and shortest paths to high-value targets such as Domain Admins.",
+    "layman": "A tool that maps how users, computers, and permissions are connected inside a company’s Windows account management system (Active Directory). It shows the step-by-step paths an attacker could take to move through the organization and gain powerful administrative access. It helps both attackers and defenders understand where risky permission chains exist."
   },
   {
     "id": "bloodhound-legacy",
     "term": "BloodHound-Legacy",
-    "technical": "",
-    "layman": ""
+    "technical": "A graph-based Active Directory and Azure AD attack path analysis platform that models relationships between users, groups, computers, permissions, and trusts. BloodHound-Legacy ingests collected directory data and uses graph queries to identify privilege escalation paths, delegated rights abuse, and shortest paths to high-value targets such as Domain Admins. BloodHound-Legacy is the predecessor to BloodHound-CE.",
+    "layman": "The older version of BloodHound-CE that maps how users, computers, and permissions connect inside a company’s Windows account system, showing how someone could gain higher access step by step."
   },
   {
     "id": "bloodhound-py",
     "term": "BloodHound.py",
-    "technical": "",
-    "layman": ""
+    "technical": "A Python-based Active Directory data collector for BloodHound.",
+    "layman": "A tool that collects information about how user accounts, computers, and permissions are connected inside a company’s Windows account system so it can be analyzed in BloodHound."
   },
   {
     "id": "bloodyad",
     "term": "bloodyAD",
-    "technical": "An AD abuse tool focused on modifying ACLs, group memberships, and delegation settings for privilege escalation",
-    "layman": "A tool that changes hidden Active Directory permissions to give you more control than you should have."
+    "technical": "An Active Directory abuse tool that modifies AD objects via LDAP for privilege escalation. Common uses include modifying ACLs, group memberships, or delegation settings.",
+    "layman": "A tool that changes configurations inside Active Directory. It can be used to alter who owns accounts, who has permissions over other users or groups, and what actions they’re allowed to perform."
   },
   {
     "id": "bluehound",
     "term": "BlueHound",
-    "technical": "",
-    "layman": ""
+    "technical": "A defensive-focused adaptation of BloodHound designed to identify privilege escalation paths in Active Directory environments.",
+    "layman": "A version of BloodHound built for defenders, helping security teams find risky permission issues before attackers exploit them."
   },
   {
     "id": "brute-force",
     "term": "Brute Force",
-    "technical": "",
-    "layman": ""
+    "technical": "An attack attempting many password combinations.",
+    "layman": "Trying many password guesses."
   },
   {
     "id": "buffer-overflow",
     "term": "Buffer Overflow",
-    "technical": "",
-    "layman": ""
+    "technical": "A vulnerability where data exceeds allocated memory space.",
+    "layman": "An error where too much data overflows into other memory."
   },
   {
     "id": "burp-suite",
     "term": "Burp Suite",
-    "technical": "",
-    "layman": ""
+    "technical": "A web application security testing platform with proxy interception, scanning, and fuzzing capabilities.",
+    "layman": "A toolkit that sits between a user and a website to inspect, modify, and test web traffic for vulnerabilities."
   },
   {
     "id": "cache-poisoning",
     "term": "Cache Poisoning",
-    "technical": "",
-    "layman": ""
+    "technical": "An attack manipulating cached data to serve malicious content.",
+    "layman": "Tricking systems into storing fake content."
   },
   {
     "id": "callback",
     "term": "Callback",
-    "technical": "",
-    "layman": ""
+    "technical": "A connection initiated from a compromised system to an external controller.",
+    "layman": "When an infected computer connects back to the attacker."
   },
   {
     "id": "cewl",
     "term": "CeWL",
-    "technical": "",
-    "layman": ""
+    "technical": "A wordlist generation tool that crawls websites to extract words for a wordlist. It is often used to generate wordlists for password attacks.",
+    "layman": "A tool that puts together a wordlist based on the words on a website. It is often used when attackers are trying to guess account passwords."
   },
   {
     "id": "chisel",
     "term": "chisel",
-    "technical": "",
-    "layman": ""
+    "technical": "A TCP/UDP tunneling tool that enables pivoting through compromised systems using HTTP-based reverse tunnels.",
+    "layman": "A tool that creates a communication tunnel through a compromised computer, allowing access to internal systems that aren’t normally reachable."
   },
   {
     "id": "clickjacking",
     "term": "Clickjacking",
-    "technical": "",
-    "layman": ""
+    "technical": "An attack tricking users into clicking hidden interface elements.",
+    "layman": "Fooling users into clicking something they cannot see."
   },
   {
     "id": "cobalt-strike",
     "term": "Cobalt Strike",
-    "technical": "",
-    "layman": ""
+    "technical": "A commercial adversary simulation and command-and-control framework used in red team operations.",
+    "layman": "A professional tool used to simulate real-world cyberattacks and maintain remote control over compromised systems."
   },
   {
     "id": "code-injection",
     "term": "Code Injection",
-    "technical": "",
-    "layman": ""
+    "technical": "An attack injecting malicious code into an application.",
+    "layman": "Inserting harmful code into a system."
   },
   {
     "id": "command-and-control-c2",
     "term": "Command and Control (C2)",
-    "technical": "",
-    "layman": ""
+    "technical": "An infrastructure used by attackers to control compromised systems remotely.",
+    "layman": "The system attackers use to remotely control infected computers."
   },
   {
     "id": "command-injection",
     "term": "Command Injection",
-    "technical": "",
-    "layman": ""
+    "technical": "An attack injecting system commands into an application.",
+    "layman": "Injecting commands to make a system run unintended actions."
   },
   {
     "id": "content-spoofing",
     "term": "Content Spoofing",
-    "technical": "",
-    "layman": ""
+    "technical": "An attack that falsifies displayed content.",
+    "layman": "Making content appear legitimate when it is fake."
   },
   {
     "id": "cors-originheaderscrutiny",
     "term": "CORS OriginHeaderScrutiny",
-    "technical": "",
-    "layman": ""
+    "technical": "A misconfiguration involving improper validation of CORS origin headers.",
+    "layman": "A flaw where websites improperly trust other websites."
   },
   {
     "id": "crackmapexec",
     "term": "CrackMapExec",
-    "technical": "",
-    "layman": ""
+    "technical": "A multi-protocol network exploitation framework for credential validation, password spraying, and remote command execution in Active Directory environments. CrackMapExec is the predecessor to NetExec.",
+    "layman": "A tool used to interact with and test many Windows network services at once. It can check whether user credentials are valid, gather information about users and their permissions, connect to remote systems, and abuse weak configurations. It is most commonly used to attack Active Directory environments."
   },
   {
     "id": "credential-dumping",
     "term": "Credential Dumping",
-    "technical": "",
-    "layman": ""
+    "technical": "The extraction of credentials such as passwords or hashes from systems.",
+    "layman": "Stealing passwords or authentication data from a system."
   },
   {
     "id": "credential-stuffing",
     "term": "Credential stuffing",
-    "technical": "",
-    "layman": ""
+    "technical": "An attack using previously breached credentials to gain access.",
+    "layman": "Using leaked usernames and passwords to log in."
   },
   {
     "id": "cross-site-request-forgery-csrf",
     "term": "Cross Site Request Forgery (CSRF)",
-    "technical": "",
-    "layman": ""
+    "technical": "An attack tricking a user into submitting unintended requests.",
+    "layman": "Forcing a logged-in user to perform unwanted actions."
   },
   {
     "id": "cross-site-scripting-xss",
     "term": "Cross Site Scripting (XSS)",
-    "technical": "",
-    "layman": ""
+    "technical": "An injection attack where malicious scripts execute in a victim’s browser.",
+    "layman": "Injecting malicious scripts into websites."
   },
   {
     "id": "cryptanalysis",
     "term": "Cryptanalysis",
-    "technical": "",
-    "layman": ""
+    "technical": "The study of analyzing and breaking cryptographic systems.",
+    "layman": "The process of trying to break encryption."
   },
   {
     "id": "csv-injection",
     "term": "CSV Injection",
-    "technical": "",
-    "layman": ""
+    "technical": "An injection attack where malicious formulas are inserted into CSV files.",
+    "layman": "Hiding malicious formulas inside spreadsheet files."
   },
   {
     "id": "cvss-common-vulnerability-scoring-system",
     "term": "CVSS (Common Vulnerability Scoring System)",
-    "technical": "",
-    "layman": ""
+    "technical": "A standardized system for scoring the severity of software vulnerabilities. Penetration test reports often assign a CVSS score to each finding.",
+    "layman": "A standardized system for scoring the severity of software vulnerabilities. Penetration test reports often assign a CVSS score to each finding."
   },
   {
     "id": "cwe-common-weakness-enumeration",
     "term": "CWE (Common Weakness Enumeration)",
-    "technical": "",
-    "layman": ""
+    "technical": "A standardized list of common types of software security weaknesses that helps developers and security teams identify and describe vulnerabilities. Penetration test reports often label their findings with a CWE.",
+    "layman": "A standardized list of common types of software security weaknesses that helps developers and security teams identify and describe vulnerabilities. Penetration test reports often label their findings with a CWE."
   },
   {
     "id": "data-compression",
     "term": "Data Compression",
-    "technical": "",
-    "layman": ""
+    "technical": "The process of reducing data size before transmission.",
+    "layman": "Shrinking data before sending it."
   },
   {
     "id": "data-encoding",
     "term": "Data Encoding",
-    "technical": "",
-    "layman": ""
+    "technical": "The transformation of data into another format.",
+    "layman": "Changing data format before sending it."
   },
   {
     "id": "data-encryption",
     "term": "Data Encryption",
-    "technical": "",
-    "layman": ""
+    "technical": "The use of cryptographic techniques to protect data confidentiality.",
+    "layman": "Scrambling data so others cannot read it."
   },
   {
     "id": "data-exfiltration",
     "term": "Data Exfiltration",
-    "technical": "",
-    "layman": ""
+    "technical": "The unauthorized transfer of data from a system.",
+    "layman": "Stealing data from a system."
   },
   {
     "id": "dcsync",
     "term": "DCSync",
-    "technical": "",
-    "layman": ""
+    "technical": "A technique that replicates domain controller credential data.",
+    "layman": "Pulling password data from a domain controller."
   },
   {
     "id": "defense-evasion",
     "term": "Defense Evasion",
-    "technical": "",
-    "layman": ""
+    "technical": "Techniques used to avoid detection by security controls.",
+    "layman": "Methods attackers use to stay hidden."
   },
   {
     "id": "defense-in-depth",
     "term": "Defense-in-Depth",
-    "technical": "",
-    "layman": ""
+    "technical": "A security strategy that layers multiple controls to protect systems.",
+    "layman": "A method of using multiple security protections so if one fails, others still protect the system."
   },
   {
     "id": "delegation",
     "term": "Delegation",
-    "technical": "",
-    "layman": ""
+    "technical": "The delegation of authentication rights in Active Directory allowing services to impersonate users.",
+    "layman": "A feature that lets a service act on behalf of a user after they log in."
   },
   {
     "id": "denial-of-service",
     "term": "Denial of Service",
-    "technical": "",
-    "layman": ""
+    "technical": "An attack intended to disrupt service availability.",
+    "layman": "Making a system unavailable."
   },
   {
     "id": "deserialization-attack",
     "term": "Deserialization Attack",
-    "technical": "",
-    "layman": ""
+    "technical": "An attack exploiting insecure object deserialization processes.",
+    "layman": "Exploiting unsafe data conversion to run malicious code."
   },
   {
     "id": "detection-capability",
     "term": "Detection Capability",
-    "technical": "",
-    "layman": ""
+    "technical": "The ability of a system to identify malicious or suspicious activity.",
+    "layman": "How well a system can detect attacks or unusual behavior."
   },
   {
     "id": "discretionary-access-control-list-dacl",
     "term": "Discretionary Access Control List (DACL)",
-    "technical": "",
-    "layman": ""
+    "technical": "The portion of an ACL that defines allowed and denied permissions.",
+    "layman": "The part of a permissions list that controls access."
   },
   {
     "id": "distinguished-name-dn",
     "term": "Distinguished Name (DN)",
-    "technical": "",
-    "layman": ""
+    "technical": "The unique path that identifies an object in Active Directory.",
+    "layman": "The full directory path of a user or object."
   },
   {
     "id": "dns",
     "term": "DNS",
-    "technical": "",
-    "layman": ""
+    "technical": "Domain Name System protocol used to translate domain names into IP addresses and support service records and name resolution.",
+    "layman": "The system that converts website names (like google.com) into numerical addresses that computers use to find each other."
   },
   {
     "id": "dns-poisoning",
     "term": "DNS Poisoning",
-    "technical": "",
-    "layman": ""
+    "technical": "An attack manipulating DNS responses to redirect traffic.",
+    "layman": "Tricking systems into connecting to malicious destinations."
   },
   {
     "id": "domain",
     "term": "Domain",
-    "technical": "",
-    "layman": ""
+    "technical": "A logical grouping of objects within Active Directory sharing a common database.",
+    "layman": "A collection of users and computers managed together in Active Directory."
   },
   {
     "id": "domain-controller-dc",
     "term": "Domain Controller (DC)",
-    "technical": "",
-    "layman": ""
+    "technical": "A server that stores and manages Active Directory data and handles authentication.",
+    "layman": "A server that manages user logins and permissions."
   },
   {
     "id": "dropper",
     "term": "Dropper",
-    "technical": "",
-    "layman": ""
+    "technical": "Malware that installs other malicious software onto a system.",
+    "layman": "A program that secretly installs malware."
   },
   {
     "id": "engagement-scope",
     "term": "Engagement Scope",
-    "technical": "",
-    "layman": ""
+    "technical": "The defined boundaries and objectives of a security testing engagement.",
+    "layman": "The defined boundaries and objectives of a security testing engagement."
   },
   {
     "id": "enum4linux-ng",
     "term": "enum4linux-ng",
-    "technical": "",
-    "layman": ""
+    "technical": "An enumeration tool that is used to extract users, shares, policies, and other information from Windows and Samba systems. The tool is based off the enum4linux tool by Mark Lowe.",
+    "layman": "A tool that gathers publicly accessible information from Windows file-sharing services."
   },
   {
     "id": "enumeration",
     "term": "Enumeration",
-    "technical": "",
-    "layman": ""
+    "technical": "The process of gathering detailed information about the target in order to identify security weaknesses for attacks. This process is often repeated many times during testing whenever new information is discovered.",
+    "layman": "The process of gathering detailed information about the target in order to identify security weaknesses for attacks. This process is often repeated many times during testing whenever new information is discovered."
   },
   {
     "id": "evidence",
     "term": "Evidence",
-    "technical": "",
-    "layman": ""
+    "technical": "Supporting proof such as screenshots, logs, or output validating a finding.",
+    "layman": "The proof that shows a vulnerability actually exists."
   },
   {
     "id": "evil-winrm",
     "term": "evil-winrm",
-    "technical": "",
-    "layman": ""
+    "technical": "A Ruby-based tool that connects to a machine over the WinRM protocol and spawns a shell. The shell simplifies tasks like file transfers and and loading in-memory scripts.",
+    "layman": "A tool that lets someone remotely control a Windows computer if they have valid login credentials."
   },
   {
     "id": "exclusions",
     "term": "Exclusions",
-    "technical": "",
-    "layman": ""
+    "technical": "Specific systems, networks, or actions that are explicitly excluded from testing.",
+    "layman": "Areas or systems that testers are not allowed to target."
   },
   {
     "id": "executive-summary",
     "term": "Executive Summary",
-    "technical": "",
-    "layman": ""
+    "technical": "A high-level summary of key findings and business impact intended for leadership.",
+    "layman": "A short overview of the most important results for executives."
   },
   {
     "id": "exfiltration-channel",
     "term": "Exfiltration Channel",
-    "technical": "",
-    "layman": ""
+    "technical": "The method used to transfer stolen data out of a network.",
+    "layman": "The path used to send stolen data out."
   },
   {
     "id": "exiftool",
     "term": "exiftool",
-    "technical": "",
-    "layman": ""
+    "technical": "A metadata extraction and editing tool supporting numerous file formats.",
+    "layman": "A tool that reveals hidden information inside files, such as GPS location or author details."
   },
   {
     "id": "exploit",
     "term": "Exploit",
-    "technical": "",
-    "layman": ""
+    "technical": "Code or technique that leverages a vulnerability to achieve unintended behavior.",
+    "layman": "A method used to take advantage of a security flaw."
   },
   {
     "id": "exploit-chain",
     "term": "Exploit Chain",
-    "technical": "",
-    "layman": ""
+    "technical": "A sequence of exploits combined to achieve a larger objective.",
+    "layman": "Multiple weaknesses used together to achieve a goal."
   },
   {
     "id": "exploitation",
     "term": "Exploitation",
-    "technical": "",
-    "layman": ""
+    "technical": "The process of leveraging identified vulnerabilities to gain unauthorized access, execute code, or perform actions beyond intended permissions. This process often takes place after Enumeration.",
+    "layman": "The process of taking advantage of a security weakness to gain access to a system, run commands, or perform actions that should not normally be allowed. This process often takes place after Enumeration."
   },
   {
     "id": "external-penetration-test",
     "term": "External Penetration Test",
-    "technical": "",
-    "layman": ""
+    "technical": "A penetration test conducted from outside the organization’s network perimeter.",
+    "layman": "A penetration test specification where the tester simulates an attacker on the internet trying to break into an organization’s systems from outside the company network."
   },
   {
     "id": "eyewitness",
     "term": "Eyewitness",
-    "technical": "",
-    "layman": ""
+    "technical": "A web reconnaissance tool that captures screenshots of discovered web services and web pages for visual analysis and documentation.",
+    "layman": "A tool that scans and takes screenshots of websites so testers can quickly see what each website looks like."
   },
   {
     "id": "feroxbuster",
     "term": "feroxbuster",
-    "technical": "",
-    "layman": ""
+    "technical": "A recursive web content discovery tool optimized for fast directory and file enumeration.",
+    "layman": "A tool that guess hidden website pages and automatically continues digging deeper into new sections it discovers."
   },
   {
     "id": "ffuf",
     "term": "ffuf",
-    "technical": "",
-    "layman": ""
+    "technical": "A fast web fuzzer used for content discovery and input testing in web applications. ffuf performs wordlist-based brute-force attacks against URL paths, file names, virtual hosts, parameters, and request fields to identify hidden resources and potential attack surfaces.",
+    "layman": "A tool used in website security testing that automatically tries thousands of possible page names, files, or input values to see what exists but isn’t publicly linked. It helps uncover hidden website areas, backup files, or undocumented features that could expose sensitive information or vulnerabilities."
   },
   {
     "id": "fierce",
     "term": "fierce",
-    "technical": "",
-    "layman": ""
+    "technical": "A DNS reconnaissance tool used for subdomain enumeration and zone transfer testing.",
+    "layman": "A tool that searches for hidden website sections or related web addresses (such as admin.company.com) that are not publicly advertised."
   },
   {
     "id": "finding",
     "term": "Finding",
-    "technical": "",
-    "layman": ""
+    "technical": "A documented security issue identified during testing.",
+    "layman": "A specific problem discovered during a security test."
   },
   {
     "id": "finger",
     "term": "Finger",
-    "technical": "",
-    "layman": ""
+    "technical": "A legacy TCP protocol used to retrieve information about users on a remote system.",
+    "layman": "An old service that allows someone to request information about users logged into a computer."
   },
   {
     "id": "flooding",
     "term": "Flooding",
-    "technical": "",
-    "layman": ""
+    "technical": "An attack overwhelming a system with excessive traffic.",
+    "layman": "Flooding a system with traffic to overwhelm it."
   },
   {
     "id": "forced-browsing",
     "term": "Forced browsing",
-    "technical": "",
-    "layman": ""
+    "technical": "Accessing hidden or unlinked web resources by guessing paths.",
+    "layman": "Accessing pages not meant to be directly reachable."
   },
   {
     "id": "forest",
     "term": "Forest",
-    "technical": "",
-    "layman": ""
+    "technical": "A collection of one or more domains that share a common schema and trust relationships.",
+    "layman": "A larger grouping of domains that trust each other."
   },
   {
     "id": "fping",
     "term": "fping",
-    "technical": "",
-    "layman": ""
+    "technical": "A high-performance network probing tool used to identify live hosts across large IP ranges.",
+    "layman": "A tool that quickly checks which computers are online in a network range."
   },
   {
     "id": "ftp",
     "term": "FTP",
-    "technical": "",
-    "layman": ""
+    "technical": "File Transfer Protocol used for transferring files between systems over TCP.",
+    "layman": "A protocol for uploading and downloading files between computers."
   },
   {
     "id": "global-catalog-gc",
     "term": "Global Catalog (GC)",
-    "technical": "",
-    "layman": ""
+    "technical": "A distributed data repository that stores partial attribute sets for objects in a forest.",
+    "layman": "A service that allows searching for users and resources across domains."
   },
   {
     "id": "gobuster",
     "term": "gobuster",
-    "technical": "",
-    "layman": ""
+    "technical": "A directory and DNS brute-forcing tool used for discovering hidden web content and subdomains.",
+    "layman": "A tool that guesses hidden website addresses, folders, or related web addresses (such as admin.company.com) by trying many possible names from a list."
   },
   {
     "id": "golden-ticket",
     "term": "Golden Ticket",
-    "technical": "",
-    "layman": ""
+    "technical": "A forged Kerberos ticket granting domain-wide access.",
+    "layman": "A fake master ticket that gives full domain access."
   },
   {
     "id": "gray-box-test",
     "term": "Gray Box Test",
-    "technical": "",
-    "layman": ""
+    "technical": "A penetration test conducted with partial internal knowledge provided.",
+    "layman": "A penetration test specification where the tester has limited inside information."
   },
   {
     "id": "group",
     "term": "Group",
-    "technical": "",
-    "layman": ""
+    "technical": "A collection of users or accounts that share permissions.",
+    "layman": "A set of users grouped together for access control."
   },
   {
     "id": "group-managed-service-account-gmsa",
     "term": "Group Managed Service Account (gMSA)",
-    "technical": "",
-    "layman": ""
+    "technical": "A managed service account that automatically handles password updates across systems.",
+    "layman": "A special service account whose password changes automatically."
   },
   {
     "id": "group-membership",
     "term": "Group Membership",
-    "technical": "",
-    "layman": ""
+    "technical": "The association between a user and a group.",
+    "layman": "Being part of a group that grants certain permissions."
   },
   {
     "id": "group-policy",
     "term": "Group Policy",
-    "technical": "",
-    "layman": ""
+    "technical": "A Windows feature used to centrally manage configurations and policies.",
+    "layman": "A system for enforcing settings across many computers."
   },
   {
     "id": "group-policy-object-gpo",
     "term": "Group Policy Object (GPO)",
-    "technical": "",
-    "layman": ""
+    "technical": "An object containing policy settings applied to users or computers.",
+    "layman": "A set of rules applied to systems or users."
   },
   {
     "id": "grpc",
     "term": "gRPC",
-    "technical": "",
-    "layman": ""
+    "technical": "A high-performance remote procedure call framework using HTTP/2 for structured service-to-service communication.",
+    "layman": "A communication protocol used behind the scenes in cloud platforms to allow software components to securely exchange data."
   },
   {
     "id": "hashcat",
     "term": "hashcat",
-    "technical": "",
-    "layman": ""
+    "technical": "A GPU-accelerated password cracking tool supporting numerous hashing algorithms and attack modes. It can also be used to expand wordlists by mutating words based on common password patterns.",
+    "layman": "A password cracking tool that can try billions of guesses per second against stolen password data."
   },
   {
     "id": "heartbeat",
     "term": "Heartbeat",
-    "technical": "",
-    "layman": ""
+    "technical": "A periodic signal sent to indicate a system or implant is active.",
+    "layman": "A regular signal showing malware is still running."
   },
   {
     "id": "http",
     "term": "HTTP",
-    "technical": "",
-    "layman": ""
+    "technical": "Hypertext Transfer Protocol used for web communication.",
+    "layman": "The basic protocol used to load websites."
   },
   {
     "id": "http-response-splitting",
     "term": "HTTP Response Splitting",
-    "technical": "",
-    "layman": ""
+    "technical": "An attack exploiting improper handling of HTTP headers.",
+    "layman": "Manipulating web responses to inject malicious data."
   },
   {
     "id": "https",
     "term": "HTTPS",
-    "technical": "",
-    "layman": ""
+    "technical": "Hypertext Transfer Protocol Secure using TLS encryption for secure web communication.",
+    "layman": "A secure version of HTTP that encrypts website traffic."
   },
   {
     "id": "hydra",
     "term": "hydra",
-    "technical": "",
-    "layman": ""
+    "technical": "A parallelized login brute-force tool supporting multiple authentication protocols.",
+    "layman": "A tool that repeatedly tries different passwords against login services until one works."
   },
   {
     "id": "imap",
     "term": "IMAP",
-    "technical": "",
-    "layman": ""
+    "technical": "Internet Message Access Protocol used for retrieving and managing email from a mail server.",
+    "layman": "A protocol that allows email programs to sync and manage messages stored on a mail server."
   },
   {
     "id": "impacket",
     "term": "impacket",
-    "technical": "",
-    "layman": ""
+    "technical": "A Python library and tool suite for interacting with network protocols, widely used for [SMB], [Kerberos[, and [NTLM]-based exploitation. Many penetration testing tools, such as [NetExec], utilizes this suite.",
+    "layman": "A collection of tools used to interact with Windows authentication and file-sharing systems, often to extract credentials or run remote actions."
   },
   {
     "id": "impact",
     "term": "Impact",
-    "technical": "",
-    "layman": ""
+    "technical": "The damage that could occur if a vulnerability is successfully exploited.",
+    "layman": "The damage that could occur if a security weakness (vulnerability) is successfully exploited."
   },
   {
     "id": "implant",
     "term": "Implant",
-    "technical": "",
-    "layman": ""
+    "technical": "Malicious code installed on a compromised system for persistence or control.",
+    "layman": "Hidden software placed on a system to maintain access."
   },
   {
     "id": "indicators-of-compromise-iocs",
     "term": "Indicators of Compromise (IOCs)",
-    "technical": "",
-    "layman": ""
+    "technical": "Artifacts or evidence that suggest a system has been compromised.",
+    "layman": "Signs that indicate a system may have been breached."
   },
   {
     "id": "initial-access",
     "term": "Initial Access",
-    "technical": "",
-    "layman": ""
+    "technical": "The process of gaining the first point of entry into a target system.",
+    "layman": "The process of gaining the first point of entry into a target system."
   },
   {
     "id": "insecure-direct-object-reference-idor",
     "term": "Insecure Direct Object Reference (IDOR)",
-    "technical": "",
-    "layman": ""
+    "technical": "A vulnerability where direct object references are exposed without proper authorization.",
+    "layman": "Accessing restricted resources by changing identifiers."
   },
   {
     "id": "internal-penetration-test",
     "term": "Internal Penetration Test",
-    "technical": "",
-    "layman": ""
+    "technical": "A penetration test conducted from within the organization’s internal network.",
+    "layman": "A penetration test specification where the tester simulates an attacker who already has internal access."
   },
   {
     "id": "inveigh",
     "term": "Inveigh",
-    "technical": "",
-    "layman": ""
+    "technical": "A PowerShell/.NET tool that performs LLMNR/NBT-NS spoofing to capture NTLM authentication hashes.",
+    "layman": "A tool that tricks same network computers into sending password hashes by impersonating trusted network services."
   },
   {
     "id": "ip-spoofing",
     "term": "IP Spoofing",
-    "technical": "",
-    "layman": ""
+    "technical": "Falsifying the source IP address in network packets.",
+    "layman": "Pretending network traffic comes from another device."
   },
   {
     "id": "ipmi",
     "term": "IPMI",
-    "technical": "",
-    "layman": ""
-  },
-  {
-    "id": "iso-27001",
-    "term": "ISO 27001",
-    "technical": "",
-    "layman": ""
+    "technical": "Intelligent Platform Management Interface used for remote hardware-level server management.",
+    "layman": "A protocol that allows administrators to remotely manage a server’s hardware, even if the operating system is not running."
   },
   {
     "id": "john-the-ripper-jtr",
     "term": "John the Ripper (JtR)",
-    "technical": "",
-    "layman": ""
+    "technical": "A password cracking tool supporting dictionary, brute-force, and rule-based attacks across many hash formats.",
+    "layman": "A program that attempts to guess passwords from stolen password hashes."
   },
   {
     "id": "kerberoasting",
     "term": "Kerberoasting",
-    "technical": "",
-    "layman": ""
+    "technical": "An attack that extracts service account ticket hashes from Kerberos for offline password cracking.",
+    "layman": "An attack that steals encrypted login tickets and tries to crack their passwords offline."
   },
   {
     "id": "kerberos",
     "term": "Kerberos",
-    "technical": "",
-    "layman": ""
+    "technical": "A network authentication protocol that uses ticket-based authentication to verify identities securely.",
+    "layman": "A Windows login system that verifies your identity once and then gives you temporary digital proof so you can access other services without repeatedly sending your password."
   },
   {
     "id": "kerberos-2",
     "term": "Kerberos",
-    "technical": "",
-    "layman": ""
+    "technical": "A ticket-based authentication protocol used in Active Directory environments.",
+    "layman": "A secure Windows login system that uses digital tickets."
   },
   {
     "id": "keylogger",
     "term": "Keylogger",
-    "technical": "",
-    "layman": ""
+    "technical": "Malware designed to capture keystrokes.",
+    "layman": "Software that records everything a user types."
   },
   {
     "id": "kill-switch",
     "term": "Kill Switch",
-    "technical": "",
-    "layman": ""
+    "technical": "A mechanism designed to disable malware under specific conditions.",
+    "layman": "A built-in feature that stops malware if certain conditions are met."
   },
   {
     "id": "lateral-movement",
     "term": "Lateral Movement",
-    "technical": "",
-    "layman": ""
+    "technical": "The process of moving from one compromised system to another within a network.",
+    "layman": "The process of using access to one computer to move to other computers in the same network in order to expand control over the network."
   },
   {
     "id": "lazagne",
     "term": "LaZagne",
-    "technical": "",
-    "layman": ""
+    "technical": "A credential recovery tool that extracts stored passwords from browsers, applications, and system locations.",
+    "layman": "A tool that finds saved passwords stored on a computer."
   },
   {
     "id": "ldap",
     "term": "LDAP",
-    "technical": "",
-    "layman": ""
+    "technical": "Lightweight Directory Access Protocol (LDAP) is a standardized protocol for accessing and managing directory services such as Active Directory. It allows clients to search for objects, read attributes, update entries, and perform authentication related operations.",
+    "layman": "A protocol that allows computers to look up and manage user accounts and permissions in a company’s centralized account system."
   },
   {
     "id": "ldap-injection",
     "term": "LDAP Injection",
-    "technical": "",
-    "layman": ""
+    "technical": "An injection attack targeting LDAP queries.",
+    "layman": "Inserting malicious input into directory queries."
   },
   {
     "id": "likelihood",
     "term": "Likelihood",
-    "technical": "",
-    "layman": ""
+    "technical": "How likely a vulnerability will actually be exploited. An example contributing factor could be whether the vulnerability is easy to exploit.",
+    "layman": "How likely a security weakness (vulnerability) will actually be exploited. An example contributing factor could be whether the weakness is easy to exploit."
   },
   {
     "id": "linux-exploit-suggester-les",
     "term": "Linux Exploit Suggester (LES)",
-    "technical": "",
-    "layman": ""
+    "technical": "A script that analyzes Linux kernel and system versions to suggest known privilege escalation exploits.",
+    "layman": "A tool that checks a Linux computer and suggests known weaknesses that might allow someone to become the administrator or another more privileged user."
   },
   {
     "id": "listener",
     "term": "Listener",
-    "technical": "",
-    "layman": ""
+    "technical": "A service that waits for incoming connections from compromised systems.",
+    "layman": "A program that waits for infected machines to connect back."
   },
   {
     "id": "living-off-the-land-lolbins",
     "term": "Living-off-the-Land (LOLBins)",
-    "technical": "",
-    "layman": ""
+    "technical": "The use of legitimate system tools for malicious purposes.",
+    "layman": "Abusing built-in system tools to avoid detection."
   },
   {
     "id": "loader",
     "term": "Loader",
-    "technical": "",
-    "layman": ""
+    "technical": "Malware responsible for loading other malicious components.",
+    "layman": "A program that loads additional malicious software."
   },
   {
     "id": "local-privilege-escalation-lpe",
     "term": "Local Privilege Escalation (LPE)",
-    "technical": "",
-    "layman": ""
+    "technical": "A vulnerability allowing a user to gain higher privileges on a local system.",
+    "layman": "A weakness that lets a regular user become an administrator."
   },
   {
     "id": "log-injection",
     "term": "Log Injection",
-    "technical": "",
-    "layman": ""
+    "technical": "An attack inserting malicious input into logs.",
+    "layman": "Adding harmful entries into system logs."
   },
   {
     "id": "logging",
     "term": "Logging",
-    "technical": "",
-    "layman": ""
+    "technical": "The recording of system and security events for analysis.",
+    "layman": "Keeping records of system activity for review."
   },
   {
     "id": "malware",
     "term": "Malware",
-    "technical": "",
-    "layman": ""
+    "technical": "Software designed to disrupt, damage, or gain unauthorized access.",
+    "layman": "Malicious software designed to harm or control systems."
   },
   {
     "id": "memory-corruption",
     "term": "Memory Corruption",
-    "technical": "",
-    "layman": ""
+    "technical": "A class of vulnerabilities caused by improper memory handling.",
+    "layman": "Errors in how software manages memory."
   },
   {
     "id": "metasploit-framework",
     "term": "Metasploit Framework",
-    "technical": "",
-    "layman": ""
+    "technical": "A modular penetration testing framework for exploit development, payload delivery, and post-exploitation.",
+    "layman": "A massive toolkit used to carry out security tests that can maintain all data and results in one place. It contains a vast number of attacks that a tester can configure and launch on a target."
   },
   {
     "id": "mimikatz",
     "term": "Mimikatz",
-    "technical": "",
-    "layman": ""
+    "technical": "A credential extraction tool that retrieves plaintext passwords, NTLM hashes, and Kerberos tickets from Windows memory.",
+    "layman": "A tool that pulls passwords and login tokens directly from a Windows computer’s memory."
   },
   {
     "id": "mimipenguin",
     "term": "mimipenguin",
-    "technical": "",
-    "layman": ""
+    "technical": "A credential extraction tool inspired by Mimikatz that retrieves credentials from memory.",
+    "layman": "A tool that extracts stored passwords from a Windows computer's memory."
   },
   {
     "id": "mitre-att-and-ck",
     "term": "MITRE ATT&CK",
-    "technical": "",
-    "layman": ""
+    "technical": "A publicly available knowledge base of adversary tactics and techniques based on real-world observations.",
+    "layman": "A publicly available knowledge base of common cyberattacks that can help organizations be aware and prevent the attacks."
   },
   {
     "id": "monitoring",
     "term": "Monitoring",
-    "technical": "",
-    "layman": ""
+    "technical": "The continuous observation of systems to detect anomalies or threats.",
+    "layman": "Watching systems for signs of suspicious activity."
   },
   {
     "id": "msfvenom",
     "term": "MSFVenom",
-    "technical": "",
-    "layman": ""
+    "technical": "A payload generation utility within Metasploit used to create custom shellcode and backdoors.",
+    "layman": "A tool that creates malicious files or programs that testers can upload to a target to maintain persistence."
   },
   {
     "id": "msrpc",
     "term": "MSRPC",
-    "technical": "",
-    "layman": ""
+    "technical": "Microsoft Remote Procedure Call protocol used for Windows interprocess communication.",
+    "layman": "A Windows communication system that allows services and applications to talk to each other."
   },
   {
     "id": "mssql",
     "term": "MSSQL",
-    "technical": "",
-    "layman": ""
+    "technical": "A relational database management system developed by Microsoft that stores, organizes, and retrieves structured data using SQL queries through a client–server architecture.",
+    "layman": "A system that allows applications to connect to a Microsoft database server to store, retrieve, and manage organizational data."
   },
   {
     "id": "mysql",
     "term": "MySQL",
-    "technical": "",
-    "layman": ""
+    "technical": "A relational database management system that stores, organizes, and retrieves structured data using SQL queries through a client–server architecture.",
+    "layman": "A system that allows applications to connect to a database server to store, organize, and retrieve structured data."
   },
   {
     "id": "net-ntlmv2-ntlmv2",
     "term": "Net-NTLMv2 (NTLMv2)",
-    "technical": "",
-    "layman": ""
+    "technical": "A challenge-response authentication protocol used in Windows environments for identity verification. It was introduced to replace weaker NTLMv1 mechanisms by incorporating stronger cryptographic hashing, improved challenge structures, and protections against replay attacks.",
+    "layman": "A Windows login protocol where a server sends a random test, and the user’s computer responds in a way that proves it knows the correct password."
   },
   {
     "id": "netbios",
     "term": "NetBIOS",
-    "technical": "",
-    "layman": ""
+    "technical": "A legacy Windows networking protocol for name resolution and session management.",
+    "layman": "A Windows system that lets computers find and communicate with each other using names (similar to contact names in a phone) instead of numeric network addresses."
   },
   {
     "id": "netexec",
     "term": "NetExec",
-    "technical": "",
-    "layman": ""
+    "technical": "A  network service enumeration and exploitation tool designed primarily for Active Directory environments. NetExec interacts with protocols such as SMB, LDAP, WinRM, RDP, and others to perform credential validation, password spraying, domain enumeration, remote command execution, and service abuse.",
+    "layman": "A tool used to interact with and test many Windows network services at once. It can check whether user credentials are valid, gather information about users and their permissions, connect to remote systems, and abuse weak configurations. It is most commonly used to attack Active Directory environments."
   },
   {
     "id": "network-penetration-test",
     "term": "Network Penetration Test",
-    "technical": "",
-    "layman": ""
+    "technical": "A penetration test focused on network infrastructure and services.",
+    "layman": "A type of penetration test where the tester examines servers, devices, and network services for weaknesses."
   },
   {
     "id": "nfs",
     "term": "NFS",
-    "technical": "",
-    "layman": ""
+    "technical": "Network File System protocol used to share files between systems over a network.",
+    "layman": "A protocol that allows computers to share folders and files."
   },
   {
     "id": "nikto",
     "term": "nikto",
-    "technical": "",
-    "layman": ""
+    "technical": "A web server vulnerability scanner that detects outdated software and misconfigurations.",
+    "layman": "A tool that scans web servers for common security problems and outdated components."
   },
   {
     "id": "nist",
     "term": "NIST",
-    "technical": "",
-    "layman": ""
+    "technical": "The National Institute of Standards and Technology, a U.S. government agency that develops cybersecurity standards and guidelines.",
+    "layman": "The National Institute of Standards and Technology, a U.S. government agency that develops cybersecurity standards and guidelines."
   },
   {
     "id": "nist-sp-800-115",
     "term": "NIST SP 800-115",
-    "technical": "",
-    "layman": ""
+    "technical": "A NIST special publication providing technical guidance for security testing and assessment.",
+    "layman": "A government guideline explaining how to properly conduct security testing."
   },
   {
     "id": "nmap",
     "term": "Nmap",
-    "technical": "",
-    "layman": ""
+    "technical": "A network scanning tool for host discovery, port scanning, service detection, and OS fingerprinting.",
+    "layman": "A tool that scans computers to see which “doors\" (network ports) are open and what services are running, helping testers understand what is exposed and potentially vulnerable."
   },
   {
     "id": "ntlm",
     "term": "NTLM",
-    "technical": "",
-    "layman": ""
+    "technical": "An older challenge-response authentication protocol used in Windows environments for identity verification. As of 2026, it has been deprecated by Microsoft and is not enabled default in new Windows builds.",
+    "layman": "An older Windows login protocol where a server that verifies a user’s identity using a random test rather than sending the password itself, but it has known security weaknesses."
   },
   {
     "id": "ntlm-2",
     "term": "NTLM",
-    "technical": "",
-    "layman": ""
+    "technical": "A Microsoft challenge-response authentication protocol.",
+    "layman": "An older Windows login method."
   },
   {
     "id": "ntlm-relay",
     "term": "NTLM Relay",
-    "technical": "",
-    "layman": ""
+    "technical": "An attack relaying NTLM authentication to another service.",
+    "layman": "Forwarding login attempts to gain access elsewhere."
   },
   {
     "id": "onesixtyone",
     "term": "onesixtyone",
-    "technical": "",
-    "layman": ""
+    "technical": "A fast SNMP scanner used to identify exposed network management services.",
+    "layman": "A tool that checks whether network devices have exposed management interfaces."
   },
   {
     "id": "open-redirect",
     "term": "Open Redirect",
-    "technical": "",
-    "layman": ""
+    "technical": "A vulnerability allowing redirection to untrusted external sites.",
+    "layman": "Redirecting users to malicious websites."
   },
   {
     "id": "openvas",
     "term": "OpenVAS",
-    "technical": "",
-    "layman": ""
+    "technical": "An open-source vulnerability scanning platform that performs authenticated and unauthenticated scans to identify known security vulnerabilities, misconfigurations, missing patches, and outdated software across networked systems.",
+    "layman": "A security scanning tool that checks computers and servers for known security weaknesses, such as missing updates, misconfigurations, or outdated software. It compares systems against a large database of known vulnerabilities and generates a report of potential risks."
   },
   {
     "id": "operational-security-opsec",
     "term": "Operational Security (OpSec)",
-    "technical": "",
-    "layman": ""
+    "technical": "Practices used to conceal operational details and reduce detection risk.",
+    "layman": "Steps taken to avoid being detected during an attack."
   },
   {
     "id": "oracle-tns",
     "term": "Oracle TNS",
-    "technical": "",
-    "layman": ""
+    "technical": "Oracle Transparent Network Substrate protocol used for connecting to Oracle databases.",
+    "layman": "The communication protocol used by Oracle database servers to accept connections."
   },
   {
     "id": "organizational-unit-ou",
     "term": "Organizational Unit (OU)",
-    "technical": "",
-    "layman": ""
-  },
-  {
-    "id": "overall-risk",
-    "term": "Overall Risk",
-    "technical": "",
-    "layman": ""
+    "technical": "A container within Active Directory used to organize objects.",
+    "layman": "A folder-like structure used to organize users and computers."
   },
   {
     "id": "overpass-the-hash-pass-the-key",
     "term": "Overpass-the-Hash (Pass-the-Key)",
-    "technical": "",
-    "layman": ""
+    "technical": "An attack using a stolen NTLM key to request Kerberos tickets.",
+    "layman": "Using stolen authentication material to get new tickets."
   },
   {
     "id": "owasp",
     "term": "OWASP",
-    "technical": "",
-    "layman": ""
+    "technical": "The Open Worldwide Application Security Project, a nonprofit focused on improving software security. They are known for their lists of Top 10 attacks in various security categories.",
+    "layman": "The Open Worldwide Application Security Project, a nonprofit focused on improving software security. They are known for their lists of Top 10 attacks in various security categories."
   },
   {
     "id": "pass-the-hash-pth",
     "term": "Pass-the-Hash (PtH)",
-    "technical": "",
-    "layman": ""
+    "technical": "An attack technique that uses stolen NTLM password hashes to authenticate without knowing the plaintext password.",
+    "layman": "Logging in using a stolen password hash instead of the real password."
   },
   {
     "id": "pass-the-ticket-ptt",
     "term": "Pass-the-Ticket (PtT)",
-    "technical": "",
-    "layman": ""
+    "technical": "An attack that reuses stolen Kerberos tickets to authenticate to services.",
+    "layman": "Using a stolen login ticket to access systems without a password."
   },
   {
     "id": "password-policy",
     "term": "Password Policy",
-    "technical": "",
-    "layman": ""
+    "technical": "A defined set of rules governing password length, complexity, and expiration.",
+    "layman": "Rules that determine how strong and how often passwords must change."
   },
   {
     "id": "password-spraying",
     "term": "Password Spraying",
-    "technical": "",
-    "layman": ""
+    "technical": "A technique attempting a single password across many accounts.",
+    "layman": "Trying one password on many accounts."
   },
   {
     "id": "path-traversal",
     "term": "Path Traversal",
-    "technical": "",
-    "layman": ""
+    "technical": "An attack accessing files outside intended directories.",
+    "layman": "Accessing restricted files by manipulating paths."
   },
   {
     "id": "payload",
     "term": "Payload",
-    "technical": "",
-    "layman": ""
+    "technical": "Code delivered and executed as part of an exploit.",
+    "layman": "The malicious code that runs after a vulnerability is exploited."
   },
   {
     "id": "pci-dss",
     "term": "PCI DSS",
-    "technical": "",
-    "layman": ""
+    "technical": "The Payment Card Industry Data Security Standard governing the protection of payment card data. It is a required standard for companies that process credit card information.",
+    "layman": "The Payment Card Industry Data Security Standard governing the protection of payment card data. It is a required standard for companies that process credit card information."
   },
   {
     "id": "pcredz",
     "term": "Pcredz",
-    "technical": "",
-    "layman": ""
+    "technical": "A network packet analysis tool that extracts cleartext credentials from captured traffic.",
+    "layman": "A tool that pulls usernames and passwords from intercepted network traffic."
   },
   {
-    "id": "penetration-testing-pentest",
-    "term": "Penetration Testing (Pentest)",
-    "technical": "",
-    "layman": ""
+    "id": "penetration-test",
+    "term": "Penetration Test",
+    "technical": "A controlled security assessment in which security testers not only identify but also exploit vulnerabilities in systems or products to demonstrate the potential impact of real attacks. Penetration tests are conducted within a defined scope and are governed by rules of engagement agreed upon by the testing organization and the client.",
+    "layman": "A controlled security test where specialists attempt to break into systems or products in the same way a real attacker might. Before the test begins, the organization being tested and the security team agree on the rules of engagement."
   },
   {
     "id": "persistence",
     "term": "Persistence",
-    "technical": "",
-    "layman": ""
+    "technical": "Techniques used to maintain long-term access to a compromised system or network, allowing an attacker to remain connected even after reboots, credential changes, or remediation efforts. An example would be creating an administrative user on the target so the attacker could remotely login in the future.",
+    "layman": "Methods used to maintiain access to a target system after breaking in."
   },
   {
     "id": "pkinittools",
     "term": "PKINITtools",
-    "technical": "",
-    "layman": ""
+    "technical": "A toolkit for abusing Kerberos PKINIT certificate-based authentication in Active Directory.",
+    "layman": "A tool that exploits weaknesses in certificate-based (cryptographic credentials as opposed to traditional passwords) Windows login systems."
   },
   {
     "id": "pop3",
     "term": "POP3",
-    "technical": "",
-    "layman": ""
+    "technical": "Post Office Protocol version 3 used to retrieve email from a mail server.",
+    "layman": "A protocol that downloads email messages from a server to a local device."
   },
   {
     "id": "post-exploitation",
     "term": "Post-Exploitation",
-    "technical": "",
-    "layman": ""
+    "technical": "The process of performing additional actions after initial system compromise to expand access, gather sensitive data, maintain persistence, or prepare for further attacks within the environment.",
+    "layman": "The process of performing additional actions after gaining access to a system or computer, such as collecting data, maintaining access, or moving to another computer."
   },
   {
     "id": "powerupsql",
     "term": "PowerUpSQL",
-    "technical": "",
-    "layman": ""
+    "technical": "A PowerShell toolkit for enumerating and exploiting Microsoft SQL Server instances.",
+    "layman": "A tool that finds security weaknesses in Microsoft database servers and can use them to gain access, run commands, or extract sensitive data."
   },
   {
     "id": "powerview",
     "term": "PowerView",
-    "technical": "",
-    "layman": ""
+    "technical": "A PowerShell-based Active Directory enumeration toolkit focused on domain object and permission discovery.",
+    "layman": "A tool that gathers detailed information about users, groups, and permissions in a Windows domain."
   },
   {
     "id": "primary-domain-controller-pdc",
     "term": "Primary Domain Controller (PDC)",
-    "technical": "",
-    "layman": ""
+    "technical": "A domain controller holding specific legacy single-master operations roles.",
+    "layman": "A domain controller responsible for certain critical tasks."
   },
   {
     "id": "printer-bug-petitpotam",
     "term": "Printer Bug (PetitPotam)",
-    "technical": "",
-    "layman": ""
+    "technical": "An attack abusing MS-RPRN to coerce authentication.",
+    "layman": "Forcing a system to authenticate to the attacker."
   },
   {
     "id": "privilege",
     "term": "Privilege",
-    "technical": "",
-    "layman": ""
+    "technical": "A specific right or permission assigned to a user or group.",
+    "layman": "A special permission that allows certain actions."
   },
   {
     "id": "privilege-escalation",
     "term": "Privilege Escalation",
-    "technical": "",
-    "layman": ""
+    "technical": "The process of gaining higher levels of access or permissions on a system than initially granted. This is often done by exploiting vulnerabilities or finding credentials to other users.",
+    "layman": "The process of increasing the level of access on a system, such as going from a normal user account to administrator-level control."
   },
   {
     "id": "proof-of-concept-poc",
     "term": "Proof of Concept (PoC)",
-    "technical": "",
-    "layman": ""
+    "technical": "A minimal demonstration showing that a vulnerability is exploitable.",
+    "layman": "A sample demonstration proving a flaw can be exploited."
   },
   {
     "id": "proxychains",
     "term": "ProxyChains",
-    "technical": "",
-    "layman": ""
+    "technical": "A tool that forces applications to route traffic through proxy servers for anonymity or pivoting.",
+    "layman": "A tool that reroutes network traffic through intermediary servers to hide its origin or reach internal systems."
   },
   {
     "id": "ptes-penetration-testing-execution-standard",
     "term": "PTES (Penetration Testing Execution Standard)",
-    "technical": "",
-    "layman": ""
+    "technical": "A standardized framework outlining phases and best practices for conducting penetration tests.",
+    "layman": "A standardized framework outlining phases and best practices for conducting penetration tests."
   },
   {
     "id": "race-condition",
     "term": "Race Condition",
-    "technical": "",
-    "layman": ""
+    "technical": "A vulnerability caused by improper handling of concurrent operations.",
+    "layman": "A flaw caused when two processes interfere with each other."
   },
   {
     "id": "rdp",
     "term": "RDP",
-    "technical": "",
-    "layman": ""
+    "technical": "Remote Desktop Protocol used to remotely control Windows systems over a network.",
+    "layman": "A protocol that allows someone to remotely view and control a Windows computer."
   },
   {
     "id": "read-permission",
     "term": "Read Permission",
-    "technical": "",
-    "layman": ""
+    "technical": "Permission allowing the viewing of object contents.",
+    "layman": "The ability to see or view something."
   },
   {
     "id": "reconnaissance",
     "term": "Reconnaissance",
-    "technical": "",
-    "layman": ""
+    "technical": "The process of gathering preliminary information about a target environment. Testers often start with this process in a penetration test or red team engagement.",
+    "layman": "The process of gathering preliminary information about a target environment. Testers often start with this process in a penetration test or red team engagement."
   },
   {
     "id": "regular-expression-denial-of-service-redos",
     "term": "Regular expression Denial of Service (ReDoS)",
-    "technical": "",
-    "layman": ""
+    "technical": "An attack exploiting inefficient regular expressions to exhaust resources.",
+    "layman": "Causing systems to slow down using complex patterns."
   },
   {
     "id": "relative-identifier-rid",
     "term": "Relative Identifier (RID)",
-    "technical": "",
-    "layman": ""
+    "technical": "The portion of a SID that uniquely identifies an account within a domain.",
+    "layman": "The part of an ID that distinguishes one user from another."
   },
   {
     "id": "remediation",
     "term": "Remediation",
-    "technical": "",
-    "layman": ""
+    "technical": "Recommended actions to correct or mitigate a vulnerability.",
+    "layman": "The steps needed to fix a security problem."
   },
   {
     "id": "remote-code-execution-rce",
     "term": "Remote Code Execution (RCE)",
-    "technical": "",
-    "layman": ""
+    "technical": "The ability to execute arbitrary code on a remote system.",
+    "layman": "A vulnerability that allows attackers to run their own code on a system."
   },
   {
     "id": "replication",
     "term": "Replication",
-    "technical": "",
-    "layman": ""
+    "technical": "The process of synchronizing Active Directory data between domain controllers.",
+    "layman": "Copying account data between servers to keep them updated."
   },
   {
     "id": "residual-risk",
     "term": "Residual Risk",
-    "technical": "",
-    "layman": ""
+    "technical": "The reamining risk after taking into account an organization's security measures.",
+    "layman": "The remaining risk after taking into account an organization's security measures."
   },
   {
     "id": "resource-based-constrained-delegation-rbcd",
     "term": "Resource-Based Constrained Delegation (RBCD)",
-    "technical": "",
-    "layman": ""
+    "technical": "A delegation configuration where resource owners define delegation rights.",
+    "layman": "A delegation model controlled by the resource server."
   },
   {
     "id": "responder",
     "term": "Responder",
-    "technical": "",
-    "layman": ""
+    "technical": "An LLMNR/NBT-NS poisoning tool used to capture NTLM authentication hashes on local networks.",
+    "layman": "A tool that tricks same network computers into sending password hashes by impersonating trusted network services."
   },
   {
     "id": "reverse-shell",
     "term": "Reverse Shell",
-    "technical": "",
-    "layman": ""
+    "technical": "A shell connection initiated from a compromised system to an attacker.",
+    "layman": "A remote command line where the victim connects back to the attacker."
   },
   {
     "id": "risk",
     "term": "Risk",
-    "technical": "",
-    "layman": ""
+    "technical": "The potential for harm resulting from a vulnerability. It considers both the likelihood of exploitation and the impact if the vulnerability is successfully exploited.",
+    "layman": "The possibility that a security weakness (vulnerability) could cause damage, based on how likely it is to happen (Likelihood) and how serious the consequences would be (Impact)."
   },
   {
     "id": "risk-assessment",
     "term": "Risk Assessment",
-    "technical": "",
-    "layman": ""
+    "technical": "The structured process of identifying and evaluating risks.",
+    "layman": "The structured process of identifying and evaluating security weaknesses (risks)."
   },
   {
     "id": "risk-rating",
     "term": "Risk Rating",
-    "technical": "",
-    "layman": ""
+    "technical": "A classification assigned to a risk often based off the risk score. The classifications are usually Info, Low, Medium, High, or Critical. Risk Rating is often used interchangeably with Risk Severity.",
+    "layman": "A classification assigned to a risk often based off the risk score. The classifications are usually Info, Low, Medium, High, or Critical. Risk Rating is often used interchangeably with Risk Severity."
   },
   {
     "id": "risk-score",
     "term": "Risk Score",
-    "technical": "",
-    "layman": ""
+    "technical": "A numerical value representing the calculated level of risk. It is derived from formulas combining factors like likelihood and impact. The CVSS is a common system that calculates risk scores.",
+    "layman": "A numerical value representing the calculated level of risk. It is derived from formulas combining factors like likelihood and impact. The CVSS is a common system that calculates risk scores."
   },
   {
     "id": "risk-severity",
     "term": "Risk Severity",
-    "technical": "",
-    "layman": ""
+    "technical": "The seriousness of a risk often based off the risk score. The seriousness is usually labeled as Info, Low, Medium, High, or Critical. Risk Severity is often used interchangeably with Risk Rating.",
+    "layman": "The seriousness of a risk often based off the risk score.The seriousness is usually labeled as Info, Low, Medium, High, or Critical. Risk Severity is often used interchangeably with Risk Rating."
   },
   {
     "id": "rootkit",
     "term": "Rootkit",
-    "technical": "",
-    "layman": ""
+    "technical": "Malware designed to hide its presence and maintain privileged access.",
+    "layman": "Malware that hides deeply inside a system."
   },
   {
     "id": "rpc",
     "term": "RPC",
-    "technical": "",
-    "layman": ""
+    "technical": "Remote Procedure Call protocol allowing programs to execute code on remote systems.",
+    "layman": "A protocol that lets one computer run a function or command on another computer."
   },
   {
     "id": "rsync",
     "term": "Rsync",
-    "technical": "",
-    "layman": ""
+    "technical": "A file synchronization utility that transfers only changed portions of files between systems.",
+    "layman": "A tool that copies and syncs files efficiently between systems."
   },
   {
     "id": "rubeus",
     "term": "Rubeus",
-    "technical": "",
-    "layman": ""
+    "technical": "A C# tool for Kerberos ticket extraction, creation, and abuse in Active Directory environments.",
+    "layman": "A tool that steals or forges Windows login tickets to impersonate other users."
   },
   {
     "id": "rules-of-engagement-roe",
     "term": "Rules of Engagement (ROE)",
-    "technical": "",
-    "layman": ""
+    "technical": "The documented guidelines that define how a penetration test will be conducted.",
+    "layman": "The agreed-upon rules that define what testers can and cannot do."
   },
   {
     "id": "rusthound",
     "term": "RustHound",
-    "technical": "",
-    "layman": ""
+    "technical": "A Rust-based high-performance BloodHound data collector.",
+    "layman": "A faster tool that collects information about how user accounts, computers, and permissions are connected inside a company’s Windows account system so it can be analyzed in BloodHound-Legacy."
   },
   {
     "id": "rusthound-ce",
     "term": "RustHound-CE",
-    "technical": "",
-    "layman": ""
+    "technical": "The community edition of RustHound used for BloodHound data collection.",
+    "layman": "A tool that collects information about how user accounts, computers, and permissions are connected inside a company’s Windows account system so it can be analyzed in BloodHound-CE."
   },
   {
     "id": "rustscan",
     "term": "RustScan",
-    "technical": "",
-    "layman": ""
+    "technical": "A high-speed port scanner written in Rust that integrates with Nmap for service enumeration.",
+    "layman": "A very fast tool that quickly identifies which network “entry points” on a computer are open before running more detailed security scans or manual checks."
   },
   {
     "id": "schema",
     "term": "Schema",
-    "technical": "",
-    "layman": ""
+    "technical": "The formal definition of object classes and attributes in Active Directory.",
+    "layman": "The blueprint that defines what types of objects and properties exist."
   },
   {
     "id": "scope-limitations",
     "term": "Scope Limitations",
-    "technical": "",
-    "layman": ""
+    "technical": "Restrictions placed on a penetration test that define systems, techniques, or timeframes that testers are not permitted to assess. These limitations are typically imposed to protect production stability, comply with legal or regulatory requirements, or avoid testing systems owned by third parties.",
+    "layman": "Rules that prevent certain systems or types of attacks from being tested during a security assessment. Organizations often set these limits to avoid disrupting important services, protect sensitive systems, or comply with legal or contractual requirements. A commonly prohibited attack is a DDOS attack because it could bring down customer facing applications."
   },
   {
     "id": "security-assessment",
     "term": "Security Assessment",
-    "technical": "",
-    "layman": ""
+    "technical": "A broader evaluation of an organization’s security posture.",
+    "layman": "A review of overall security controls and risks."
   },
   {
     "id": "security-governance",
     "term": "Security Governance",
-    "technical": "",
-    "layman": ""
+    "technical": "The framework of policies, roles, and processes for managing security.",
+    "layman": "The way an organization organizes and oversees its security efforts."
   },
   {
     "id": "security-identifier-sid",
     "term": "Security Identifier (SID)",
-    "technical": "",
-    "layman": ""
+    "technical": "A unique value assigned to identify a security principal in Windows.",
+    "layman": "A unique ID number assigned to users or groups."
   },
   {
     "id": "security-posture",
     "term": "Security Posture",
-    "technical": "",
-    "layman": ""
+    "technical": "The overall security condition and resilience of an organization.",
+    "layman": "The general strength of an organization’s security defenses."
   },
   {
     "id": "sensitive-data",
     "term": "Sensitive Data",
-    "technical": "",
-    "layman": ""
+    "technical": "Information that requires protection due to its value or confidentiality.",
+    "layman": "Important data that must be protected."
   },
   {
     "id": "server-side-request-forgery-ssrf",
     "term": "Server Side Request Forgery (SSRF)",
-    "technical": "",
-    "layman": ""
+    "technical": "An attack forcing a server to make unauthorized requests.",
+    "layman": "Tricking a server into requesting unintended resources."
   },
   {
     "id": "server-side-includes-ssi-injection",
     "term": "Server-Side Includes (SSI) Injection",
-    "technical": "",
-    "layman": ""
+    "technical": "An attack exploiting server-side include directives.",
+    "layman": "Injecting commands into server-side includes."
   },
   {
     "id": "service-account",
     "term": "Service Account",
-    "technical": "",
-    "layman": ""
+    "technical": "A non-human account used by services or applications to run processes.",
+    "layman": "An account used by software instead of a person."
   },
   {
     "id": "service-principal-name-spn",
     "term": "Service Principal Name (SPN)",
-    "technical": "",
-    "layman": ""
+    "technical": "An identifier that associates a service instance with a service account.",
+    "layman": "A unique name used to link a service to an account."
   },
   {
     "id": "session",
     "term": "Session",
-    "technical": "",
-    "layman": ""
+    "technical": "An active connection between an attacker and a compromised system.",
+    "layman": "A live remote connection to a compromised computer."
   },
   {
     "id": "session-fixation",
     "term": "Session fixation",
-    "technical": "",
-    "layman": ""
+    "technical": "An attack setting a user’s session ID before login.",
+    "layman": "Forcing a victim to use a known session ID."
   },
   {
     "id": "session-hijacking",
     "term": "Session hijacking",
-    "technical": "",
-    "layman": ""
+    "technical": "An attack stealing an active user session.",
+    "layman": "Taking over someone’s logged-in session."
   },
   {
     "id": "severity",
     "term": "Severity",
-    "technical": "",
-    "layman": ""
+    "technical": "The seriousness of a vulnerability based primarily on the Impact of a successful exploitation. It doesn't directly account for likelihood.",
+    "layman": "The seriousness of a vulnerability."
   },
   {
     "id": "severity-rating",
     "term": "Severity Rating",
-    "technical": "",
-    "layman": ""
+    "technical": "The seriousness of a vulnerability based primarily on the Impact of a successful exploitation. The seriousness is usually labeled as Info, Low, Medium, High, or Critical. It is sometimes used interchangeably with Risk Rating or Risk Severity.",
+    "layman": "The seriousness of a vulnerability based primarily on the Impact of a successful exploitation. The seriousness is usually labeled as Info, Low, Medium, High, or Critical. It is sometimes used interchangeably with Risk Rating or Risk Severity."
   },
   {
     "id": "shadow-coerce-ms-fsrvp",
     "term": "Shadow Coerce (MS-FSRVP)",
-    "technical": "",
-    "layman": ""
+    "technical": "An attack abusing MS-FSRVP to coerce authentication.",
+    "layman": "Forcing a system to authenticate using file share protocols."
   },
   {
     "id": "sharpview",
     "term": "SharpView",
-    "technical": "",
-    "layman": ""
+    "technical": "A C# implementation of PowerView for Active Directory enumeration.",
+    "layman": "A Windows-native version of PowerView used to analyze user and permission relationships."
   },
   {
     "id": "shellcode",
     "term": "Shellcode",
-    "technical": "",
-    "layman": ""
+    "technical": "Low-level machine code used as part of an exploit payload.",
+    "layman": "Tiny pieces of code used to run malicious commands."
   },
   {
     "id": "shodan",
     "term": "Shodan",
-    "technical": "",
-    "layman": ""
+    "technical": "A search engine for internet-exposed devices and services.",
+    "layman": "A search engine that finds publicly accessible servers, cameras, and network devices."
   },
   {
     "id": "silver-ticket",
     "term": "Silver Ticket",
-    "technical": "",
-    "layman": ""
+    "technical": "A forged Kerberos service ticket granting access to a specific service.",
+    "layman": "A fake ticket that grants access to one service."
   },
   {
     "id": "sliver",
     "term": "Sliver",
-    "technical": "",
-    "layman": ""
+    "technical": "An open-source command-and-control framework for red team operations.",
+    "layman": "A comprehensive toolkit that provides remote control of compromised computers or systems. It also helps testers remain covert and evade detection."
   },
   {
     "id": "smb",
     "term": "SMB",
-    "technical": "",
-    "layman": ""
+    "technical": "Server Message Block protocol used for file and printer sharing in Windows environments.",
+    "layman": "A Windows file-sharing protocol that allows computers to share folders, files, and printers."
   },
   {
     "id": "smbmap",
     "term": "SMBMap",
-    "technical": "",
-    "layman": ""
+    "technical": "A tool for enumerating and interacting with SMB file shares.",
+    "layman": "A tool that lists shared folders on Windows systems and shows what access is available. It can also look through those shared folders to list files or find files with keywords in them."
   },
   {
     "id": "smtp",
     "term": "SMTP",
-    "technical": "",
-    "layman": ""
+    "technical": "Simple Mail Transfer Protocol used for sending email between mail servers.",
+    "layman": "The protocol used to send email messages across the internet."
   },
   {
     "id": "snaffler",
     "term": "Snaffler",
-    "technical": "",
-    "layman": ""
+    "technical": "A tool that searches Windows networks for files likely to contain sensitive data.",
+    "layman": "A tool that hunts for exposed secrets inside computers, especially in shared company folders."
   },
   {
     "id": "snmp",
     "term": "SNMP",
-    "technical": "",
-    "layman": ""
+    "technical": "Simple Network Management Protocol used for monitoring and managing network devices.",
+    "layman": "A protocol that allows administrators to monitor and manage routers, switches, and servers."
   },
   {
     "id": "spyware",
     "term": "Spyware",
-    "technical": "",
-    "layman": ""
+    "technical": "Malware that secretly gathers information about a user.",
+    "layman": "Software that secretly monitors user activity."
   },
   {
     "id": "sql-injection",
     "term": "SQL Injection",
-    "technical": "",
-    "layman": ""
+    "technical": "An injection attack targeting SQL queries.",
+    "layman": "Inserting malicious database queries."
   },
   {
     "id": "sqlmap",
     "term": "sqlmap",
-    "technical": "",
-    "layman": ""
+    "technical": "An automated SQL injection exploitation tool.",
+    "layman": "A tool that discovers or exploits database flaws to extract or modify data."
   },
   {
     "id": "ssh",
     "term": "SSH",
-    "technical": "",
-    "layman": ""
+    "technical": "Secure Shell protocol providing encrypted remote command-line access.",
+    "layman": "A secure protocol for remotely logging into and controlling a computer."
   },
   {
     "id": "subbrute",
     "term": "subbrute",
-    "technical": "",
-    "layman": ""
+    "technical": "A DNS subdomain brute-forcing tool.",
+    "layman": "A tool that guesses hidden website addresses (such as admin.company.com) by trying many possible names."
   },
   {
     "id": "subfinder",
     "term": "subfinder",
-    "technical": "",
-    "layman": ""
+    "technical": "A passive subdomain enumeration tool leveraging OSINT sources.",
+    "layman": "A tool that finds website addresses (such as admin.company.com) using public information sources."
   },
   {
     "id": "summary-of-findings",
     "term": "Summary of Findings",
-    "technical": "",
-    "layman": ""
+    "technical": "A consolidated overview of all identified security findings.",
+    "layman": "A summary of all discovered security issues."
   },
   {
     "id": "system-access-control-list-sacl",
     "term": "System Access Control List (SACL)",
-    "technical": "",
-    "layman": ""
+    "technical": "The portion of an ACL used to define auditing rules.",
+    "layman": "The part of a permissions list that controls logging of actions."
   },
   {
     "id": "sysvol",
     "term": "SYSVOL",
-    "technical": "",
-    "layman": ""
+    "technical": "A shared folder on domain controllers storing group policy and login scripts.",
+    "layman": "A central folder where domain-wide settings are stored."
   },
   {
     "id": "telnet",
     "term": "Telnet",
-    "technical": "",
-    "layman": ""
+    "technical": "A legacy unencrypted remote login protocol.",
+    "layman": "An older method of remotely logging into a computer that sends data without encryption."
   },
   {
     "id": "testing-window",
     "term": "Testing Window",
-    "technical": "",
-    "layman": ""
+    "technical": "The approved time period during which security testing is permitted.",
+    "layman": "The approved time period during which security testing is permitted."
   },
   {
     "id": "tftp",
     "term": "TFTP",
-    "technical": "",
-    "layman": ""
+    "technical": "Trivial File Transfer Protocol used for simple file transfers without authentication.",
+    "layman": "A very basic file transfer protocol often used for network device configuration."
   },
   {
     "id": "threat-actor",
     "term": "Threat Actor",
-    "technical": "",
-    "layman": ""
+    "technical": "An individual or group responsible for conducting malicious activities.",
+    "layman": "A person or group carrying out an attack."
   },
   {
     "id": "ticket-granting-ticket-tgt",
     "term": "Ticket-Granting Ticket (TGT)",
-    "technical": "",
-    "layman": ""
+    "technical": "A Kerberos ticket used to request service tickets.",
+    "layman": "A digital ticket that allows you to request access to services."
   },
   {
     "id": "trojan",
     "term": "Trojan",
-    "technical": "",
-    "layman": ""
+    "technical": "Malware disguised as legitimate software.",
+    "layman": "Malicious software that pretends to be harmless."
   },
   {
     "id": "trust",
     "term": "Trust",
-    "technical": "",
-    "layman": ""
+    "technical": "A relationship enabling authentication between different domains.",
+    "layman": "A connection that allows users in one domain to access another."
   },
   {
     "id": "trusted-domain-object-tdo",
     "term": "Trusted Domain Object (TDO)",
-    "technical": "",
-    "layman": ""
+    "technical": "An object in Active Directory representing a trust relationship.",
+    "layman": "The configuration that defines how two domains trust each other."
   },
   {
     "id": "unconstrained-delegation",
     "term": "Unconstrained Delegation",
-    "technical": "",
-    "layman": ""
+    "technical": "A delegation setting allowing services to impersonate users to any service.",
+    "layman": "A risky setting allowing broad impersonation rights."
   },
   {
     "id": "unicode-encoding",
     "term": "Unicode Encoding",
-    "technical": "",
-    "layman": ""
+    "technical": "Encoding characters to bypass filters or validation.",
+    "layman": "Changing characters to bypass security checks."
   },
   {
     "id": "use-after-free",
     "term": "Use-After-Free",
-    "technical": "",
-    "layman": ""
+    "technical": "A vulnerability caused by accessing memory after it has been freed.",
+    "layman": "Using memory that has already been released."
   },
   {
     "id": "user-principal-name-upn",
     "term": "User Principal Name (UPN)",
-    "technical": "",
-    "layman": ""
+    "technical": "A user’s login name formatted similarly to an email address.",
+    "layman": "A username written like an email address."
   },
   {
     "id": "vulnerability-assessment",
     "term": "Vulnerability Assessment",
-    "technical": "",
-    "layman": ""
+    "technical": "A type of security test focused on identifying known security vulnerabilities. Unlike a penetration test, the tester does not exploit the vulnerability for verification.",
+    "layman": "A type of security test focused on identifying known security vulnerabilities. Unlike a penetration test, the tester does not exploit the vulnerability for verification."
   },
   {
     "id": "web-application-penetration-test",
     "term": "Web Application Penetration Test",
-    "technical": "",
-    "layman": ""
+    "technical": "A penetration test focused on identifying vulnerabilities in web applications.",
+    "layman": "A type of penetration test that looks for weaknesses in websites and web-based applications."
   },
   {
     "id": "webdav",
     "term": "WebDAV",
-    "technical": "",
-    "layman": ""
+    "technical": "An extension of HTTP allowing file management operations over web servers.",
+    "layman": "A protocol that lets users upload, download, and manage files on a web server."
   },
   {
     "id": "whatweb",
     "term": "whatweb",
-    "technical": "",
-    "layman": ""
+    "technical": "A fingerprinting tool that identifies software stacks and frameworks of a website.",
+    "layman": "A tool that identifies what technologies a website is built with."
   },
   {
     "id": "white-box-test",
     "term": "White Box Test",
-    "technical": "",
-    "layman": ""
+    "technical": "A penetration test conducted with full internal knowledge and access provided.",
+    "layman": "A penetration test specification where the tester has full knowledge of inside information and systems."
   },
   {
     "id": "windows-exploit-suggester-next-generation-wes-ng",
     "term": "Windows Exploit Suggester - Next Generation (WES-NG)",
-    "technical": "",
-    "layman": ""
+    "technical": "A Windows vulnerability assessment tool that identifies missing patches and potential privilege escalation vectors.",
+    "layman": "A tool that analyzes which Windows updates are missing and suggests known vulnerabilities that could be exploited."
   },
   {
     "id": "winpeas",
     "term": "winpeas",
-    "technical": "",
-    "layman": ""
+    "technical": "A Windows privilege escalation auditing script from the PEASS-ng suite.",
+    "layman": "A tool that checks a Windows computer for weaknesses that could allow someone to become an administrator or gain more privileged access."
   },
   {
     "id": "winrm",
     "term": "WinRM",
-    "technical": "",
-    "layman": ""
+    "technical": "Windows Remote Management protocol for remote command execution over HTTP/HTTPS.",
+    "layman": "A Windows protocol that allows remote management and command execution."
   },
   {
     "id": "wireshark",
     "term": "Wireshark",
-    "technical": "",
-    "layman": ""
+    "technical": "A network tool used for deep packet inspection and traffic analysis.",
+    "layman": "A tool that captures and displays detailed network traffic between computers."
   },
   {
     "id": "wmi",
     "term": "WMI",
-    "technical": "",
-    "layman": ""
+    "technical": "Windows Management Instrumentation interface for system management and remote administration.",
+    "layman": "A Windows protocol used to gather information or run commands remotely."
   },
   {
     "id": "wpscan",
     "term": "wpscan",
-    "technical": "",
-    "layman": ""
+    "technical": "A vulnerability scanner focused on WordPress installations.",
+    "layman": "A tool that finds security weaknesses in WordPress websites."
   },
   {
     "id": "write-permission",
     "term": "Write Permission",
-    "technical": "",
-    "layman": ""
+    "technical": "Permission allowing modification of object contents.",
+    "layman": "The ability to change or edit something."
   },
   {
     "id": "x11",
     "term": "X11",
-    "technical": "",
-    "layman": ""
+    "technical": "A network protocol used for graphical display forwarding in Unix/Linux systems.",
+    "layman": "A protocol that allows graphical programs to run remotely and display on another computer."
   },
   {
     "id": "xmlrpc",
     "term": "XMLRPC",
-    "technical": "",
-    "layman": ""
+    "technical": "A remote procedure call protocol that uses XML over HTTP for communication.",
+    "layman": "A way for applications to send commands or data over the web using structured messages."
   },
   {
     "id": "xpath-injection",
     "term": "XPATH Injection",
-    "technical": "",
-    "layman": ""
+    "technical": "An injection attack targeting XPath queries.",
+    "layman": "Inserting malicious input into XML queries."
   },
   {
     "id": "xsstrike",
     "term": "XSStrike",
-    "technical": "",
-    "layman": ""
+    "technical": "A Cross-Site Scripting (XSS) detection and exploitation tool.",
+    "layman": "A tool that scans websites for places where attackers can inject malicious code and perform XSS."
   },
   {
     "id": "zero-day",
     "term": "Zero-Day",
-    "technical": "",
-    "layman": ""
+    "technical": "A previously unknown vulnerability without an available patch.",
+    "layman": "A security flaw that has not yet been fixed."
   }
 ]

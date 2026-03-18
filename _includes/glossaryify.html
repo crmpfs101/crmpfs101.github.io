@@ -2,17 +2,15 @@
 {{- chunks.first -}}
 {%- for chunk in chunks offset:1 -%}
   {%- if chunk contains "]]" -%}
-    {%- assign pair = chunk | split: "]]" -%}
-    {%- assign token = pair.first -%}
-    {%- assign rest = pair | shift | join: "]]" -%}
+    {%- assign token = chunk | split: "]]" | first | strip -%}
+    {%- assign rest = chunk | replace_first: token, "" | replace_first: "]]", "" -%}
+
+    {%- assign lookup_term = token -%}
+    {%- assign display_name = token -%}
 
     {%- if token contains "|" -%}
-      {%- assign token_parts = token | split: "|" -%}
-      {%- assign lookup_term = token_parts.first | strip -%}
-      {%- assign display_name = token_parts | shift | join: "|" | strip -%}
-    {%- else -%}
-      {%- assign lookup_term = token | strip -%}
-      {%- assign display_name = token | strip -%}
+      {%- assign lookup_term = token | split: "|" | first | strip -%}
+      {%- assign display_name = token | split: "|" | last | strip -%}
     {%- endif -%}
 
     {%- assign lookup_norm = lookup_term | downcase | strip -%}
