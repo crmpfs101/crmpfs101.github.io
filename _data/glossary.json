@@ -2,26 +2,26 @@
   {
     "id": "access-control-entry-ace",
     "term": "Access Control Entry (ACE)",
-    "technical": "An individual permission entry within an ACL.",
-    "layman": "A single rule in a permissions list."
+    "technical": "A single rule within an Access Control List (ACL) that grants, denies, or audits a specific type of access for a particular principal.",
+    "layman": "An individual rule inside an ACL. Each ACE defines one access decision for one user or group. It is like one line on a meeting participant list, where each line or ACE determines a specific person able to join the meeting."
   },
   {
     "id": "access-control-list-acl",
     "term": "Access Control List (ACL)",
-    "technical": "A list defining which users or groups have permissions on an object.",
-    "layman": "A list that shows who can access something."
+    "technical": "A list of Access Control Entry (ACE) rules attached to an object that defines which principals are allowed, denied, or audited for specific actions.",
+    "layman": "A set of rules that says who can interact with an object and how. It helps the system enforce access decisions in a consistent way. It is like the access list for a meeting that determines who can join the meeting."
   },
   {
     "id": "active-directory",
     "term": "Active Directory",
-    "technical": "Microsoft’s centralized directory service for managing identities and resources in Windows environments.",
-    "layman": "The system Windows organizations use to manage user accounts, computers, and permissions."
+    "technical": "A Windows directory service that centrally manages identities, systems, Authentication, Authorization, and policies within an organization's  domain environment. It allows administrators to control who has access to which network resources, such as computers or printers.",
+    "layman": "A system that helps an organization manage users, computers, and access rules across its network. It is like the company’s central office directory and badge-access system combined."
   },
   {
     "id": "agent",
     "term": "Agent",
-    "technical": "A small software component on a compromised system that communicates with command servers.",
-    "layman": "A small program on an infected machine that talks to the attacker."
+    "technical": "A software component running on a compromised host that communicates with an attacker-controlled system ([[C2])) and performs assigned tasks.",
+    "layman": "A small program on a hacked device that carries out commands for the attacker. It is like a helper inside the system that takes orders and reports back."
   },
   {
     "id": "aquatone",
@@ -32,14 +32,14 @@
   {
     "id": "as-rep-roasting",
     "term": "AS-REP Roasting",
-    "technical": "An attack targeting accounts that do not require Kerberos preauthentication to obtain crackable authentication data.",
-    "layman": "An attack that targets misconfigured accounts to steal data that can be used to guess passwords offline."
+    "technical": "An attack technique in which an attacker requests AS-REP data for accounts that do not require Kerberos preauthentication and attempts to crack that data offline. It is possible because the account can return authentication material before fully verifying identity.",
+    "layman": "An attack technique that targets accounts with weaker Kerberos login protection by collecting password-related data and cracking it offline. It is dangerous because the attacker may be able to obtain crackable data without first proving who they are. It is like finding badge records that skip an extra identity check and then trying to break them in private."
   },
   {
     "id": "assessment-summary",
     "term": "Assessment Summary",
-    "technical": "A summary describing the scope, methodology, and overall results of an assessment.",
-    "layman": "A brief explanation of what was tested and what was found."
+    "technical": "A concise overview of the assessment that describes the scope, methodology, and general results of the testing performed.",
+    "layman": "A brief explanation of what was tested, how it was tested, and the general result."
   },
   {
     "id": "attack-path",
@@ -50,38 +50,38 @@
   {
     "id": "attribute",
     "term": "Attribute",
-    "technical": "A named property associated with an object in a directory service.",
-    "layman": "A specific piece of information about a user or object."
+    "technical": "A named property that stores a specific piece of information about an object, such as a username, email address, department, or identifier.",
+    "layman": "A specific detail stored about a user, computer, group, or other object. Multiple attributes together describe what that object is and what information is known about it. It is like a field in a company record, such as name, title, or office number."
   },
   {
     "id": "authentication",
     "term": "Authentication",
-    "technical": "The process of verifying an identity.",
-    "layman": "Proving you are who you claim to be."
+    "technical": "The process of verifying the identity of a user, computer, or service by checking credentials such as passwords, certificates, or tickets.",
+    "layman": "The process of proving that someone or something really is who it claims to be. It is like showing a badge at the front desk to confirm your identity."
   },
   {
     "id": "authorization",
     "term": "Authorization",
-    "technical": "The process of granting permissions after authentication.",
-    "layman": "Determining what you are allowed to do."
+    "technical": "The process of determining what an authenticated identity is allowed to access or do based on permissions, policy, and group membership.",
+    "layman": "The process of deciding what a user or system is allowed to access after identity has been verified. It is like deciding which rooms a valid badge is allowed to open."
   },
   {
     "id": "backdoor",
     "term": "Backdoor",
-    "technical": "A hidden method of bypassing authentication or access controls.",
-    "layman": "A secret way to access a system without normal login."
+    "technical": "A hidden or unauthorized method of accessing a system while bypassing normal authentication or security controls.",
+    "layman": "A secret way to access a system without the usual protections."
   },
   {
     "id": "beaconing",
     "term": "Beaconing",
-    "technical": "Periodic communication from malware to a command server.",
-    "layman": "A regular check-in message sent from infected systems to the attacker."
+    "technical": "Periodic communication from a compromised host to an attacker-controlled system (C2) to announce that it is active and ready to receive instructions.",
+    "layman": "When infected software regularly checks in with an attacker-controlled infrastructure (C2). It is like a stolen device quietly sending “I’m here” messages at set intervals."
   },
   {
     "id": "bind-shell",
     "term": "Bind Shell",
-    "technical": "A shell where the compromised system listens for incoming connections.",
-    "layman": "A remote command line where the attacker connects directly to the victim."
+    "technical": "A shell session created when a target system listens on a port and waits for an attacker to connect directly.",
+    "layman": "A remote connection achieved by making the victim machine listen for an attacker connection. It is like leaving a hidden door unlocked so someone outside can come in later."
   },
   {
     "id": "black-box-test",
@@ -128,8 +128,8 @@
   {
     "id": "buffer-overflow",
     "term": "Buffer Overflow",
-    "technical": "A vulnerability where data exceeds allocated memory space.",
-    "layman": "An error where too much data overflows into other memory."
+    "technical": "A memory corruption flaw where data written into a buffer exceeds its intended size and spills into adjacent memory, potentially altering program behavior. This could cause redirection of the program to perform attacker-intended actions.",
+    "layman": "A memory corruption flaw where too much data is shoved into a space that was only meant to hold a smaller amount. It is like overfilling a container until it spills into places it should not. This could lead to an attacker gaining control over the program."
   },
   {
     "id": "burp-suite",
@@ -146,8 +146,8 @@
   {
     "id": "callback",
     "term": "Callback",
-    "technical": "A connection initiated from a compromised system to an external controller.",
-    "layman": "When an infected computer connects back to the attacker."
+    "technical": "A connection initiated by compromised code back to an attacker-controlled system ([[C2])), often to establish remote access or continue execution.",
+    "layman": "When malware or exploited code reaches back out to the attacker after it runs. It is like a compromised machine making a secret return phone call."
   },
   {
     "id": "cewl",
@@ -182,8 +182,8 @@
   {
     "id": "command-and-control-c2",
     "term": "Command and Control (C2)",
-    "technical": "An infrastructure used by attackers to control compromised systems remotely.",
-    "layman": "The system attackers use to remotely control infected computers."
+    "technical": "An attacker-controlled infrastructure used to manage compromised systems after access is gained, including sending tasks, receiving output, and coordinating actions.",
+    "layman": "An attacker-controlled infrastructure that stays connected to a hacked device so attackers can keep giving it instructions. It is like keeping a hidden remote control link to a machine after sneaking inside."
   },
   {
     "id": "command-injection",
@@ -260,26 +260,20 @@
   {
     "id": "data-compression",
     "term": "Data Compression",
-    "technical": "The process of reducing data size before transmission.",
-    "layman": "Shrinking data before sending it."
+    "technical": "The process of reducing the size of data, often to save space or make transfers faster. In attacks, it may also help package stolen data before exfiltration or bypass security measures.",
+    "layman": "The process of shrinking data before sending it. Attackers may do this to move stolen files faster or with less notice."
   },
   {
     "id": "data-encoding",
     "term": "Data Encoding",
-    "technical": "The transformation of data into another format.",
-    "layman": "Changing data format before sending it."
+    "technical": "The process of transforming data into a different representation for storage, transport, or interpretation, without necessarily making it secret.",
+    "layman": "The process of changing how data is represented so it can be handled by a system or protocol. It is like rewriting a message into a different format, not necessarily hiding what it says."
   },
   {
     "id": "data-encryption",
     "term": "Data Encryption",
-    "technical": "The use of cryptographic techniques to protect data confidentiality.",
-    "layman": "Scrambling data so others cannot read it."
-  },
-  {
-    "id": "data-exfiltration",
-    "term": "Data Exfiltration",
-    "technical": "The unauthorized transfer of data from a system.",
-    "layman": "Stealing data from a system."
+    "technical": "The process of converting data into a protected form that can only be read with the appropriate cryptographic key or method for the sake of confidentiality.",
+    "layman": "The process of scrambling data so only authorized people can read it to preserve confidentiality."
   },
   {
     "id": "dcsync",
@@ -288,22 +282,16 @@
     "layman": "Pulling password data from a domain controller."
   },
   {
-    "id": "defense-evasion",
-    "term": "Defense Evasion",
-    "technical": "Techniques used to avoid detection by security controls.",
-    "layman": "Methods attackers use to stay hidden."
-  },
-  {
     "id": "defense-in-depth",
     "term": "Defense-in-Depth",
-    "technical": "A security strategy that layers multiple controls to protect systems.",
-    "layman": "A method of using multiple security protections so if one fails, others still protect the system."
+    "technical": "A security strategy that layers multiple controls to protect systems and reduce damage. Enforcing the Least Privilege principle is an example of practicing Defense-in-Depth.",
+    "layman": "A security approach that uses several layers of protection so one failed defense does not leave everything exposed. Think of a hotel room door. Even if someone can unlock it with a keycard and have some vision inside the room, the deadlock would still prevent them from completely getting in."
   },
   {
     "id": "delegation",
     "term": "Delegation",
-    "technical": "The delegation of authentication rights in Active Directory allowing services to impersonate users.",
-    "layman": "A feature that lets a service act on behalf of a user after they log in."
+    "technical": "The assignment of limited authority to a user, group, service, or computer so it can perform specific tasks on behalf of others or within a defined scope.",
+    "layman": "The assignment of permission to someone or something to carry out specific tasks without giving them full control over everything. This helps divide responsibilities more safely and efficiently. It is like allowing a department lead to handle certain office access requests without making them head of the entire building."
   },
   {
     "id": "denial-of-service",
@@ -314,26 +302,26 @@
   {
     "id": "deserialization-attack",
     "term": "Deserialization Attack",
-    "technical": "An attack exploiting insecure object deserialization processes.",
-    "layman": "Exploiting unsafe data conversion to run malicious code."
+    "technical": "An attack that abuses a program’s process for reconstructing objects or data structures from serialized input, causing unintended behavior such as code execution, privilege abuse, or logic manipulation.",
+    "layman": "When a program rebuilds saved or received data, it may trust that data too much. If an attacker has secretly changed it, the program can be tricked into doing something harmful or unexpected."
   },
   {
     "id": "detection-capability",
     "term": "Detection Capability",
-    "technical": "The ability of a system to identify malicious or suspicious activity.",
-    "layman": "How well a system can detect attacks or unusual behavior."
+    "technical": "An organization's ability to identify security breaches or malicious activity in a timely manner.",
+    "layman": "How well an organization can detect attacks or malicious behavior."
   },
   {
     "id": "discretionary-access-control-list-dacl",
     "term": "Discretionary Access Control List (DACL)",
-    "technical": "The portion of an ACL that defines allowed and denied permissions.",
-    "layman": "The part of a permissions list that controls access."
+    "technical": "A type of Access Control List (ACL) that contains the Access Control Entry (ACE) rules used to allow or deny access to an object. It is distinct because it is the ACL specifically used to enforce access decisions, whereas other ACL types, such as a System Access Control List (SACL), are used for auditing.",
+    "layman": "A type of access control list that actually decides who can or cannot use something. It is different from other kinds of ACLs because its job is to enforce access, not just record activity. It is like the section of a building’s access list that determines whose badge opens the door and whose does not."
   },
   {
     "id": "distinguished-name-dn",
     "term": "Distinguished Name (DN)",
-    "technical": "The unique path that identifies an object in Active Directory.",
-    "layman": "The full directory path of a user or object."
+    "technical": "The unique directory path that identifies an object by showing its full location within the hierarchy of Active Directory.",
+    "layman": "The full path that shows exactly where an object is located in Active Directory. It helps uniquely identify the object by including not just its name, but also the containers or organizational levels above it. It is like a full office address that includes the company, department, and specific place where someone or something belongs."
   },
   {
     "id": "dns",
@@ -350,20 +338,20 @@
   {
     "id": "domain",
     "term": "Domain",
-    "technical": "A logical grouping of objects within Active Directory sharing a common database.",
-    "layman": "A collection of users and computers managed together in Active Directory."
+    "technical": "A logical boundary in Active Directory that contains objects such as users, computers, groups, and policies under a shared security and directory structure.",
+    "layman": "An Active Directory grouping where a set of users and computers are organized under the same central login system and access rules. It is like one company office where everyone uses the same badge system and follows the same building policies."
   },
   {
     "id": "domain-controller-dc",
     "term": "Domain Controller (DC)",
-    "technical": "A server that stores and manages Active Directory data and handles authentication.",
-    "layman": "A server that manages user logins and permissions."
+    "technical": "The server that stores and manages Active Directory data and handles both authentication and authorization.",
+    "layman": "A server that verifies logins and keeps track of important directory information for the domain. It is like the main security desk that checks badges and maintains official office records."
   },
   {
     "id": "dropper",
     "term": "Dropper",
-    "technical": "Malware that installs other malicious software onto a system.",
-    "layman": "A program that secretly installs malware."
+    "technical": "Malware that delivers or installs other malicious software onto a system.",
+    "layman": "A malware that secretly delivers or installs other malware onto the system."
   },
   {
     "id": "engagement-scope",
@@ -384,10 +372,16 @@
     "layman": "The process of gathering detailed information about the target in order to identify security weaknesses for attacks. This process is often repeated many times during testing whenever new information is discovered."
   },
   {
+    "id": "evasion",
+    "term": "Evasion",
+    "technical": "Techniques used to avoid detection by security controls.",
+    "layman": "Methods attackers use to stay hidden."
+  },
+  {
     "id": "evidence",
     "term": "Evidence",
-    "technical": "Supporting proof such as screenshots, logs, or output validating a finding.",
-    "layman": "The proof that shows a vulnerability actually exists."
+    "technical": "The proof that validates a finding, such as logs, packet captures, command output, screenshots of XSS on a web page.",
+    "layman": "The proof that proves a finding or general security issue is legitimate. They often come in the form of screenshots, code output, or reproducible steps to replicate the attack."
   },
   {
     "id": "evil-winrm",
@@ -404,14 +398,20 @@
   {
     "id": "executive-summary",
     "term": "Executive Summary",
-    "technical": "A high-level summary of key findings and business impact intended for leadership.",
-    "layman": "A short overview of the most important results for executives."
+    "technical": "A high-level section of a security report intended for leadership that summarizes the scope, key findings, business impact, and overall conclusions of the assessment. Some summaries also include a brief remediation section.",
+    "layman": "A short section written for leadership that explains the most important results of the security test and why they matter. It also provides the context in which the security test was performed (date, place, devices tested)."
+  },
+  {
+    "id": "exfiltration",
+    "term": "Exfiltration",
+    "technical": "The unauthorized transfer of data from a system.",
+    "layman": "Stealing data from a system."
   },
   {
     "id": "exfiltration-channel",
     "term": "Exfiltration Channel",
     "technical": "The method used to transfer stolen data out of a network.",
-    "layman": "The path used to send stolen data out."
+    "layman": "The path used to send stolen data out. It is like the escape tunnel used to smuggle documents out of a building."
   },
   {
     "id": "exiftool",
@@ -422,14 +422,14 @@
   {
     "id": "exploit",
     "term": "Exploit",
-    "technical": "Code or technique that leverages a vulnerability to achieve unintended behavior.",
-    "layman": "A method used to take advantage of a security flaw."
+    "technical": "Code, input, or a technique that takes advantage of a vulnerabilities to cause unintended behavior, gain access, or execute unauthorized actions.",
+    "layman": "A way of using a flaw or weakness to make a system do something it was not supposed to do."
   },
   {
     "id": "exploit-chain",
     "term": "Exploit Chain",
-    "technical": "A sequence of exploits combined to achieve a larger objective.",
-    "layman": "Multiple weaknesses used together to achieve a goal."
+    "technical": "A sequence of vulnerabilities, misconfigurations, or techniques combined to achieve a larger goal such as full domain compromise.",
+    "layman": "When an attacker links several smaller weaknesses together to achieve a bigger result."
   },
   {
     "id": "exploitation",
@@ -470,7 +470,7 @@
   {
     "id": "finding",
     "term": "Finding",
-    "technical": "A documented security issue identified during testing.",
+    "technical": "A specific security issue identified during a security test.",
     "layman": "A specific problem discovered during a security test."
   },
   {
@@ -494,8 +494,8 @@
   {
     "id": "forest",
     "term": "Forest",
-    "technical": "A collection of one or more domains that share a common schema and trust relationships.",
-    "layman": "A larger grouping of domains that trust each other."
+    "technical": "The top-level structure in Active Directory that contains one or more domains and shares a common Schema, configuration, and trust framework.",
+    "layman": "An Active Directory grouping that connects multiple related domains into one broader system. It is like a parent company that oversees several office locations that still share common rules and records."
   },
   {
     "id": "fping",
@@ -512,8 +512,8 @@
   {
     "id": "global-catalog-gc",
     "term": "Global Catalog (GC)",
-    "technical": "A distributed data repository that stores partial attribute sets for objects in a forest.",
-    "layman": "A service that allows searching for users and resources across domains."
+    "technical": "A feature on a Domain Controller that stores a partial, searchable copy of objects from across an Active Directory forest, allowing users and applications to find objects without knowing which domain contains them.",
+    "layman": "A feature that helps Active Directory quickly search for users, groups, and other resources across connected domains. It is like a company-wide directory that lists key details for people and resources from every office, even if their full records are stored elsewhere."
   },
   {
     "id": "gobuster",
@@ -536,32 +536,32 @@
   {
     "id": "group",
     "term": "Group",
-    "technical": "A collection of users or accounts that share permissions.",
-    "layman": "A set of users grouped together for access control."
+    "technical": "An Active Directory object that groups accounts together so permissions, rights, and administration can be assigned to multiple principals at once.",
+    "layman": "An Active Directory collection of users, computers, or other groups that can be managed together. This makes it easier to assign access to many accounts at once instead of configuring each one individually. It is like a team list that lets a company grant room access to a whole department at once."
   },
   {
     "id": "group-managed-service-account-gmsa",
     "term": "Group Managed Service Account (gMSA)",
-    "technical": "A managed service account that automatically handles password updates across systems.",
-    "layman": "A special service account whose password changes automatically."
+    "technical": "A managed domain service account whose password is automatically maintained by Active Directory and can be used by approved systems. Its automatic password rotation helps reduce the risk associated with long-lived or manually managed service account credentials.",
+    "layman": "A service account whose password is automatically managed by Active Directory. This makes it safer than many traditional service accounts because the password is regularly changed without administrators having to do it manually. It is like a machine badge that office security automatically updates so it is less likely to become stale or easy to misuse."
   },
   {
     "id": "group-membership",
     "term": "Group Membership",
-    "technical": "The association between a user and a group.",
-    "layman": "Being part of a group that grants certain permissions."
+    "technical": "An Active Directory relationship that makes an account or group part of another group and influences permissions, rights, and policy application.",
+    "layman": "An Active Directory relationship where an account or group is part of another group and inherits the permissions, rights, and policy application from that group. This matters because belonging to a group can automatically give access to resources or apply certain rules. It is like being placed on a department roster that determines which rooms and tools you can use."
   },
   {
     "id": "group-policy",
     "term": "Group Policy",
-    "technical": "A Windows feature used to centrally manage configurations and policies.",
-    "layman": "A system for enforcing settings across many computers."
+    "technical": "A Windows management framework used to centrally define and apply configuration, security, and administrative settings to users and computers in Active Directory. Its centralized control improves consistency, but misconfigured Group Policy can also spread insecure settings widely.",
+    "layman": "A way for administrators to automatically apply rules and settings across many users or computers. This helps keep systems consistent and secure at scale, but a bad policy can also affect many systems at once. It is like company management sending out building-wide rules that are efficient when correct and disruptive when wrong."
   },
   {
     "id": "group-policy-object-gpo",
     "term": "Group Policy Object (GPO)",
-    "technical": "An object containing policy settings applied to users or computers.",
-    "layman": "A set of rules applied to systems or users."
+    "technical": "A collection of Group Policy settings that can be linked to sites, domains, or OUs to apply configuration and security rules. Because GPOs can affect many systems, attackers and defenders alike pay close attention to who can modify them.",
+    "layman": "A collection of settings to enforce Group Policy in a specific part of the environment. This makes management easier, but it also means a compromised or misused GPO can change many systems quickly. It is like a policy packet sent to a department or office branch that can shape how everyone there operates."
   },
   {
     "id": "grpc",
@@ -578,8 +578,8 @@
   {
     "id": "heartbeat",
     "term": "Heartbeat",
-    "technical": "A periodic signal sent to indicate a system or implant is active.",
-    "layman": "A regular signal showing malware is still running."
+    "technical": "A periodic signal sent by a host or process to show that it is still running and reachable.",
+    "layman": "A regular “I’m still here” message sent by a system or program. It is like a guard checking in on schedule to show everything is still active."
   },
   {
     "id": "http",
@@ -626,8 +626,8 @@
   {
     "id": "implant",
     "term": "Implant",
-    "technical": "Malicious code installed on a compromised system for persistence or control.",
-    "layman": "Hidden software placed on a system to maintain access."
+    "technical": "Malicious code or tooling placed on a system to maintain access, gather information, execute commands, or support further operations.",
+    "layman": "A malicious program left behind on a device so the attacker can keep using it later."
   },
   {
     "id": "indicators-of-compromise-iocs",
@@ -680,8 +680,8 @@
   {
     "id": "kerberoasting",
     "term": "Kerberoasting",
-    "technical": "An attack that extracts service account ticket hashes from Kerberos for offline password cracking.",
-    "layman": "An attack that steals encrypted login tickets and tries to crack their passwords offline."
+    "technical": "An attack technique in which an attacker requests Kerberos service tickets for accounts with SPN values and attempts to crack the ticket data offline to recover account credentials. It is especially effective against service accounts with weak or long-lived passwords.",
+    "layman": "An attack that targets certain service accounts in Active Directory by collecting Kerberos ticket data and trying to crack it offline. It is dangerous because attackers can test guesses privately without repeatedly interacting with the target system, especially if the account has a weak password. It is like copying encrypted service badge data and testing guesses in private until one works."
   },
   {
     "id": "kerberos",
@@ -692,20 +692,20 @@
   {
     "id": "kerberos-2",
     "term": "Kerberos",
-    "technical": "A ticket-based authentication protocol used in Active Directory environments.",
-    "layman": "A secure Windows login system that uses digital tickets."
+    "technical": "A ticket-based authentication protocol used in Active Directory to verify identities and obtain access to services without repeatedly sending passwords over the network. Its design improves both security and usability, though stolen tickets can still be abused in attacks such as Pass-the-Ticket (PtT).",
+    "layman": "A Windows login system that uses temporary tickets to prove identity and request access to services. This helps reduce how often passwords need to be sent or re-entered, which improves both security and convenience. It is like checking in once with building security and then using temporary access passes instead of repeating your password at every door."
   },
   {
     "id": "keylogger",
     "term": "Keylogger",
-    "technical": "Malware designed to capture keystrokes.",
-    "layman": "Software that records everything a user types."
+    "technical": "Malware designed to capture keystrokes in order to capture credentials, messages, or other sensitive input.",
+    "layman": "Malware designed to record what someone types. It is often used to steal passwords or other private information."
   },
   {
     "id": "kill-switch",
     "term": "Kill Switch",
-    "technical": "A mechanism designed to disable malware under specific conditions.",
-    "layman": "A built-in feature that stops malware if certain conditions are met."
+    "technical": "A built-in condition or mechanism that disables malware or stops an operation when triggered.",
+    "layman": "A feature that can shut down malicious software or stop an attack process. It is like an emergency off switch built into a dangerous machine."
   },
   {
     "id": "lateral-movement",
@@ -746,26 +746,26 @@
   {
     "id": "listener",
     "term": "Listener",
-    "technical": "A service that waits for incoming connections from compromised systems.",
-    "layman": "A program that waits for infected machines to connect back."
+    "technical": "A service or process that waits for incoming network connections, often used by attackers to receive callbacks or shells from compromised systems.",
+    "layman": "A program that waits for a hacked device to connect back. It is like keeping a phone line open so the compromised machine knows where to call. It could also be a program on the hacked device waiting to be contacted."
   },
   {
     "id": "living-off-the-land-lolbins",
     "term": "Living-off-the-Land (LOLBins)",
-    "technical": "The use of legitimate system tools for malicious purposes.",
-    "layman": "Abusing built-in system tools to avoid detection."
+    "technical": "A concept where attackers abuse legitimate built-in tools, binaries, or system features to carry out malicious actions while blending in with normal activity. It also allows an attacker to not have to upload their own tools to the system for exploitation.",
+    "layman": "A concept where attackers use tools already present on a system instead of bringing in obvious malware. It is like breaking into a house using the owner's own toolbox or ladder."
   },
   {
     "id": "loader",
     "term": "Loader",
-    "technical": "Malware responsible for loading other malicious components.",
-    "layman": "A program that loads additional malicious software."
+    "technical": "Malware responsible for loading other malicious components or payloads.",
+    "layman": "A malware that loadsor executes additional malware."
   },
   {
     "id": "local-privilege-escalation-lpe",
     "term": "Local Privilege Escalation (LPE)",
-    "technical": "A vulnerability allowing a user to gain higher privileges on a local system.",
-    "layman": "A weakness that lets a regular user become an administrator."
+    "technical": "A process that allows a user or process with limited access on a system to gain higher privileges on that same system.",
+    "layman": "A process where someone who already has access on a machine finds a way to gain more privileged access on the same machine."
   },
   {
     "id": "log-injection",
@@ -776,20 +776,20 @@
   {
     "id": "logging",
     "term": "Logging",
-    "technical": "The recording of system and security events for analysis.",
-    "layman": "Keeping records of system activity for review."
+    "technical": "The process of recording systems, applications, networks and security events for later analysis. It is a common process security teams use to support monitoring.",
+    "layman": "The process of recording computer, system, and network activity so security teams can review it later to detect malicious behavior or investigate how a breach happened."
   },
   {
     "id": "malware",
     "term": "Malware",
-    "technical": "Software designed to disrupt, damage, or gain unauthorized access.",
-    "layman": "Malicious software designed to harm or control systems."
+    "technical": "Software intentionally designed to disrupt, damage, spy on, or gain unauthorized access to systems or data.",
+    "layman": "Malicious software made to interfere with systems, steal information, or help attackers gain control."
   },
   {
     "id": "memory-corruption",
     "term": "Memory Corruption",
-    "technical": "A class of vulnerabilities caused by improper memory handling.",
-    "layman": "Errors in how software manages memory."
+    "technical": "A class of software flaw where a program reads from, writes to, or manages memory in an unintended way, potentially causing crashes, data leaks, or code execution.",
+    "layman": "A class of software flaw in which a program mishandles the part of the computer where data is temporarily stored while the program is running. It can make the program break, leak information, or even run attacker-controlled code."
   },
   {
     "id": "metasploit-framework",
@@ -818,8 +818,8 @@
   {
     "id": "monitoring",
     "term": "Monitoring",
-    "technical": "The continuous observation of systems to detect anomalies or threats.",
-    "layman": "Watching systems for signs of suspicious activity."
+    "technical": "The process of observing systems, network activity, and applications to detect anomalies or threats. Common monitoring tools security teams use include IDS, IPS, SIEM, EDR .",
+    "layman": "The process of observing computers, systems, and network activity so suspicious behavior or technical problems can be noticed and investigated."
   },
   {
     "id": "msfvenom",
@@ -908,8 +908,8 @@
   {
     "id": "ntlm-2",
     "term": "NTLM",
-    "technical": "A Microsoft challenge-response authentication protocol.",
-    "layman": "An older Windows login method."
+    "technical": "An older Microsoft authentication protocol that uses a challenge-response process to verify identity, often when Kerberos is unavailable or unsupported. Because it relies on password-derived hashes and lacks some of Kerberos’s protections, it is commonly targeted in credential theft and relay attacks.",
+    "layman": "An older way Windows systems verify identity during login or network access. It avoids sending the actual password directly, but attackers often abuse it because stolen or intercepted NTLM data can sometimes be reused to impersonate users. It is like using an older badge-check procedure that still works, but is easier for intruders to trick or copy than the newer system."
   },
   {
     "id": "ntlm-relay",
@@ -938,7 +938,7 @@
   {
     "id": "operational-security-opsec",
     "term": "Operational Security (OpSec)",
-    "technical": "Practices used to conceal operational details and reduce detection risk.",
+    "technical": "The practice of protecting information about methods, plans, tools, or activities so that others cannot use those details against you.",
     "layman": "Steps taken to avoid being detected during an attack."
   },
   {
@@ -950,8 +950,8 @@
   {
     "id": "organizational-unit-ou",
     "term": "Organizational Unit (OU)",
-    "technical": "A container within Active Directory used to organize objects.",
-    "layman": "A folder-like structure used to organize users and computers."
+    "technical": "A container object in Active Directory used to organize other objects for administration, delegation, and Group Policy application.",
+    "layman": "A section inside Active Directory used to organize users, computers, or other objects into smaller manageable groups. It is like dividing a company into departments such as HR, Finance, or IT. Administrators could then delegate specific administrative rights to one of the departments so that all users or objects under the department get the right."
   },
   {
     "id": "overpass-the-hash-pass-the-key",
@@ -968,20 +968,20 @@
   {
     "id": "pass-the-hash-pth",
     "term": "Pass-the-Hash (PtH)",
-    "technical": "An attack technique that uses stolen NTLM password hashes to authenticate without knowing the plaintext password.",
-    "layman": "Logging in using a stolen password hash instead of the real password."
+    "technical": "An attack technique in which an attacker uses a stolen NTLM hash to authenticate without knowing the plaintext password. It is commonly associated with NTLM because the protocol can accept the hash-derived material as proof of identity.",
+    "layman": "An attack technique where a stolen password hash is used to log in without learning the real password. This is one reason NTLM is often abused by attackers. Attackers can steal the hash alone and impersonate the user without knowing their password. It is like using a copied badge token that the building accepts even though you never learned the badge owner’s secret code."
   },
   {
     "id": "pass-the-ticket-ptt",
     "term": "Pass-the-Ticket (PtT)",
-    "technical": "An attack that reuses stolen Kerberos tickets to authenticate to services.",
-    "layman": "Using a stolen login ticket to access systems without a password."
+    "technical": "An attack technique in which an attacker steals and reuses Kerberos tickets to authenticate as another user or service. It works because possession of a valid ticket may be enough to access services until the ticket expires.",
+    "layman": "An attack technique where a stolen Kerberos ticket is reused to impersonate someone else. This is dangerous because a valid ticket can sometimes be used directly without needing the user’s password. It is like finding a valid temporary access pass and using it before it expires."
   },
   {
     "id": "password-policy",
     "term": "Password Policy",
-    "technical": "A defined set of rules governing password length, complexity, and expiration.",
-    "layman": "Rules that determine how strong and how often passwords must change."
+    "technical": "A set of security rules that defines how passwords must be created, used, and managed within a system, application, or organization. It can include requirements such as minimum length, complexity, reuse restrictions, expiration, lockout behavior, and password reset controls.",
+    "layman": "A set of rules that tells people how their passwords should be made and managed. It helps reduce weak passwords so that attackers can't easily guess them. However, poorly designed or overly restrictive rules can also frustrate users or encourage predictable habits. It is like an organization’s rulebook for passcodes, including how strong they must be and what happens after too many wrong attempts."
   },
   {
     "id": "password-spraying",
@@ -998,8 +998,8 @@
   {
     "id": "payload",
     "term": "Payload",
-    "technical": "Code delivered and executed as part of an exploit.",
-    "layman": "The malicious code that runs after a vulnerability is exploited."
+    "technical": "The code or action delivered as part of an exploit or malware operation that performs the intended effect, such as opening access, executing commands, or stealing data.",
+    "layman": "The part of an attack that actually does the work once delivered. It is like the contents of a package after it has been successfully smuggled in."
   },
   {
     "id": "pci-dss",
@@ -1058,8 +1058,8 @@
   {
     "id": "primary-domain-controller-pdc",
     "term": "Primary Domain Controller (PDC)",
-    "technical": "A domain controller holding specific legacy single-master operations roles.",
-    "layman": "A domain controller responsible for certain critical tasks."
+    "technical": "In modern Active Directory, “Primary Domain Controller” usually refers to the Primary Domain Controller Emulator role, a specialized Domain Controller (DC) role that handles functions such as prioritizing password changes, acting as an authoritative time source, and supporting certain legacy compatibility needs. The original PDC concept comes from older Windows domain models.",
+    "layman": "A special domain controller role that handles a few important coordination jobs in the domain. While the name comes from an older Windows design, the role still helps modern environments stay consistent, especially for password updates and time synchronization. It is like the main office desk that certain urgent updates are sent to first so the rest of the building stays aligned."
   },
   {
     "id": "printer-bug-petitpotam",
@@ -1070,8 +1070,8 @@
   {
     "id": "privilege",
     "term": "Privilege",
-    "technical": "A specific right or permission assigned to a user or group.",
-    "layman": "A special permission that allows certain actions."
+    "technical": "A system-level or administrative right that allows a user, account, process, or service to perform specific actions, such as changing settings, managing accounts, or controlling resources.",
+    "layman": "A special level of authority that allows someone or something to perform powerful actions, such as changing settings, managing users, or controlling important parts of a system. It goes beyond simply opening one file or folder. It is like having the authority to not only join a meeting, but also approve who can join the meeting."
   },
   {
     "id": "privilege-escalation",
@@ -1083,7 +1083,7 @@
     "id": "proof-of-concept-poc",
     "term": "Proof of Concept (PoC)",
     "technical": "A minimal demonstration showing that a vulnerability is exploitable.",
-    "layman": "A sample demonstration proving a flaw can be exploited."
+    "layman": "A demonstration proving a flaw or weakness can be exploited."
   },
   {
     "id": "proxychains",
@@ -1100,8 +1100,8 @@
   {
     "id": "race-condition",
     "term": "Race Condition",
-    "technical": "A vulnerability caused by improper handling of concurrent operations.",
-    "layman": "A flaw caused when two processes interfere with each other."
+    "technical": "A flaw where the behavior of a program depends on the timing or order of operations, allowing unintended results when events happen in an unexpected sequence.",
+    "layman": "A flaw where the outcome depends on which action happens first, and the wrong order creates a problem. It is like two people rushing for the same control panel when one person is always supposed to get there first. However, when the other person gets their first, it causes an issue."
   },
   {
     "id": "rdp",
@@ -1112,8 +1112,8 @@
   {
     "id": "read-permission",
     "term": "Read Permission",
-    "technical": "Permission allowing the viewing of object contents.",
-    "layman": "The ability to see or view something."
+    "technical": "An access right that allows a user, account, process, or service to view or retrieve the contents, properties, or data of a resource without modifying it. It can apply to files, folders, databases, applications, systems, etc.",
+    "layman": "The ability to see or access information without changing it. It is useful when someone needs to view data but should not be able to edit or delete it. It is like being allowed to read a top secret document but not modify it."
   },
   {
     "id": "reconnaissance",
@@ -1130,26 +1130,26 @@
   {
     "id": "relative-identifier-rid",
     "term": "Relative Identifier (RID)",
-    "technical": "The portion of a SID that uniquely identifies an account within a domain.",
-    "layman": "The part of an ID that distinguishes one user from another."
+    "technical": "The unique domain-specific portion added to a domain SID to create the full SID.",
+    "layman": "The part of a SID that makes one account different from another within the same domain. It helps create a unique identity for each user, group, or computer. It is like the personal ID number added to a company branch code to create a full employee ID."
   },
   {
     "id": "remediation",
     "term": "Remediation",
-    "technical": "Recommended actions to correct or mitigate a vulnerability.",
-    "layman": "The steps needed to fix a security problem."
+    "technical": "Recommended actions to correct or mitigate a finding or general security issue.",
+    "layman": "Recommended actions to fix or prevent a finding or general security issue."
   },
   {
     "id": "remote-code-execution-rce",
     "term": "Remote Code Execution (RCE)",
-    "technical": "The ability to execute arbitrary code on a remote system.",
-    "layman": "A vulnerability that allows attackers to run their own code on a system."
+    "technical": "A vulnerability that allows an attacker to run code on a target system remotely.",
+    "layman": "A vulnerability where the attacker can make a system run their code remotely. It is one of the most serious kinds of flaws because it can let the attacker take direct action on the target."
   },
   {
     "id": "replication",
     "term": "Replication",
-    "technical": "The process of synchronizing Active Directory data between domain controllers.",
-    "layman": "Copying account data between servers to keep them updated."
+    "technical": "The process by which Active Directory copies directory data and updates between Domain Controller (DC) systems so they remain synchronized. While it improves consistency and availability, replication also means that malicious directory changes can spread across domain controllers if not detected.",
+    "layman": "The process by which Active Directory keeps multiple domain controllers updated with the same information. This helps the environment stay consistent and available, but it also means harmful changes can spread if attackers alter the directory. It is like making sure every security desk in the company has the latest records, whether those updates are helpful or malicious."
   },
   {
     "id": "residual-risk",
@@ -1172,8 +1172,8 @@
   {
     "id": "reverse-shell",
     "term": "Reverse Shell",
-    "technical": "A shell connection initiated from a compromised system to an attacker.",
-    "layman": "A remote command line where the victim connects back to the attacker."
+    "technical": "A shell session created when a target system initiates a connection back to an attacker-controlled host and provides command execution through that connection.",
+    "layman": "A remote connection achieved by making the victim machine connect outward to the attacker. It is like getting someone inside a building to call you and then follow your instructions over the line."
   },
   {
     "id": "risk",
@@ -1208,8 +1208,8 @@
   {
     "id": "rootkit",
     "term": "Rootkit",
-    "technical": "Malware designed to hide its presence and maintain privileged access.",
-    "layman": "Malware that hides deeply inside a system."
+    "technical": "Malware designed to be highly evasive and maintain persistence on the system.",
+    "layman": "Malware designed to hide it's own presence and the attacker's activities. It is like a compromised security guard that wipes the security records of their own malicious activity."
   },
   {
     "id": "rpc",
@@ -1256,8 +1256,8 @@
   {
     "id": "schema",
     "term": "Schema",
-    "technical": "The formal definition of object classes and attributes in Active Directory.",
-    "layman": "The blueprint that defines what types of objects and properties exist."
+    "technical": "The set of definitions that determines which object types and attributes can exist in Active Directory and how they are structured.",
+    "layman": "The set of rules that defines what kind of information Active Directory can store. It is like the company’s official record blueprint that says which types of files exist and which fields each file can contain, such as name, job title, or office number."
   },
   {
     "id": "scope-limitations",
@@ -1274,26 +1274,26 @@
   {
     "id": "security-governance",
     "term": "Security Governance",
-    "technical": "The framework of policies, roles, and processes for managing security.",
-    "layman": "The way an organization organizes and oversees its security efforts."
+    "technical": "The framework an organization uses to make security decisions, assign accountability, and ensure security efforts align with business needs.",
+    "layman": "The way an organization decides how security should be handled, who is responsible for it, and how those decisions are carried out."
   },
   {
     "id": "security-identifier-sid",
     "term": "Security Identifier (SID)",
-    "technical": "A unique value assigned to identify a security principal in Windows.",
-    "layman": "A unique ID number assigned to users or groups."
+    "technical": "A unique internal identifier assigned to a security principal such as a user, group, or computer and used in access control decisions.",
+    "layman": "The unique internal ID Active Directory uses to identify an account or group. This matters because names can change, but the SID is what the system actually relies on to track identity and access. It is like the employee number behind a badge, not just the name printed on it."
   },
   {
     "id": "security-posture",
     "term": "Security Posture",
-    "technical": "The overall security condition and resilience of an organization.",
-    "layman": "The general strength of an organization’s security defenses."
+    "technical": "The overall effectiveness of an organization's security controls, policies, and technologies in detecting, preventing, and remediating threats.",
+    "layman": "The overall strength of an organization's security in detecting threats, preventing security breaches, and fixing security issues."
   },
   {
     "id": "sensitive-data",
     "term": "Sensitive Data",
-    "technical": "Information that requires protection due to its value or confidentiality.",
-    "layman": "Important data that must be protected."
+    "technical": "Information that could cause harm, legal issues, or security impact if exposed, altered, or misused.",
+    "layman": "Information that could cause harm, legal issues, or security impact if exposed, altered, or misused."
   },
   {
     "id": "server-side-request-forgery-ssrf",
@@ -1310,20 +1310,20 @@
   {
     "id": "service-account",
     "term": "Service Account",
-    "technical": "A non-human account used by services or applications to run processes.",
-    "layman": "An account used by software instead of a person."
+    "technical": "An account used by an application, service, or scheduled task to authenticate and operate with assigned permissions. Service accounts are often targeted by attackers because they may have elevated access, broad reach, or passwords that are rarely changed.",
+    "layman": "A special account used by software or automated processes instead of a person. Attackers often target these accounts because they can be highly privileged and are sometimes managed less carefully than normal user accounts. It is like giving a company badge to a machine, except that badge may quietly unlock many important areas."
   },
   {
     "id": "service-principal-name-spn",
     "term": "Service Principal Name (SPN)",
-    "technical": "An identifier that associates a service instance with a service account.",
-    "layman": "A unique name used to link a service to an account."
+    "technical": "A unique identifier that associates a service instance with an account so Kerberos can locate and authenticate that service. Accounts with SPNs are frequently targeted in Kerberoasting because attackers can request service tickets tied to them.",
+    "layman": "A label that tells Active Directory which account belongs to a specific service, such as a web server or database. SPNs are important for Kerberos to work correctly, but they also matter to attackers because they help identify service accounts that may be worth targeting. It is like a company directory entry that tells everyone exactly which badge is tied to a certain office resource."
   },
   {
     "id": "session",
     "term": "Session",
-    "technical": "An active connection between an attacker and a compromised system.",
-    "layman": "A live remote connection to a compromised computer."
+    "technical": "An active connection between two systems or processes where data or commands are interchanged.",
+    "layman": "A live connection where activity is happening between systems or users. It is like an ongoing conversation line that stays open while work is being done."
   },
   {
     "id": "session-fixation",
@@ -1364,8 +1364,8 @@
   {
     "id": "shellcode",
     "term": "Shellcode",
-    "technical": "Low-level machine code used as part of an exploit payload.",
-    "layman": "Tiny pieces of code used to run malicious commands."
+    "technical": "Copmact machine-level code used as part of exploitation, often to start a shell, load another payload, or take control of execution flow.",
+    "layman": "A small chunk of code designed to run as part of an exploit."
   },
   {
     "id": "shodan",
@@ -1454,20 +1454,20 @@
   {
     "id": "summary-of-findings",
     "term": "Summary of Findings",
-    "technical": "A consolidated overview of all identified security findings.",
-    "layman": "A summary of all discovered security issues."
+    "technical": "A condensed section that highlights the main security findings identified during a security test.",
+    "layman": "A short overview of the main security problems (findings) that were found."
   },
   {
     "id": "system-access-control-list-sacl",
     "term": "System Access Control List (SACL)",
-    "technical": "The portion of an ACL used to define auditing rules.",
-    "layman": "The part of a permissions list that controls logging of actions."
+    "technical": "A type of Access Control List (ACL) that contains the Access Control Entry (ACE) rules used to specify which access attempts on an object should be logged for auditing. It is distinct because it does not grant or deny access; instead, it defines what activity should be recorded.",
+    "layman": "A type of access control list that tells the system which actions should be recorded in security logs. Unlike the rules that decide who can use something, its role is to track important activity for monitoring and investigation. It is like configuring security cameras and alarms to record when certain doors are opened, certain rooms are entered, or certain people try to get in."
   },
   {
     "id": "sysvol",
     "term": "SYSVOL",
-    "technical": "A shared folder on domain controllers storing group policy and login scripts.",
-    "layman": "A central folder where domain-wide settings are stored."
+    "technical": "A shared folder on domain controllers that stores public domain files such as logon scripts and Group Policy data and is replicated across domain controllers. Attackers sometimes find credentials in these shared folders.",
+    "layman": "A shared folder on domain controllers that stores important domain-wide files. It helps make sure scripts and policy files are available everywhere, but changes to it can affect many systems at once. It is like a company bulletin room whose posted instructions are copied to every security desk. Sometimes the posted instructions might contain credentials that attackers can leverage."
   },
   {
     "id": "telnet",
@@ -1490,26 +1490,26 @@
   {
     "id": "threat-actor",
     "term": "Threat Actor",
-    "technical": "An individual or group responsible for conducting malicious activities.",
-    "layman": "A person or group carrying out an attack."
+    "technical": "The person, group, or organization responsible for carrying out malicious or harmful cyber activity.",
+    "layman": "The person, group, or organization responsible for carrying out malicious or harmful cyber activity."
   },
   {
     "id": "ticket-granting-ticket-tgt",
     "term": "Ticket-Granting Ticket (TGT)",
-    "technical": "A Kerberos ticket used to request service tickets.",
-    "layman": "A digital ticket that allows you to request access to services."
+    "technical": "A Kerberos ticket issued after successful Authentication that allows a user or service to request service tickets without re-entering credentials. Because it represents a successfully authenticated identity, a stolen TGT can be highly valuable to an attacker.",
+    "layman": "A temporary Kerberos ticket that proves a successful login and can be used to request access to other services. This makes access more efficient for legitimate users, but it also means an attacker who steals one may be able to impersonate that user. It is like receiving a master pass from the front desk that works well for you, but would also be dangerous in the wrong hands."
   },
   {
     "id": "trojan",
     "term": "Trojan",
     "technical": "Malware disguised as legitimate software.",
-    "layman": "Malicious software that pretends to be harmless."
+    "layman": "Malware that pretends to be harmless."
   },
   {
     "id": "trust",
     "term": "Trust",
-    "technical": "A relationship enabling authentication between different domains.",
-    "layman": "A connection that allows users in one domain to access another."
+    "technical": "A relationship between domains or forests that allows identities from one environment to be authenticated and authorized in another according to defined rules. While trusts improve resource sharing, they can also expand the paths an attacker may use to move between environments.",
+    "layman": "An Active Directory formal relationship that lets one domain recognize and accept accounts from another domain. This can make collaboration easier, but it can also create more opportunities for attackers to move between connected environments. It is like two office buildings agreeing to honor each other’s badges, which is convenient but also increases the importance of securing both buildings."
   },
   {
     "id": "trusted-domain-object-tdo",
@@ -1532,14 +1532,14 @@
   {
     "id": "use-after-free",
     "term": "Use-After-Free",
-    "technical": "A vulnerability caused by accessing memory after it has been freed.",
-    "layman": "Using memory that has already been released."
+    "technical": "A memory corruption flaw where a program continues using memory after that memory has already been released.",
+    "layman": "A memory corruption flaw where a program tries to use something after it has already thrown that storage spacea away. It is like assigning a meeting room to a meeting when the meeting room no longer exists."
   },
   {
     "id": "user-principal-name-upn",
     "term": "User Principal Name (UPN)",
-    "technical": "A user’s login name formatted similarly to an email address.",
-    "layman": "A username written like an email address."
+    "technical": "A user logon name, usually in an email-like format, that uniquely identifies an account in Active Directory.",
+    "layman": "A user’s formal login name, often written in a format that looks like an email address. It gives users a consistent way to sign in and identify their account. It is like the official username listed on an employee’s company record."
   },
   {
     "id": "vulnerability-assessment",
@@ -1610,8 +1610,8 @@
   {
     "id": "write-permission",
     "term": "Write Permission",
-    "technical": "Permission allowing modification of object contents.",
-    "layman": "The ability to change or edit something."
+    "technical": "An access right that allows a user, account, process, or service to create, modify, update, or overwrite the contents or properties of a resource. It can apply to files, folders, databases, applications, systems, etc.",
+    "layman": "The ability being to change information or add new data. It is useful when someone needs to write to something without being able to fully view what is already there. It is like being allowed to submit forms into a box or add entries to a record without being allowed to read every item already inside."
   },
   {
     "id": "x11",
@@ -1641,6 +1641,6 @@
     "id": "zero-day",
     "term": "Zero-Day",
     "technical": "A previously unknown vulnerability without an available patch.",
-    "layman": "A security flaw that has not yet been fixed."
+    "layman": "A security flaw that defenders have little or no warning about because it is not yet patched or publicly known. It is like a hidden entrance that the owner doesn't knows exists. It is why defense-in-depth is an important security principle to follow."
   }
 ]
