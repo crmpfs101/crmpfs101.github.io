@@ -3,7 +3,7 @@
     "id": "access-control-entry-ace",
     "term": "Access Control Entry (ACE)",
     "technical": "A single rule within an <span class=\"glossary-term--ref\" data-id=\"access-control-list-acl\">Access Control List (ACL)</span> that grants, denies, or audits a specific type of access for a particular principal.",
-    "layman": "An individual rule inside an <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">ACL</span>. Each ACE defines one access decision for one user or group. It is like one line on a meeting participant list, where each line or ACE determines a specific person able to join the meeting."
+    "layman": "An individual rule inside an <span class=\"glossary-term--ref\" data-id=\"access-control-list-acl\">ACL</span>. Each ACE defines one access decision for one user or group. It is like one line on a meeting participant list, where each line or ACE determines a specific person able to join the meeting."
   },
   {
     "id": "access-control-list-acl",
@@ -74,8 +74,8 @@
   {
     "id": "beaconing",
     "term": "Beaconing",
-    "technical": "Periodic communication from a compromised host to an attacker-controlled system (<span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">C2</span>) to announce that it is active and ready to receive instructions.",
-    "layman": "When infected software regularly checks in with an attacker-controlled infrastructure (<span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">C2</span>). It is like a stolen device quietly sending “I’m here” messages at set intervals."
+    "technical": "Periodic communication from a compromised host to an attacker-controlled system (<span class=\"glossary-term--ref\" data-id=\"command-and-control-c2\">C2</span>) to announce that it is active and ready to receive instructions.",
+    "layman": "When infected software regularly checks in with an attacker-controlled infrastructure (<span class=\"glossary-term--ref\" data-id=\"command-and-control-c2\">C2</span>). It is like a stolen device quietly sending “I’m here” messages at set intervals."
   },
   {
     "id": "bind-shell",
@@ -110,7 +110,7 @@
   {
     "id": "bloodyad",
     "term": "bloodyAD",
-    "technical": "An <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> abuse tool that modifies <span class=\"glossary-term--ref\" data-id=\"active-directory\">AD</span> objects via <span class=\"glossary-term--ref\" data-id=\"ldap\">LDAP</span> for <span class=\"glossary-term--ref\" data-id=\"privilege-escalation\">privilege escalation</span>. Common uses include modifying <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">ACLs</span>, group memberships, or delegation settings.",
+    "technical": "An <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> abuse tool that modifies <span class=\"glossary-term--ref\" data-id=\"active-directory\">AD</span> objects via <span class=\"glossary-term--ref\" data-id=\"ldap\">LDAP</span> for <span class=\"glossary-term--ref\" data-id=\"privilege-escalation\">privilege escalation</span>. Common uses include modifying <span class=\"glossary-term--ref\" data-id=\"access-control-list-acl\">ACLs</span>, group memberships, or delegation settings.",
     "layman": "A tool that changes configurations inside <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span>. It can be used to alter who owns accounts, who has permissions over other users or groups, and what actions they’re allowed to perform."
   },
   {
@@ -315,7 +315,7 @@
     "id": "discretionary-access-control-list-dacl",
     "term": "Discretionary Access Control List (DACL)",
     "technical": "A type of <span class=\"glossary-term--ref\" data-id=\"access-control-list-acl\">Access Control List (ACL)</span> that contains the <span class=\"glossary-term--ref\" data-id=\"access-control-entry-ace\">Access Control Entry (ACE)</span> rules used to allow or deny access to an object. It is distinct because it is the ACL specifically used to enforce access decisions, whereas other ACL types, such as a <span class=\"glossary-term--ref\" data-id=\"system-access-control-list-sacl\">System Access Control List (SACL)</span>, are used for auditing.",
-    "layman": "A type of access control list that actually decides who can or cannot use something. It is different from other kinds of <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">ACL</span>s because its job is to enforce access, not just record activity. It is like the section of a building’s access list that determines whose badge opens the door and whose does not."
+    "layman": "A type of access control list that actually decides who can or cannot use something. It is different from other kinds of <span class=\"glossary-term--ref\" data-id=\"access-control-list-acl\">ACL</span>s because its job is to enforce access, not just record activity. It is like the section of a building’s access list that determines whose badge opens the door and whose does not."
   },
   {
     "id": "distinguished-name-dn",
@@ -512,7 +512,7 @@
   {
     "id": "global-catalog-gc",
     "term": "Global Catalog (GC)",
-    "technical": "A feature on a <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">Domain Controller</span> that stores a partial, searchable copy of objects from across an <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> <span class=\"glossary-term--ref\" data-id=\"forest\">forest</span>, allowing users and applications to find objects without knowing which <span class=\"glossary-term--ref\" data-id=\"domain\">domain</span> contains them.",
+    "technical": "A feature on a <span class=\"glossary-term--ref\" data-id=\"domain-controller-dc\">Domain Controller</span> that stores a partial, searchable copy of objects from across an <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> <span class=\"glossary-term--ref\" data-id=\"forest\">forest</span>, allowing users and applications to find objects without knowing which <span class=\"glossary-term--ref\" data-id=\"domain\">domain</span> contains them.",
     "layman": "A feature that helps <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> quickly search for users, groups, and other resources across connected domains. It is like a company-wide directory that lists key details for people and resources from every office, even if their full records are stored elsewhere."
   },
   {
@@ -560,7 +560,7 @@
   {
     "id": "group-policy-object-gpo",
     "term": "Group Policy Object (GPO)",
-    "technical": "A collection of <span class=\"glossary-term--ref\" data-id=\"group-policy\">Group Policy</span> settings that can be linked to sites, <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">domains</span>, or <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">OU</span>s to apply configuration and security rules. Because GPOs can affect many systems, attackers and defenders alike pay close attention to who can modify them.",
+    "technical": "A collection of <span class=\"glossary-term--ref\" data-id=\"group-policy\">Group Policy</span> settings that can be linked to sites, <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">domains</span>, or <span class=\"glossary-term--ref\" data-id=\"organizational-unit-ou\">OU</span>s to apply configuration and security rules. Because GPOs can affect many systems, attackers and defenders alike pay close attention to who can modify them.",
     "layman": "A collection of settings to enforce <span class=\"glossary-term--ref\" data-id=\"group-policy\">Group Policy</span> in a specific part of the environment. This makes management easier, but it also means a compromised or misused GPO can change many systems quickly. It is like a policy packet sent to a department or office branch that can shape how everyone there operates."
   },
   {
@@ -680,7 +680,7 @@
   {
     "id": "kerberoasting",
     "term": "Kerberoasting",
-    "technical": "An attack technique in which an attacker requests <span class=\"glossary-term--ref\" data-id=\"kerberos-2\">Kerberos</span> service tickets for accounts with <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">SPN</span> values and attempts to crack the ticket data offline to recover account credentials. It is especially effective against <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">service accounts</span> with weak or long-lived passwords.",
+    "technical": "An attack technique in which an attacker requests <span class=\"glossary-term--ref\" data-id=\"kerberos-2\">Kerberos</span> service tickets for accounts with <span class=\"glossary-term--ref\" data-id=\"service-principal-name-spn\">SPN</span> values and attempts to crack the ticket data offline to recover account credentials. It is especially effective against <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">service accounts</span> with weak or long-lived passwords.",
     "layman": "An attack that targets certain <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">service accounts</span> in <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> by collecting <span class=\"glossary-term--ref\" data-id=\"kerberos-2\">Kerberos</span> ticket data and trying to crack it offline. It is dangerous because attackers can test guesses privately without repeatedly interacting with the target system, especially if the account has a weak password. It is like copying encrypted service badge data and testing guesses in private until one works."
   },
   {
@@ -1016,8 +1016,8 @@
   {
     "id": "penetration-test",
     "term": "Penetration Test",
-    "technical": "A controlled security assessment in which security testers not only identify but also exploit vulnerabilities in systems or products to demonstrate the potential impact of real attacks. Penetration tests are conducted within a defined scope and are governed by <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">rules of engagement</span> agreed upon by the testing organization and the client.",
-    "layman": "A controlled security test where specialists attempt to break into systems or products in the same way a real attacker might. Before the test begins, the organization being tested and the security team agree on the <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">rules of engagement</span>."
+    "technical": "A controlled security assessment in which security testers not only identify but also exploit vulnerabilities in systems or products to demonstrate the potential impact of real attacks. Penetration tests are conducted within a defined scope and are governed by <span class=\"glossary-term--ref\" data-id=\"rules-of-engagement-roe\">rules of engagement</span> agreed upon by the testing organization and the client.",
+    "layman": "A controlled security test where specialists attempt to break into systems or products in the same way a real attacker might. Before the test begins, the organization being tested and the security team agree on the <span class=\"glossary-term--ref\" data-id=\"rules-of-engagement-roe\">rules of engagement</span>."
   },
   {
     "id": "persistence",
@@ -1059,7 +1059,7 @@
     "id": "primary-domain-controller-pdc",
     "term": "Primary Domain Controller (PDC)",
     "technical": "In modern <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span>, “Primary Domain Controller” usually refers to the Primary Domain Controller Emulator role, a specialized <span class=\"glossary-term--ref\" data-id=\"domain-controller-dc\">Domain Controller (DC)</span> role that handles functions such as prioritizing password changes, acting as an authoritative time source, and supporting certain legacy compatibility needs. The original PDC concept comes from older Windows domain models.",
-    "layman": "A special <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">domain controller</span> role that handles a few important coordination jobs in the domain. While the name comes from an older Windows design, the role still helps modern environments stay consistent, especially for password updates and time synchronization. It is like the main office desk that certain urgent updates are sent to first so the rest of the building stays aligned."
+    "layman": "A special <span class=\"glossary-term--ref\" data-id=\"domain-controller-dc\">domain controller</span> role that handles a few important coordination jobs in the domain. While the name comes from an older Windows design, the role still helps modern environments stay consistent, especially for password updates and time synchronization. It is like the main office desk that certain urgent updates are sent to first so the rest of the building stays aligned."
   },
   {
     "id": "printer-bug-petitpotam",
@@ -1130,8 +1130,8 @@
   {
     "id": "relative-identifier-rid",
     "term": "Relative Identifier (RID)",
-    "technical": "The unique domain-specific portion added to a <span class=\"glossary-term--ref\" data-id=\"domain\">domain</span> <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">SID</span> to create the full <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">SID</span>.",
-    "layman": "The part of a <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">SID</span> that makes one account different from another within the same <span class=\"glossary-term--ref\" data-id=\"domain\">domain</span>. It helps create a unique identity for each user, group, or computer. It is like the personal ID number added to a company branch code to create a full employee ID."
+    "technical": "The unique domain-specific portion added to a <span class=\"glossary-term--ref\" data-id=\"domain\">domain</span> <span class=\"glossary-term--ref\" data-id=\"security-identifier-sid\">SID</span> to create the full <span class=\"glossary-term--ref\" data-id=\"security-identifier-sid\">SID</span>.",
+    "layman": "The part of a <span class=\"glossary-term--ref\" data-id=\"security-identifier-sid\">SID</span> that makes one account different from another within the same <span class=\"glossary-term--ref\" data-id=\"domain\">domain</span>. It helps create a unique identity for each user, group, or computer. It is like the personal ID number added to a company branch code to create a full employee ID."
   },
   {
     "id": "remediation",
@@ -1196,8 +1196,8 @@
   {
     "id": "risk-score",
     "term": "Risk Score",
-    "technical": "A numerical value representing the calculated level of <span class=\"glossary-term--ref\" data-id=\"risk\">risk</span>. It is derived from formulas combining factors like <span class=\"glossary-term--ref\" data-id=\"likelihood\">likelihood</span> and <span class=\"glossary-term--ref\" data-id=\"impact\">impact</span>. The <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">CVSS</span> is a common system that calculates risk scores.",
-    "layman": "A numerical value representing the calculated level of <span class=\"glossary-term--ref\" data-id=\"risk\">risk</span>. It is derived from formulas combining factors like <span class=\"glossary-term--ref\" data-id=\"likelihood\">likelihood</span> and <span class=\"glossary-term--ref\" data-id=\"impact\">impact</span>. The <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">CVSS</span> is a common system that calculates risk scores."
+    "technical": "A numerical value representing the calculated level of <span class=\"glossary-term--ref\" data-id=\"risk\">risk</span>. It is derived from formulas combining factors like <span class=\"glossary-term--ref\" data-id=\"likelihood\">likelihood</span> and <span class=\"glossary-term--ref\" data-id=\"impact\">impact</span>. The <span class=\"glossary-term--ref\" data-id=\"cvss-common-vulnerability-scoring-system\">CVSS</span> is a common system that calculates risk scores.",
+    "layman": "A numerical value representing the calculated level of <span class=\"glossary-term--ref\" data-id=\"risk\">risk</span>. It is derived from formulas combining factors like <span class=\"glossary-term--ref\" data-id=\"likelihood\">likelihood</span> and <span class=\"glossary-term--ref\" data-id=\"impact\">impact</span>. The <span class=\"glossary-term--ref\" data-id=\"cvss-common-vulnerability-scoring-system\">CVSS</span> is a common system that calculates risk scores."
   },
   {
     "id": "risk-severity",
@@ -1466,8 +1466,8 @@
   {
     "id": "sysvol",
     "term": "SYSVOL",
-    "technical": "A shared folder on <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">domain controllers</span> that stores public domain files such as logon scripts and <span class=\"glossary-term--ref\" data-id=\"group-policy\">Group Policy</span> data and is replicated across <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">domain controllers</span>. Attackers sometimes find credentials in these shared folders.",
-    "layman": "A shared folder on <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">domain controllers</span> that stores important <span class=\"glossary-term--ref\" data-id=\"domain\">domain</span>-wide files. It helps make sure scripts and policy files are available everywhere, but changes to it can affect many systems at once. It is like a company bulletin room whose posted instructions are copied to every security desk. Sometimes the posted instructions might contain credentials that attackers can leverage."
+    "technical": "A shared folder on <span class=\"glossary-term--ref\" data-id=\"domain-controller-dc\">domain controllers</span> that stores public domain files such as logon scripts and <span class=\"glossary-term--ref\" data-id=\"group-policy\">Group Policy</span> data and is replicated across <span class=\"glossary-term--ref\" data-id=\"domain-controller-dc\">domain controllers</span>. Attackers sometimes find credentials in these shared folders.",
+    "layman": "A shared folder on <span class=\"glossary-term--ref\" data-id=\"domain-controller-dc\">domain controllers</span> that stores important <span class=\"glossary-term--ref\" data-id=\"domain\">domain</span>-wide files. It helps make sure scripts and policy files are available everywhere, but changes to it can affect many systems at once. It is like a company bulletin room whose posted instructions are copied to every security desk. Sometimes the posted instructions might contain credentials that attackers can leverage."
   },
   {
     "id": "telnet",
@@ -1635,7 +1635,7 @@
     "id": "xsstrike",
     "term": "XSStrike",
     "technical": "A <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">Cross-Site Scripting (XSS)</span> detection and exploitation tool.",
-    "layman": "A tool that scans websites for places where attackers can inject malicious code and perform <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">XSS</span>."
+    "layman": "A tool that scans websites for places where attackers can inject malicious code and perform <span class=\"glossary-term--ref\" data-id=\"cross-site-scripting-xss\">XSS</span>."
   },
   {
     "id": "zero-day",

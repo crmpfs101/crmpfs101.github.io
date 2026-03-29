@@ -58,7 +58,7 @@ permalink: /glossary/
 </p>
 
 <p>
-  Participants can view sample reports and complete a short questionnaire.
+  Participants would view sample reports and complete a short questionnaire.
 </p>
 
 <div class="glossary-download">

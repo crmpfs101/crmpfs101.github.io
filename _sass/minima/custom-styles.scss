@@ -1,4 +1,11 @@
 /* ============================
+   Scrolling Behavior
+   ============================ */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ============================
    Heading color gradient
    h1 (darkest) → h6 (lightest)
    ============================ */
@@ -195,3 +202,30 @@
     color: var(--kali-fg);
   }
   
+/* Variables */
+.language-bash .highlight .nv,
+.language-bash .highlight .vc,
+.language-bash .highlight .vg,
+.language-bash .highlight .vi,
+.language-sh .highlight .nv,
+.language-sh .highlight .vc,
+.language-sh .highlight .vg,
+.language-sh .highlight .vi,
+.language-shell .highlight .nv,
+.language-shell .highlight .vc,
+.language-shell .highlight .vg,
+.language-shell .highlight .vi,
+.language-zsh .highlight .nv,
+.language-zsh .highlight .vc,
+.language-zsh .highlight .vg,
+.language-zsh .highlight .vi,
+.language-console .highlight .nv,
+.language-console .highlight .vc,
+.language-console .highlight .vg,
+.language-console .highlight .vi,
+.language-terminal .highlight .nv,
+.language-terminal .highlight .vc,
+.language-terminal .highlight .vg,
+.language-terminal .highlight .vi {
+  color: var(--kali-blue) !important;
+}

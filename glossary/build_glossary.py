@@ -134,17 +134,39 @@ def read_excel_entries(xlsx_path: str) -> List[Entry]:
 
 
 def build_lookup(entries: List[Entry]) -> Dict[str, Entry]:
-    """Lookup by normalized term string."""
+    """
+    Lookup by normalized term string.
+
+    Also adds aliases for parenthetical abbreviations, e.g.
+    "Command and Control (C2)" -> lookup works for both:
+      - "Command and Control (C2)"
+      - "C2"
+    """
     lut: Dict[str, Entry] = {}
+
+    paren_alias_re = re.compile(r"^(.*?)\s*\(([^()]+)\)\s*$")
+
     for e in entries:
-        lut[normalize_term_key(e.term)] = e
+        full_key = normalize_term_key(e.term)
+        lut[full_key] = e
+
+        match = paren_alias_re.match(e.term.strip())
+        if match:
+            base_term = match.group(1).strip()
+            alias = match.group(2).strip()
+
+            if base_term:
+                lut.setdefault(normalize_term_key(base_term), e)
+            if alias:
+                lut.setdefault(normalize_term_key(alias), e)
+
     return lut
 
 
 def replace_refs_processed(text: str, lut: Dict[str, Entry]) -> str:
     """
-    [[target]] -> <span ... data-id="id">target</span>
-    [[target|display]] -> <span ... data-id="id">display</span>
+    [[target]] -> <span class="glossary-term--ref" data-id="id">target</span>
+    [[target|display]] -> <span class="glossary-term--ref" data-id="id">display</span>
     """
     if not text:
         return ""
@@ -159,11 +181,14 @@ def replace_refs_processed(text: str, lut: Dict[str, Entry]) -> str:
 
         entry = lut.get(key)
         if entry is None:
-            # keep visible text; mark missing
-            return f'<span class="glossary-term--ref glossary-term--missing" data-id="">{visible_esc}</span>'
+            return (
+                f'<span class="glossary-term--ref glossary-term--missing" data-id="">'
+                f"{visible_esc}</span>"
+            )
 
         return (
-            f'<span class="glossary-term--ref" data-id="{html.escape(entry.id)}">'
+            f'<span class="glossary-term--ref" '
+            f'data-id="{html.escape(entry.id)}">'
             f"{visible_esc}</span>"
         )
 

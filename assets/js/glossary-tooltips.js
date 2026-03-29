@@ -18,6 +18,8 @@
   tooltip.style.display = "none";
   document.body.appendChild(tooltip);
 
+  const tooltipToggleBtn = document.getElementById("tooltipToggle");
+
   const escapeHtml = (value) =>
     String(value ?? "")
       .replaceAll("&", "&amp;")
@@ -25,6 +27,63 @@
       .replaceAll(">", "&gt;")
       .replaceAll('"', "&quot;")
       .replaceAll("'", "&#39;");
+
+  function clearHoverTimer() {
+    if (hoverTimer) {
+      clearTimeout(hoverTimer);
+      hoverTimer = null;
+    }
+    hoverAction = null;
+  }
+
+  function showTooltip() {
+    clearHoverTimer();
+    tooltip.style.display = "block";
+  }
+
+  function hideTooltip() {
+    clearHoverTimer();
+    tooltip.style.display = "none";
+    currentAnchor = null;
+  }
+
+  function tooltipsEnabled() {
+    if (!tooltipToggleBtn) return true;
+
+    const state = tooltipToggleBtn.dataset.tooltipState;
+    if (state === "on") return true;
+    if (state === "off") return false;
+
+    return tooltipToggleBtn.getAttribute("aria-pressed") === "true";
+  }
+
+  function updateTooltipToggle(enabled) {
+    if (!tooltipToggleBtn) return;
+
+    tooltipToggleBtn.dataset.tooltipState = enabled ? "on" : "off";
+    tooltipToggleBtn.setAttribute("aria-pressed", String(enabled));
+    tooltipToggleBtn.textContent = enabled ? "Tooltips: On" : "Tooltips: Off";
+    document.documentElement.dataset.tooltips = enabled ? "on" : "off";
+
+    if (!enabled) {
+      hideTooltip();
+    }
+  }
+
+  function initTooltipToggle() {
+    if (!tooltipToggleBtn) {
+      document.documentElement.dataset.tooltips = "on";
+      return;
+    }
+
+    const defaultState = (tooltipToggleBtn.dataset.tooltipDefault || "off").toLowerCase();
+    const enabled = defaultState === "on";
+    updateTooltipToggle(enabled);
+
+    tooltipToggleBtn.addEventListener("click", () => {
+      updateTooltipToggle(!tooltipsEnabled());
+    });
+  }
 
   async function loadGlossary() {
     if (glossaryMap) return glossaryMap;
@@ -65,14 +124,6 @@
     return glossaryPromise;
   }
 
-  function clearHoverTimer() {
-    if (hoverTimer) {
-      clearTimeout(hoverTimer);
-      hoverTimer = null;
-    }
-    hoverAction = null;
-  }
-
   function setTooltipContent(entry) {
     const technical = entry.technical?.trim() || "(Not defined)";
     const layman = entry.layman?.trim() || "(Not defined)";
@@ -88,17 +139,6 @@
         ${escapeHtml(layman)}
       </div>
     `;
-  }
-
-  function showTooltip() {
-    clearHoverTimer();
-    tooltip.style.display = "block";
-  }
-
-  function hideTooltip() {
-    clearHoverTimer();
-    tooltip.style.display = "none";
-    currentAnchor = null;
   }
 
   function positionTooltip(anchor) {
@@ -135,6 +175,8 @@
   }
 
   async function showForReference(ref) {
+    if (!tooltipsEnabled()) return;
+
     const id = ref?.dataset?.id;
     if (!id) return;
 
@@ -153,6 +195,8 @@
   }
 
   document.addEventListener("pointerover", (event) => {
+    if (!tooltipsEnabled()) return;
+
     const ref = event.target.closest?.(".glossary-term--ref");
     if (!ref || ref.classList.contains("glossary-term--missing")) return;
     if (currentAnchor === ref) return;
@@ -161,7 +205,7 @@
     hoverAction = "show";
 
     hoverTimer = setTimeout(() => {
-      if (hoverAction === "show") {
+      if (hoverAction === "show" && tooltipsEnabled()) {
         showForReference(ref);
       }
     }, SHOW_DELAY);
@@ -204,7 +248,8 @@
   document.addEventListener("pointerdown", (event) => {
     if (
       event.target.closest?.(".glossary-term--ref") ||
-      event.target.closest?.(".glossary-tooltip")
+      event.target.closest?.(".glossary-tooltip") ||
+      event.target.closest?.("#tooltipToggle")
     ) {
       return;
     }
@@ -217,9 +262,32 @@
     }
   });
 
+  document.addEventListener("click", (event) => {
+    const ref = event.target.closest?.(".glossary-term--ref");
+    if (!ref || ref.classList.contains("glossary-term--missing")) return;
+
+    const id = ref.dataset.id;
+    if (!id) return;
+
+    const url = `{{ '/glossary/' | relative_url }}#${encodeURIComponent(id)}`;
+
+    // Let modifier-click behavior open in new tab/window
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
+      window.open(url, "_blank", "noopener");
+      return;
+    }
+
+    window.location.href = url;
+  });
+
   window.addEventListener(
     "scroll",
     () => {
+      if (!tooltipsEnabled()) {
+        hideTooltip();
+        return;
+      }
+
       if (currentAnchor && tooltip.style.display !== "none") {
         positionTooltip(currentAnchor);
       }
@@ -230,12 +298,19 @@
   window.addEventListener(
     "resize",
     () => {
+      if (!tooltipsEnabled()) {
+        hideTooltip();
+        return;
+      }
+
       if (currentAnchor && tooltip.style.display !== "none") {
         positionTooltip(currentAnchor);
       }
     },
     { passive: true }
   );
+
+  initTooltipToggle();
 
   if ("requestIdleCallback" in window) {
     window.requestIdleCallback(() => {

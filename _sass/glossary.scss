@@ -152,9 +152,14 @@
   
   /* Tooltip styling */
   .glossary-term--ref {
-    cursor: help;
-    text-decoration: underline dotted;
-    text-underline-offset: 2px;
+    cursor: pointer;
+    color: #b9a3ff;
+    text-decoration: none;
+    transition: color 160ms ease, opacity 160ms ease;
+  }
+  
+  .glossary-term--ref:hover {
+    color: #d6ccff;
   }
   
   .glossary-tooltip {
@@ -177,6 +182,51 @@
     font-weight: 700;
     margin-bottom: 0.5rem;
     color: #f0f0f0;
+  }
+
+  /* ===== Evaluation tooltip toggle ===== */
+  .tooltip-toggle-btn {
+    height: 2.35rem;
+    line-height: 1.2;
+    border-radius: 12px;
+
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: rgba(0, 0, 0, 0.22);
+    color: inherit;
+
+    padding: 0 0.85rem;
+    outline: none;
+    cursor: pointer;
+
+    transition: border-color 160ms ease, box-shadow 160ms ease, background 160ms ease;
+  }
+
+  .tooltip-toggle-btn:hover {
+    border-color: rgba(255, 255, 255, 0.22);
+    background: rgba(0, 0, 0, 0.28);
+  }
+
+  .tooltip-toggle-btn:focus-visible,
+  .tooltip-toggle-btn:focus {
+    border-color: rgba(167, 139, 250, 0.65);
+    box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.22);
+  }
+
+  /* Optional visual state */
+  .tooltip-toggle-btn[aria-pressed="true"] {
+    border-color: rgba(167, 139, 250, 0.55);
+    background: rgba(167, 139, 250, 0.12);
+  }
+
+  @media (max-width: 720px) {
+    .eval-controls {
+      align-items: stretch;
+      flex-wrap: wrap;
+    }
+
+    .tooltip-toggle-btn {
+      width: 100%;
+    }
   }
   
   /* Tooltip follows mode */
