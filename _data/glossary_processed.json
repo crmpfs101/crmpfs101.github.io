@@ -1,5 +1,11 @@
 [
   {
+    "id": "access-control",
+    "term": "Access Control",
+    "technical": "The mechanisms and policies that determine who or what is allowed to access resources and what actions they can perform.",
+    "layman": "The rules that decide who can access something and what they are allowed to do."
+  },
+  {
     "id": "access-control-entry-ace",
     "term": "Access Control Entry (ACE)",
     "technical": "A single rule within an <span class=\"glossary-term--ref\" data-id=\"access-control-list-acl\">Access Control List (ACL)</span> that grants, denies, or audits a specific type of access for a particular principal.",
@@ -18,10 +24,34 @@
     "layman": "A system that helps an organization manage users, computers, and access rules across its network. It is like the company’s central office directory and badge-access system combined."
   },
   {
+    "id": "active-directory-certificate-services-ad-cs",
+    "term": "Active Directory Certificate Services (AD CS)",
+    "technical": "A Windows Server role that provides certificate issuance, management, and related public key infrastructure services for Active Directory environments.",
+    "layman": "A Windows service that issues and manages digital certificates for an organization."
+  },
+  {
+    "id": "address-resolution-protocol-arp",
+    "term": "Address Resolution Protocol (ARP)",
+    "technical": "A protocol used on local networks to map IP addresses to MAC addresses.",
+    "layman": "A local network method that helps devices figure out which physical device matches a network address."
+  },
+  {
+    "id": "administrative-privileges",
+    "term": "Administrative Privileges",
+    "technical": "Elevated permissions that allow a user or process to manage system settings, users, services, or security controls.",
+    "layman": "High-level access that allows someone to make important changes to a system."
+  },
+  {
     "id": "agent",
     "term": "Agent",
     "technical": "A software component running on a compromised host that communicates with an attacker-controlled system ([[C2])) and performs assigned tasks.",
     "layman": "A small program on a hacked device that carries out commands for the attacker. It is like a helper inside the system that takes orders and reports back."
+  },
+  {
+    "id": "application",
+    "term": "Application",
+    "technical": "A software program or service designed to perform specific tasks for users or other systems.",
+    "layman": "A piece of software that helps users or systems perform a specific job."
   },
   {
     "id": "aquatone",
@@ -46,6 +76,12 @@
     "term": "Attack Path",
     "technical": "A chain of steps an attacker takes to capture the target asset. This might involve multiple vulnerabilities chained together to reach the final desired asset, such as achieving domain administrator.",
     "layman": "A chain of steps an attacker takes to the target asset. This might involve multiple vulnerabilities chained together to reach the final desired asset, such as getting the credentials to the most privileged administrative account."
+  },
+  {
+    "id": "attack-surface",
+    "term": "Attack Surface",
+    "technical": "The total set of locations, services, interfaces, and entry points through which a system or organization can be targeted.",
+    "layman": "All of the places where an attacker might try to interact with or break into a system."
   },
   {
     "id": "attribute",
@@ -122,8 +158,8 @@
   {
     "id": "brute-force",
     "term": "Brute Force",
-    "technical": "An attack attempting many password combinations.",
-    "layman": "Trying many password guesses."
+    "technical": "An attack that repeatedly tries many possible values until the correct one is found. The attack is commonly associated with password guessing but can also be used for guessing website URLs or usernames.",
+    "layman": "An attack technique where repeated guessing is used until the correct answer is found. It could be used to guess passwords, hidden website pages, or usernames."
   },
   {
     "id": "buffer-overflow",
@@ -140,14 +176,20 @@
   {
     "id": "cache-poisoning",
     "term": "Cache Poisoning",
-    "technical": "An attack manipulating cached data to serve malicious content.",
-    "layman": "Tricking systems into storing fake content."
+    "technical": "An attack that causes a cache to store malicious or incorrect content so later requests receive the wrong response. An example would be poisoning DNS cached records.",
+    "layman": "An attack where an attacker corrupts stored content so other users are served false or harmful data."
   },
   {
     "id": "callback",
     "term": "Callback",
     "technical": "A connection initiated by compromised code back to an attacker-controlled system ([[C2])), often to establish remote access or continue execution.",
     "layman": "When malware or exploited code reaches back out to the attacker after it runs. It is like a compromised machine making a secret return phone call."
+  },
+  {
+    "id": "certipy",
+    "term": "Certipy",
+    "technical": "A tool used to enumerate and abuse Active Directory Certificate Services, including certificate templates and certificate-based authentication paths.",
+    "layman": "A tool used to find and exploit weaknesses in Windows certificate services."
   },
   {
     "id": "cewl",
@@ -164,8 +206,8 @@
   {
     "id": "clickjacking",
     "term": "Clickjacking",
-    "technical": "An attack tricking users into clicking hidden interface elements.",
-    "layman": "Fooling users into clicking something they cannot see."
+    "technical": "An attack that tricks a user into clicking on a hidden or disguised web element. A common method involves transparent iframes over buttons or misleading page overlays that trigger unintended actions.",
+    "layman": "An attack where someone is fooled into clicking something different from what they think they are clicking. It could be an invisible button on a website that leads to a fake login page."
   },
   {
     "id": "cobalt-strike",
@@ -176,8 +218,8 @@
   {
     "id": "code-injection",
     "term": "Code Injection",
-    "technical": "An attack injecting malicious code into an application.",
-    "layman": "Inserting harmful code into a system."
+    "technical": "An attack that causes an application to interpret attacker-controlled input as code.",
+    "layman": "An attack where harmful instructions are inserted into input and treated like real code."
   },
   {
     "id": "command-and-control-c2",
@@ -188,20 +230,20 @@
   {
     "id": "command-injection",
     "term": "Command Injection",
-    "technical": "An attack injecting system commands into an application.",
-    "layman": "Injecting commands to make a system run unintended actions."
+    "technical": "An attack that causes an application to pass attacker-controlled input to a system shell or command interpreter.",
+    "layman": "An attack where user input is turned into real system commands. These commands could lead to attackers gaining control over the computers running the website or application."
   },
   {
     "id": "content-spoofing",
     "term": "Content Spoofing",
-    "technical": "An attack that falsifies displayed content.",
-    "layman": "Making content appear legitimate when it is fake."
+    "technical": "An attack that makes attacker-controlled content appear to be part of a legitimate website or application, so users trust information that was not actually provided by the real source.",
+    "layman": "This is an attack where false or misleading content is made to look like it came from a trusted website or application. It is meant to trick the user into trusting information that is not actually legitimate."
   },
   {
     "id": "cors-originheaderscrutiny",
     "term": "CORS OriginHeaderScrutiny",
-    "technical": "A misconfiguration involving improper validation of CORS origin headers.",
-    "layman": "A flaw where websites improperly trust other websites."
+    "technical": "A web security weakness where an application makes unsafe trust decisions based on the HTTP Origin header during CORS processing.",
+    "layman": "A web security weakness where a site trusts the wrong website when deciding who is allowed to read its responses."
   },
   {
     "id": "crackmapexec",
@@ -218,32 +260,38 @@
   {
     "id": "credential-stuffing",
     "term": "Credential stuffing",
-    "technical": "An attack using previously breached credentials to gain access.",
-    "layman": "Using leaked usernames and passwords to log in."
+    "technical": "An attack that uses valid credentials from one source to attempt logins against other accounts, applications, or services.",
+    "layman": "An attack where valid credentials (username and password) are tried on other websites or systems to see where else they work. It takes advantage of people reusing the same login information in more than one place."
   },
   {
     "id": "cross-site-request-forgery-csrf",
     "term": "Cross Site Request Forgery (CSRF)",
-    "technical": "An attack tricking a user into submitting unintended requests.",
-    "layman": "Forcing a logged-in user to perform unwanted actions."
+    "technical": "An attack that causes a user’s browser to send an attacker-controlled request to a web application where that user is already authenticated. This relies on the application to trust the request based off the cookies and ignore the origin of the request.",
+    "layman": "An attack where a logged-in user is tricked into sending a request by another site."
   },
   {
     "id": "cross-site-scripting-xss",
     "term": "Cross Site Scripting (XSS)",
-    "technical": "An injection attack where malicious scripts execute in a victim’s browser.",
-    "layman": "Injecting malicious scripts into websites."
+    "technical": "An attack that injects attacker-controlled script into web content so it runs in another user’s browser within the trusted context of the application. It commonly affects pages that display user input without safely handling it, allowing actions such as session theft or page manipulation. There are three main types of XSS: Stored XSS, Reflected XSS, DOM-based XSS.",
+    "layman": "An attack where harmful code is placed into a website so it runs in another person’s browser when they view the page. It can let the attacker change what the user sees, steal information, or act as that user inside the site."
   },
   {
     "id": "cryptanalysis",
     "term": "Cryptanalysis",
-    "technical": "The study of analyzing and breaking cryptographic systems.",
-    "layman": "The process of trying to break encryption."
+    "technical": "The process of analyzing the security of cryptographic algorithms and their implementations.",
+    "layman": "The process of analyzing the security of information systems. It focuses on the math that the security systems are based on."
   },
   {
     "id": "csv-injection",
     "term": "CSV Injection",
-    "technical": "An injection attack where malicious formulas are inserted into CSV files.",
-    "layman": "Hiding malicious formulas inside spreadsheet files."
+    "technical": "An injection attack that places spreadsheet formulas into CSV data so they execute when the file is opened in spreadsheet software.",
+    "layman": "An attack where harmful spreadsheet instructions or formulas are hidden inside exported data so they execute when the file is opened in spreadsheet software."
+  },
+  {
+    "id": "cve",
+    "term": "CVE",
+    "technical": "A Common Vulnerabilities and Exposures identifier that uniquely names a publicly disclosed security vulnerability.",
+    "layman": "A standard ID used to identify a known security vulnerability."
   },
   {
     "id": "cvss-common-vulnerability-scoring-system",
@@ -296,8 +344,8 @@
   {
     "id": "denial-of-service",
     "term": "Denial of Service",
-    "technical": "An attack intended to disrupt service availability.",
-    "layman": "Making a system unavailable."
+    "technical": "An attack that disrupts a system so legitimate users cannot use it normally. It often works by exhausting resources or triggering behavior that limits <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">availability</span>.",
+    "layman": "An attack where a system is made too busy or unstable to serve real users properly. The goal is to make the service slow or completely unavailable."
   },
   {
     "id": "deserialization-attack",
@@ -310,6 +358,12 @@
     "term": "Detection Capability",
     "technical": "An organization's ability to identify security breaches or malicious activity in a timely manner.",
     "layman": "How well an organization can detect attacks or malicious behavior."
+  },
+  {
+    "id": "diamond-ticket",
+    "term": "Diamond Ticket",
+    "technical": "A forged Kerberos ticket technique that abuses compromised KRBTGT material and certificate-related trust to create powerful authentication artifacts in Active Directory environments.",
+    "layman": "A forged Windows login ticket technique that can give an attacker very powerful access in a network."
   },
   {
     "id": "discretionary-access-control-list-dacl",
@@ -444,6 +498,12 @@
     "layman": "A <span class=\"glossary-term--ref\" data-id=\"penetration-test\">penetration test</span> specification where the tester simulates an attacker on the internet trying to break into an organization’s systems from outside the company network."
   },
   {
+    "id": "external-scope",
+    "term": "External Scope",
+    "technical": "The portion of an assessment that includes systems, applications, or services accessible from outside the organization, typically from the internet.",
+    "layman": "The part of a security test that focuses on systems exposed to the outside world or the internet."
+  },
+  {
     "id": "eyewitness",
     "term": "Eyewitness",
     "technical": "A web reconnaissance tool that captures screenshots of discovered web services and web pages for visual analysis and documentation.",
@@ -482,14 +542,20 @@
   {
     "id": "flooding",
     "term": "Flooding",
-    "technical": "An attack overwhelming a system with excessive traffic.",
-    "layman": "Flooding a system with traffic to overwhelm it."
+    "technical": "A <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">DoS</span> attack that overwhelms a target by sending a very large volume of traffic, requests, or packets in a short period of time.",
+    "layman": "A <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">DoS</span> attack where a system is hit with so much traffic that it cannot respond properly to real users."
+  },
+  {
+    "id": "foothold",
+    "term": "Foothold",
+    "technical": "A stable point of access established on a compromised system that allows further actions within the environment.",
+    "layman": "A point of access an attacker keeps after getting into a system so they can continue operating."
   },
   {
     "id": "forced-browsing",
     "term": "Forced browsing",
-    "technical": "Accessing hidden or unlinked web resources by guessing paths.",
-    "layman": "Accessing pages not meant to be directly reachable."
+    "technical": "An attack technique that accesses unlinked web pages directly by requesting their paths in the URL. It often targets predictable file names or folders. Attackers often find these paths through <span class=\"glossary-term--ref\" data-id=\"brute-force\">brute forcing</span>.",
+    "layman": "An attack technique where an attacker tries to reach hidden parts of a website by manually changing the web address."
   },
   {
     "id": "forest",
@@ -510,6 +576,24 @@
     "layman": "A protocol for uploading and downloading files between computers."
   },
   {
+    "id": "fully-qualified-domain-name-fqdn",
+    "term": "Fully Qualified Domain Name (FQDN)",
+    "technical": "A complete domain name that specifies the full DNS path to a host, including the hostname and domain, such as server.example.com.",
+    "layman": "The full internet or network name of a computer, including both its name and domain."
+  },
+  {
+    "id": "genericall",
+    "term": "GenericAll",
+    "technical": "An Active Directory permission that grants full control over an object, including modification of its attributes, permissions, and ownership.",
+    "layman": "A permission that gives nearly complete control over an account, group, or other object."
+  },
+  {
+    "id": "genericwrite",
+    "term": "GenericWrite",
+    "technical": "An Active Directory permission that allows modification of certain attributes on an object without full control.",
+    "layman": "A permission that allows someone to change important details on an account or object."
+  },
+  {
     "id": "global-catalog-gc",
     "term": "Global Catalog (GC)",
     "technical": "A feature on a <span class=\"glossary-term--ref\" data-id=\"domain-controller-dc\">Domain Controller</span> that stores a partial, searchable copy of objects from across an <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> <span class=\"glossary-term--ref\" data-id=\"forest\">forest</span>, allowing users and applications to find objects without knowing which <span class=\"glossary-term--ref\" data-id=\"domain\">domain</span> contains them.",
@@ -524,8 +608,8 @@
   {
     "id": "golden-ticket",
     "term": "Golden Ticket",
-    "technical": "A forged Kerberos ticket granting domain-wide access.",
-    "layman": "A fake master ticket that gives full domain access."
+    "technical": "An attack that forges <span class=\"glossary-term--ref\" data-id=\"kerberos-2\">Kerberos</span> <span class=\"glossary-term--ref\" data-id=\"ticket-granting-ticket-tgt\">ticket-granting tickets (TGT)</span> by using the secret of the KRBTGT account in an <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> <span class=\"glossary-term--ref\" data-id=\"domain\">domain</span>. Because the KRBTGT account is used to sign <span class=\"glossary-term--ref\" data-id=\"ticket-granting-ticket-tgt\">TGTs</span>, a forged ticket can let an attacker create <span class=\"glossary-term--ref\" data-id=\"kerberos-2\">Kerberos</span> access for nearly any user in the domain.",
+    "layman": "An attack where someone creates fake top-level <span class=\"glossary-term--ref\" data-id=\"kerberos-2\">Kerberos</span> access tickets for an <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> <span class=\"glossary-term--ref\" data-id=\"domain\">domain</span>. The tickets let an attacker pretend to be almost any user and gain broad access across the environment."
   },
   {
     "id": "gray-box-test",
@@ -570,6 +654,12 @@
     "layman": "A communication protocol used behind the scenes in cloud platforms to allow software components to securely exchange data."
   },
   {
+    "id": "hash",
+    "term": "Hash",
+    "technical": "A fixed-length value produced by a mathematical algorithm from input data, often used for integrity checking, password storage, or authentication.",
+    "layman": "A scrambled value created from data, often used to help protect passwords or verify that information has not changed."
+  },
+  {
     "id": "hashcat",
     "term": "hashcat",
     "technical": "A GPU-accelerated password cracking tool supporting numerous hashing algorithms and attack modes. It can also be used to expand wordlists by mutating words based on common password patterns.",
@@ -582,6 +672,18 @@
     "layman": "A regular “I’m still here” message sent by a system or program. It is like a guard checking in on schedule to show everything is still active."
   },
   {
+    "id": "host",
+    "term": "Host",
+    "technical": "Any device or system connected to a network and identified by an IP address or hostname.",
+    "layman": "Any computer or device connected to a network."
+  },
+  {
+    "id": "hostname",
+    "term": "Hostname",
+    "technical": "The specific name assigned to a device or system on a network.",
+    "layman": "The name given to a computer or device on a network."
+  },
+  {
     "id": "http",
     "term": "HTTP",
     "technical": "Hypertext Transfer Protocol used for web communication.",
@@ -590,8 +692,8 @@
   {
     "id": "http-response-splitting",
     "term": "HTTP Response Splitting",
-    "technical": "An attack exploiting improper handling of HTTP headers.",
-    "layman": "Manipulating web responses to inject malicious data."
+    "technical": "An attack that injects crafted header-breaking characters (carriage return) into an HTTP response so a server or intermediary treats part of the data as a second response.",
+    "layman": "An attack where a website is tricked into sending a broken or altered reply to a user. That can change what the person sees on the site or make the website behave in an unexpected way."
   },
   {
     "id": "https",
@@ -620,8 +722,8 @@
   {
     "id": "impact",
     "term": "Impact",
-    "technical": "The damage that could occur if a <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">vulnerability</span> is successfully exploited.",
-    "layman": "The damage that could occur if a security weakness (<span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">vulnerability</span>) is successfully exploited."
+    "technical": "The damage that could occur if a <span class=\"glossary-term--ref\" data-id=\"vulnerability\">vulnerability</span> is successfully exploited.",
+    "layman": "The damage that could occur if a security weakness (<span class=\"glossary-term--ref\" data-id=\"vulnerability\">vulnerability</span>) is successfully exploited."
   },
   {
     "id": "implant",
@@ -632,8 +734,20 @@
   {
     "id": "indicators-of-compromise-iocs",
     "term": "Indicators of Compromise (IOCs)",
-    "technical": "Artifacts or evidence that suggest a system has been compromised.",
-    "layman": "Signs that indicate a system may have been breached."
+    "technical": "Observable signs that suggest a system, account, or network may have been compromised. Examples include unexpected outbound connections, new scheduled tasks, or logins from unusual locations.",
+    "layman": "Warning signs that suggest something may have been hacked or misused."
+  },
+  {
+    "id": "inherent-likelihood",
+    "term": "Inherent Likelihood",
+    "technical": "The likelihood that a threat will occur before security controls or mitigations are considered.",
+    "layman": "How likely a problem is to happen before protections are taken into account."
+  },
+  {
+    "id": "inherent-risk",
+    "term": "Inherent Risk",
+    "technical": "The level of risk that exists before any controls or mitigations are applied.",
+    "layman": "The amount of risk that exists before any protections or fixes are in place."
   },
   {
     "id": "initial-access",
@@ -644,14 +758,26 @@
   {
     "id": "insecure-direct-object-reference-idor",
     "term": "Insecure Direct Object Reference (IDOR)",
-    "technical": "A vulnerability where direct object references are exposed without proper authorization.",
-    "layman": "Accessing restricted resources by changing identifiers."
+    "technical": "An access control vulnerability where an application exposes a direct reference to an internal object, such as an ID or filename, that is modifiable by users. Attackers can abuse this vulnerability to reach restricted areas like other user's account information.",
+    "layman": "An attack where an attacker changes a reference, such as a number in a link or web request, to access something that belongs to someone else."
   },
   {
     "id": "internal-penetration-test",
     "term": "Internal Penetration Test",
     "technical": "A <span class=\"glossary-term--ref\" data-id=\"penetration-test\">penetration test</span> conducted from within the organization’s internal network.",
     "layman": "A <span class=\"glossary-term--ref\" data-id=\"penetration-test\">penetration test</span> specification where the tester simulates an attacker who already has internal access."
+  },
+  {
+    "id": "internal-scope",
+    "term": "Internal Scope",
+    "technical": "The portion of an assessment that includes systems, applications, or networks accessible from within the organization’s internal environment.",
+    "layman": "The part of a security test that focuses on systems inside the organization’s network."
+  },
+  {
+    "id": "internet-protocol-ip",
+    "term": "Internet Protocol (IP)",
+    "technical": "The network-layer protocol responsible for addressing and routing packets between hosts across networks.",
+    "layman": "The basic system that allows computers to send data to each other across networks using addresses."
   },
   {
     "id": "inveigh",
@@ -662,8 +788,8 @@
   {
     "id": "ip-spoofing",
     "term": "IP Spoofing",
-    "technical": "Falsifying the source IP address in network packets.",
-    "layman": "Pretending network traffic comes from another device."
+    "technical": "An attack technique where a packet is sent with a forged source IP address so it appears to come from a different system.",
+    "layman": "An attack technique where network traffic is made to look like it came from a different computer. This tricks defenders as to the origin of the attack."
   },
   {
     "id": "ipmi",
@@ -728,14 +854,14 @@
   {
     "id": "ldap-injection",
     "term": "LDAP Injection",
-    "technical": "An injection attack targeting LDAP queries.",
-    "layman": "Inserting malicious input into directory queries."
+    "technical": "An attack that manipulates an <span class=\"glossary-term--ref\" data-id=\"ldap\">LDAP</span> query by injecting crafted input into data used for directory searches or authentication. It occurs when an application builds <span class=\"glossary-term--ref\" data-id=\"ldap\">LDAP</span> queries from user-controlled input without properly handling special characters or query structure.",
+    "layman": "An attack where specially crafted input changes how a system looks up users or checks login information in its directory. By altering the search itself, an attacker may be able to bypass checks or retrieve information they should not see."
   },
   {
     "id": "likelihood",
     "term": "Likelihood",
-    "technical": "How likely a <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">vulnerability</span> will actually be exploited. An example contributing factor could be whether the <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">vulnerability</span> is easy to exploit.",
-    "layman": "How likely a security weakness (<span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">vulnerability</span>) will actually be exploited. An example contributing factor could be whether the weakness is easy to exploit."
+    "technical": "How likely a <span class=\"glossary-term--ref\" data-id=\"vulnerability\">vulnerability</span> will actually be exploited. An example contributing factor could be whether the <span class=\"glossary-term--ref\" data-id=\"vulnerability\">vulnerability</span> is easy to exploit.",
+    "layman": "How likely a security weakness (<span class=\"glossary-term--ref\" data-id=\"vulnerability\">vulnerability</span>) will actually be exploited. An example contributing factor could be whether the weakness is easy to exploit."
   },
   {
     "id": "linux-exploit-suggester-les",
@@ -770,8 +896,8 @@
   {
     "id": "log-injection",
     "term": "Log Injection",
-    "technical": "An attack inserting malicious input into logs.",
-    "layman": "Adding harmful entries into system logs."
+    "technical": "An attack that inserts crafted input into log files and often targets software that reads logs without safe handling. This could lead to the attacker taking control over the system.",
+    "layman": "An attack where someone makes system records contain corrupt information. Some software insecurely read the records for processing and end up executing attacker-controlled commands."
   },
   {
     "id": "logging",
@@ -784,6 +910,12 @@
     "term": "Malware",
     "technical": "Software intentionally designed to disrupt, damage, spy on, or gain unauthorized access to systems or data.",
     "layman": "Malicious software made to interfere with systems, steal information, or help attackers gain control."
+  },
+  {
+    "id": "media-access-control-address-mac",
+    "term": "Media Access Control Address (MAC)",
+    "technical": "A hardware address assigned to a network interface that uniquely identifies it on a local network segment.",
+    "layman": "A unique physical network address assigned to a device’s network card."
   },
   {
     "id": "memory-corruption",
@@ -800,7 +932,7 @@
   {
     "id": "mimikatz",
     "term": "Mimikatz",
-    "technical": "A credential extraction tool that retrieves plaintext passwords, <span class=\"glossary-term--ref\" data-id=\"ntlm-2\">NTLM</span> hashes, and <span class=\"glossary-term--ref\" data-id=\"kerberos-2\">Kerberos</span> tickets from Windows memory.",
+    "technical": "A credential extraction tool that retrieves plaintext passwords, <span class=\"glossary-term--ref\" data-id=\"ntlm\">NTLM</span> hashes, and <span class=\"glossary-term--ref\" data-id=\"kerberos-2\">Kerberos</span> tickets from Windows memory.",
     "layman": "A tool that pulls passwords and login tokens directly from a Windows computer’s memory."
   },
   {
@@ -818,7 +950,7 @@
   {
     "id": "monitoring",
     "term": "Monitoring",
-    "technical": "The process of observing systems, network activity, and applications to detect anomalies or <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">threats</span>. Common monitoring tools security teams use include <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">IDS</span>, <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">IPS</span>, <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">SIEM</span>, <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">EDR</span> .",
+    "technical": "The process of observing systems, network activity, and applications to detect anomalies or <span class=\"glossary-term--ref\" data-id=\"threat\">threats</span>. Common monitoring tools security teams use include <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">IDS</span>, <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">IPS</span>, <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">SIEM</span>, <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">EDR</span> .",
     "layman": "The process of observing computers, systems, and network activity so suspicious behavior or technical problems can be noticed and investigated."
   },
   {
@@ -844,12 +976,6 @@
     "term": "MySQL",
     "technical": "A relational database management system that stores, organizes, and retrieves structured data using SQL queries through a client–server architecture.",
     "layman": "A system that allows applications to connect to a database server to store, organize, and retrieve structured data."
-  },
-  {
-    "id": "net-ntlmv2-ntlmv2",
-    "term": "Net-NTLMv2 (NTLMv2)",
-    "technical": "A challenge-response authentication protocol used in Windows environments for identity verification. It was introduced to replace weaker <span class=\"glossary-term--ref\" data-id=\"ntlm-2\">NTLMv1</span> mechanisms by incorporating stronger cryptographic hashing, improved challenge structures, and protections against replay attacks.",
-    "layman": "A Windows login protocol where a server sends a random test, and the user’s computer responds in a way that proves it knows the correct password."
   },
   {
     "id": "netbios",
@@ -900,22 +1026,34 @@
     "layman": "A tool that scans computers to see which “doors\" (network ports) are open and what services are running, helping testers understand what is exposed and potentially vulnerable."
   },
   {
-    "id": "ntlm",
-    "term": "NTLM",
-    "technical": "An older challenge-response authentication protocol used in Windows environments for identity verification. As of 2026, it has been deprecated by Microsoft and is not enabled default in new Windows builds.",
-    "layman": "An older Windows login protocol where a server that verifies a user’s identity using a random test rather than sending the password itself, but it has known security weaknesses."
+    "id": "nt-hash",
+    "term": "NT Hash",
+    "technical": "The NTLM password hash format derived from a user’s password and used in Windows authentication processes.",
+    "layman": "A Windows password hash that can sometimes be reused for authentication without knowing the actual password."
   },
   {
-    "id": "ntlm-2",
+    "id": "ntlm",
     "term": "NTLM",
     "technical": "An older Microsoft authentication protocol that uses a challenge-response process to verify identity, often when <span class=\"glossary-term--ref\" data-id=\"kerberos-2\">Kerberos</span> is unavailable or unsupported. Because it relies on password-derived hashes and lacks some of Kerberos’s protections, it is commonly targeted in <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">credential theft</span> and <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">relay attacks</span>.",
     "layman": "An older way Windows systems verify identity during login or network access. It avoids sending the actual password directly, but attackers often abuse it because stolen or intercepted NTLM data can sometimes be reused to impersonate users. It is like using an older badge-check procedure that still works, but is easier for intruders to trick or copy than the newer system."
+  },
+  {
+    "id": "ntlm-net-ntlmv1",
+    "term": "NTLM (Net-NTLMv1)",
+    "technical": "An older challenge-response authentication protocol used in Windows environments for identity verification. As of 2026, it has been deprecated by Microsoft and is not enabled default in new Windows builds. NTLM could also be used to refer to Microsoft's challenge-response authentication protocol as a whole, including both NTLMv1 and <span class=\"glossary-term--ref\" data-id=\"ntlmv2-net-ntlmv2\">NTLMv2</span>.",
+    "layman": "An older Windows login protocol where a server that verifies a user’s identity using a random test rather than sending the password itself, but it has known security weaknesses."
   },
   {
     "id": "ntlm-relay",
     "term": "NTLM Relay",
     "technical": "An attack relaying NTLM authentication to another service.",
     "layman": "Forwarding login attempts to gain access elsewhere."
+  },
+  {
+    "id": "ntlmv2-net-ntlmv2",
+    "term": "NTLMv2 (Net-NTLMv2)",
+    "technical": "A challenge-response authentication protocol used in Windows environments for identity verification. It was introduced to replace <span class=\"glossary-term--ref\" data-id=\"ntlm\">NTLMv1</span> and includes stronger cryptographic hashing and improved challenge structures. However, it is still vulnerable to some relay attacks and offline cracking. Net-NTLMv2 is sometimes used interchangeably with NTLMv2, but it more accurately refers to the network authentication data of a NTLMv2 login attempt. The hash in Net-NTLMv2 also cannot be used direcly in a <span class=\"glossary-term--ref\" data-id=\"pass-the-hash-pth\">PtH</span> attack.",
+    "layman": "A Windows login protocol where a server sends a random test, and the user’s computer responds in a way that proves it knows the correct password."
   },
   {
     "id": "onesixtyone",
@@ -926,8 +1064,8 @@
   {
     "id": "open-redirect",
     "term": "Open Redirect",
-    "technical": "A vulnerability allowing redirection to untrusted external sites.",
-    "layman": "Redirecting users to malicious websites."
+    "technical": "An attack where an attacker can input a URL into a web application and redirect users to that URL.",
+    "layman": "An attack where a trusted website sends someone to an unsafe destination because it did not properly check where the link was pointing."
   },
   {
     "id": "openvas",
@@ -956,8 +1094,8 @@
   {
     "id": "overpass-the-hash-pass-the-key",
     "term": "Overpass-the-Hash (Pass-the-Key)",
-    "technical": "An attack using a stolen NTLM key to request Kerberos tickets.",
-    "layman": "Using stolen authentication material to get new tickets."
+    "technical": "An attack that uses stolen <span class=\"glossary-term--ref\" data-id=\"nt-hash\">NT hashes</span> to obtain <span class=\"glossary-term--ref\" data-id=\"kerberos-2\">Kerberos</span> tickets without knowing the plaintext password.",
+    "layman": "An attack where stolen password-related data is used to get real <span class=\"glossary-term--ref\" data-id=\"kerberos-2\">Kerberos</span> access tickets without knowing the actual password. It lets an attacker turn one kind of stolen login secret into another form of access that the system will trust."
   },
   {
     "id": "owasp",
@@ -968,8 +1106,8 @@
   {
     "id": "pass-the-hash-pth",
     "term": "Pass-the-Hash (PtH)",
-    "technical": "An attack technique in which an attacker uses a stolen <span class=\"glossary-term--ref\" data-id=\"ntlm-2\">NTLM</span> hash to authenticate without knowing the plaintext password. It is commonly associated with <span class=\"glossary-term--ref\" data-id=\"ntlm-2\">NTLM</span> because the protocol can accept the hash-derived material as proof of identity.",
-    "layman": "An attack technique where a stolen password hash is used to log in without learning the real password. This is one reason <span class=\"glossary-term--ref\" data-id=\"ntlm-2\">NTLM</span> is often abused by attackers. Attackers can steal the hash alone and impersonate the user without knowing their password. It is like using a copied badge token that the building accepts even though you never learned the badge owner’s secret code."
+    "technical": "An attack technique in which an attacker uses a stolen <span class=\"glossary-term--ref\" data-id=\"ntlm\">NTLM</span> hash to authenticate without knowing the plaintext password. It is commonly associated with <span class=\"glossary-term--ref\" data-id=\"ntlm\">NTLM</span> because the protocol can accept the hash-derived material as proof of identity.",
+    "layman": "An attack technique where a stolen password hash is used to log in without learning the real password. This is one reason <span class=\"glossary-term--ref\" data-id=\"ntlm\">NTLM</span> is often abused by attackers. Attackers can steal the hash alone and impersonate the user without knowing their password. It is like using a copied badge token that the building accepts even though you never learned the badge owner’s secret code."
   },
   {
     "id": "pass-the-ticket-ptt",
@@ -986,14 +1124,14 @@
   {
     "id": "password-spraying",
     "term": "Password Spraying",
-    "technical": "A technique attempting a single password across many accounts.",
-    "layman": "Trying one password on many accounts."
+    "technical": "An attack that attempts a small number of likely or previously discovered passwords against many different accounts, rather than trying many passwords against one account. This technique is often used as opposed to <span class=\"glossary-term--ref\" data-id=\"brute-force\">brute force</span> to avoid account lockouts.",
+    "layman": "An attack that attempts a small number of likely or previously discovered passwords against many different accounts, rather than trying many passwords against one account."
   },
   {
     "id": "path-traversal",
     "term": "Path Traversal",
-    "technical": "An attack accessing files outside intended directories.",
-    "layman": "Accessing restricted files by manipulating paths."
+    "technical": "An attack that manipulates file path input so an application accesses files or directories outside the location it was meant to allow. It could lead to data disclosure or even give command execution to attackers when chained with other vulnerabilities.",
+    "layman": "An attack where the attacker manipulates input so the system accesses restricted files or folders. It can be used to expose sensitive information or give attackers control over the system."
   },
   {
     "id": "payload",
@@ -1024,6 +1162,12 @@
     "term": "Persistence",
     "technical": "Techniques used to maintain long-term access to a compromised system or network, allowing an attacker to remain connected even after reboots, credential changes, or remediation efforts. An example would be creating an administrative user on the target so the attacker could remotely login in the future.",
     "layman": "Methods used to maintiain access to a target system after breaking in."
+  },
+  {
+    "id": "pkinit",
+    "term": "PKINIT",
+    "technical": "Public Key Cryptography for Initial Authentication in Kerberos, an extension that allows certificate-based initial Kerberos authentication.",
+    "layman": "A way for Windows logins to use digital certificates instead of only passwords during initial authentication."
   },
   {
     "id": "pkinittools",
@@ -1124,8 +1268,8 @@
   {
     "id": "regular-expression-denial-of-service-redos",
     "term": "Regular expression Denial of Service (ReDoS)",
-    "technical": "An attack exploiting inefficient regular expressions to exhaust resources.",
-    "layman": "Causing systems to slow down using complex patterns."
+    "technical": "A form of <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">DoS</span> attack that sends manipulated input designed to trigger extremely slow processing in a regular expression, causing the application to consume excessive time or CPU.",
+    "layman": "A form of <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">DoS</span> attack that targets systems that try to pattern match user input. The attacker sends a malicious input that intentionally makes the pattern match operation take a long time. This slows down the system and effectively causes denial of service."
   },
   {
     "id": "relative-identifier-rid",
@@ -1152,10 +1296,22 @@
     "layman": "The process by which <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> keeps multiple <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">domain controllers</span> updated with the same information. This helps the environment stay consistent and available, but it also means harmful changes can spread if attackers alter the directory. It is like making sure every security desk in the company has the latest records, whether those updates are helpful or malicious."
   },
   {
+    "id": "residual-likelihood",
+    "term": "Residual Likelihood",
+    "technical": "The likelihood that a threat will occur after security controls or mitigations are considered.",
+    "layman": "How likely a problem is to happen after protections are taken into account."
+  },
+  {
     "id": "residual-risk",
     "term": "Residual Risk",
     "technical": "The reamining <span class=\"glossary-term--ref\" data-id=\"risk\">risk</span> after taking into account an organization's security measures.",
     "layman": "The remaining <span class=\"glossary-term--ref\" data-id=\"risk\">risk</span> after taking into account an organization's security measures."
+  },
+  {
+    "id": "residual-risk-2",
+    "term": "Residual Risk",
+    "technical": "The level of risk that remains after controls, mitigations, or remediation efforts have been applied.",
+    "layman": "The risk that still remains after protections or fixes are put in place."
   },
   {
     "id": "resource-based-constrained-delegation-rbcd",
@@ -1166,7 +1322,7 @@
   {
     "id": "responder",
     "term": "Responder",
-    "technical": "An LLMNR/NBT-NS poisoning tool used to capture <span class=\"glossary-term--ref\" data-id=\"ntlm-2\">NTLM</span> authentication hashes on local networks.",
+    "technical": "An LLMNR/NBT-NS poisoning tool used to capture <span class=\"glossary-term--ref\" data-id=\"ntlm\">NTLM</span> authentication hashes on local networks.",
     "layman": "A tool that tricks same network computers into sending password hashes by impersonating trusted network services."
   },
   {
@@ -1178,8 +1334,8 @@
   {
     "id": "risk",
     "term": "Risk",
-    "technical": "The potential for harm resulting from a <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">vulnerability</span>. It considers both the <span class=\"glossary-term--ref\" data-id=\"likelihood\">likelihood</span> of exploitation and the <span class=\"glossary-term--ref\" data-id=\"impact\">impact</span> if the vulnerability is successfully exploited.",
-    "layman": "The possibility that a security weakness (<span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">vulnerability</span>) could cause damage, based on how likely it is to happen (<span class=\"glossary-term--ref\" data-id=\"likelihood\">Likelihood</span>) and how serious the consequences would be (<span class=\"glossary-term--ref\" data-id=\"impact\">Impact</span>)."
+    "technical": "The potential for harm resulting from a <span class=\"glossary-term--ref\" data-id=\"vulnerability\">vulnerability</span>. It considers both the <span class=\"glossary-term--ref\" data-id=\"likelihood\">likelihood</span> of exploitation and the <span class=\"glossary-term--ref\" data-id=\"impact\">impact</span> if the vulnerability is successfully exploited.",
+    "layman": "The possibility that a security weakness (<span class=\"glossary-term--ref\" data-id=\"vulnerability\">vulnerability</span>) could cause damage, based on how likely it is to happen (<span class=\"glossary-term--ref\" data-id=\"likelihood\">Likelihood</span>) and how serious the consequences would be (<span class=\"glossary-term--ref\" data-id=\"impact\">Impact</span>)."
   },
   {
     "id": "risk-assessment",
@@ -1296,16 +1452,22 @@
     "layman": "Information that could cause harm, legal issues, or security impact if exposed, altered, or misused."
   },
   {
+    "id": "server",
+    "term": "Server",
+    "technical": "A system that provides resources, services, or functionality to other systems over a network.",
+    "layman": "A computer that provides services or data to other computers."
+  },
+  {
     "id": "server-side-request-forgery-ssrf",
     "term": "Server Side Request Forgery (SSRF)",
-    "technical": "An attack forcing a server to make unauthorized requests.",
-    "layman": "Tricking a server into requesting unintended resources."
+    "technical": "An attack that causes a server to send requests to an attacker-chosen location. It occurs when an application fetches a URL or network resource based on user-controlled input without properly restricting where the server is allowed to connect. This could lead to sensitive data leaks or unintended interactions with internal servers.",
+    "layman": "An attack where a web server is tricked into making a request to itself or another server. It could bypass security protections and let an attacker reach internal systems or restricted information."
   },
   {
     "id": "server-side-includes-ssi-injection",
     "term": "Server-Side Includes (SSI) Injection",
-    "technical": "An attack exploiting server-side include directives.",
-    "layman": "Injecting commands into server-side includes."
+    "technical": "An attack that inserts crafted server-side directives into content processed by a web server. The web server would then execute the server-side include instructions instead of just displaying the text.",
+    "layman": "An attack where input is treated like special instructions for the web server instead of just text. This could lead to the display of hidden file contents."
   },
   {
     "id": "service-account",
@@ -1328,14 +1490,14 @@
   {
     "id": "session-fixation",
     "term": "Session fixation",
-    "technical": "An attack setting a user’s session ID before login.",
-    "layman": "Forcing a victim to use a known session ID."
+    "technical": "An attack that causes a user to authenticate with a <span class=\"glossary-term--ref\" data-id=\"session\">session</span> identifier already known to the attacker. This often occurs when an application accepts existing <span class=\"glossary-term--ref\" data-id=\"session\">session</span> tokens instead of issuing a new one on login.",
+    "layman": "An attack where someone is tricked into logging in with a <span class=\"glossary-term--ref\" data-id=\"session\">session</span> that the attacker already set up or knows about. This should only happen when a website is insecurely setup and allows the reuse of previous <span class=\"glossary-term--ref\" data-id=\"session\">session</span> identifiers for login."
   },
   {
     "id": "session-hijacking",
     "term": "Session hijacking",
-    "technical": "An attack stealing an active user session.",
-    "layman": "Taking over someone’s logged-in session."
+    "technical": "An attack that takes over a valid authenticated session by obtaining or abusing the session identifier tied to that session.",
+    "layman": "An attack where someone takes control of an active logged-in <span class=\"glossary-term--ref\" data-id=\"session\">session</span> without needing to know the password. Most websites use a <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">session token</span> to track who the logged in user is. An attacker could steal this token and use it to pretend to be the user on the website."
   },
   {
     "id": "severity",
@@ -1356,10 +1518,22 @@
     "layman": "Forcing a system to authenticate using file share protocols."
   },
   {
+    "id": "shadow-credentials",
+    "term": "Shadow Credentials",
+    "technical": "A persistence and privilege escalation technique that abuses certificate-based authentication by adding alternate key material to an account.",
+    "layman": "A technique that lets an attacker set up certificate-based access to log in as another account without knowing its password."
+  },
+  {
     "id": "sharpview",
     "term": "SharpView",
     "technical": "A C# implementation of <span class=\"glossary-term--ref\" data-id=\"powerview\">PowerView</span> for <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> enumeration.",
     "layman": "A Windows-native version of <span class=\"glossary-term--ref\" data-id=\"powerview\">PowerView</span> used to analyze user and permission relationships."
+  },
+  {
+    "id": "shell",
+    "term": "Shell",
+    "technical": "A command-line interface that allows interactive execution of commands on a system.",
+    "layman": "A text-based window that lets someone type commands directly into a system."
   },
   {
     "id": "shellcode",
@@ -1376,8 +1550,8 @@
   {
     "id": "silver-ticket",
     "term": "Silver Ticket",
-    "technical": "A forged Kerberos service ticket granting access to a specific service.",
-    "layman": "A fake ticket that grants access to one service."
+    "technical": "An attack that forges a <span class=\"glossary-term--ref\" data-id=\"kerberos-2\">Kerberos</span> service ticket for a specific service by using the secret of that service’s account. Because the forged ticket is only for one service, it can let an attacker access that service as another user without needing to contact the <span class=\"glossary-term--ref\" data-id=\"domain-controller-dc\">domain controller</span> for validation.",
+    "layman": "An attack where someone creates a fake access ticket for one specific service. If the service accepts it, the attacker can use that service as though they were a legitimate user."
   },
   {
     "id": "sliver",
@@ -1416,16 +1590,22 @@
     "layman": "A protocol that allows administrators to monitor and manage routers, switches, and servers."
   },
   {
+    "id": "source-code",
+    "term": "Source Code",
+    "technical": "The human-readable code written by developers that defines how software behaves and functions.",
+    "layman": "The original code written by developers to build a program."
+  },
+  {
     "id": "spyware",
     "term": "Spyware",
-    "technical": "Malware that secretly gathers information about a user.",
-    "layman": "Software that secretly monitors user activity."
+    "technical": "A type of <span class=\"glossary-term--ref\" data-id=\"malware\">malware</span> designed specifically to secretly monitor a user or system. It is often used to steal credentials or sensitive data.",
+    "layman": "A type of <span class=\"glossary-term--ref\" data-id=\"malware\">malware</span> designed specifically to secretly monitor a user or system. It is often used to steal credentials or sensitive data."
   },
   {
     "id": "sql-injection",
     "term": "SQL Injection",
-    "technical": "An injection attack targeting SQL queries.",
-    "layman": "Inserting malicious database queries."
+    "technical": "An attack that manipulates SQL queries to cause the database to execute unintended operations. It can be used to bypass authentication, read/write restricted files, or gain control over the system hosting the database.",
+    "layman": "An attack where input is used to manipulate a <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">database</span> request so the system does something it was not supposed to do. It can be used to bypass login forms or gain control over the system."
   },
   {
     "id": "sqlmap",
@@ -1444,6 +1624,12 @@
     "term": "subbrute",
     "technical": "A DNS subdomain brute-forcing tool.",
     "layman": "A tool that guesses hidden website addresses (such as admin.company.com) by trying many possible names."
+  },
+  {
+    "id": "subdomain",
+    "term": "Subdomain",
+    "technical": "A subordinate DNS name under a parent domain, such as admin.example.com under example.com.",
+    "layman": "An additional web address under a main website name, such as admin.example.com."
   },
   {
     "id": "subfinder",
@@ -1488,16 +1674,34 @@
     "layman": "A very basic file transfer protocol often used for network device configuration."
   },
   {
+    "id": "threat",
+    "term": "Threat",
+    "technical": "Any circumstance, event, actor, or condition with the potential to exploit a vulnerability and cause harm.",
+    "layman": "Anything that could take advantage of a weakness and cause damage."
+  },
+  {
     "id": "threat-actor",
     "term": "Threat Actor",
     "technical": "The person, group, or organization responsible for carrying out malicious or harmful cyber activity.",
     "layman": "The person, group, or organization responsible for carrying out malicious or harmful cyber activity."
   },
   {
+    "id": "ticket-granting-service-tgs",
+    "term": "Ticket-Granting Service (TGS)",
+    "technical": "The Kerberos service responsible for issuing service tickets after a user or system presents a valid Ticket-Granting Ticket.",
+    "layman": "The part of the Kerberos system that gives out tickets to access specific services after login."
+  },
+  {
     "id": "ticket-granting-ticket-tgt",
     "term": "Ticket-Granting Ticket (TGT)",
     "technical": "A <span class=\"glossary-term--ref\" data-id=\"kerberos-2\">Kerberos</span> ticket issued after successful <span class=\"glossary-term--ref\" data-id=\"authentication\">Authentication</span> that allows a user or service to request service tickets without re-entering credentials. Because it represents a successfully authenticated identity, a stolen TGT can be highly valuable to an attacker.",
     "layman": "A temporary <span class=\"glossary-term--ref\" data-id=\"kerberos-2\">Kerberos</span> ticket that proves a successful login and can be used to request access to other services. This makes access more efficient for legitimate users, but it also means an attacker who steals one may be able to impersonate that user. It is like receiving a master pass from the front desk that works well for you, but would also be dangerous in the wrong hands."
+  },
+  {
+    "id": "transport-layer-security-tls",
+    "term": "Transport Layer Security (TLS)",
+    "technical": "A cryptographic protocol that provides confidentiality, integrity, and authentication for data transmitted over a network.",
+    "layman": "A security technology that encrypts network traffic so others cannot easily read or tamper with it."
   },
   {
     "id": "trojan",
@@ -1526,8 +1730,14 @@
   {
     "id": "unicode-encoding",
     "term": "Unicode Encoding",
-    "technical": "Encoding characters to bypass filters or validation.",
-    "layman": "Changing characters to bypass security checks."
+    "technical": "A character encoding method that represents text using the Unicode standard. In attack contexts, it can be abused to disguise input or bypass filters.",
+    "layman": "A way of representing text that can sometimes be misused to hide malicious input."
+  },
+  {
+    "id": "universal-naming-convention-unc",
+    "term": "Universal Naming Convention (UNC)",
+    "technical": "A standardized path format used to identify shared files, folders, printers, or other resources on Windows networks, such as \\\\server\\share.",
+    "layman": "A standard way Windows systems refer to shared folders or resources on a network."
   },
   {
     "id": "use-after-free",
@@ -1540,6 +1750,24 @@
     "term": "User Principal Name (UPN)",
     "technical": "A user logon name, usually in an email-like format, that uniquely identifies an account in <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span>.",
     "layman": "A user’s formal login name, often written in a format that looks like an email address. It gives users a consistent way to sign in and identify their account. It is like the official username listed on an employee’s company record."
+  },
+  {
+    "id": "uv",
+    "term": "uv",
+    "technical": "",
+    "layman": ""
+  },
+  {
+    "id": "vhost",
+    "term": "Vhost",
+    "technical": "A virtual host configuration that allows a web server to serve different websites or content based on the requested hostname.",
+    "layman": "A way for one web server to host multiple websites or web applications."
+  },
+  {
+    "id": "vulnerability",
+    "term": "Vulnerability",
+    "technical": "A weakness in software, hardware, configuration, or process that can be exploited to compromise confidentiality, integrity, or availability.",
+    "layman": "A security flaw or weakness that attackers could take advantage of."
   },
   {
     "id": "vulnerability-assessment",
@@ -1628,8 +1856,8 @@
   {
     "id": "xpath-injection",
     "term": "XPATH Injection",
-    "technical": "An injection attack targeting XPath queries.",
-    "layman": "Inserting malicious input into XML queries."
+    "technical": "An attack that manipulates XPath queries to search or check information in XML documents. It can be used to bypass authentication or gain control over the system.",
+    "layman": "An attack where input is used to change how a system searches XML data. It can be used to bypass login checks or access restricted file contents."
   },
   {
     "id": "xsstrike",
@@ -1642,5 +1870,11 @@
     "term": "Zero-Day",
     "technical": "A previously unknown vulnerability without an available patch.",
     "layman": "A security flaw that defenders have little or no warning about because it is not yet patched or publicly known. It is like a hidden entrance that the owner doesn't knows exists. It is why <span class=\"glossary-term--ref\" data-id=\"defense-in-depth\">defense-in-depth</span> is an important security principle to follow."
+  },
+  {
+    "id": "zone-transfer",
+    "term": "Zone Transfer",
+    "technical": "A DNS operation that transfers DNS records from a primary server to a secondary server for synchronization.",
+    "layman": "A DNS feature that copies website or domain records from one server to another."
   }
 ]

@@ -38,7 +38,7 @@ permalink: /glossary/evaluation/technical/
 
 This technical walkthrough sample is actually a walkthrough of HTB's [Fluffy](https://www.hackthebox.com/machines/fluffy) machine. However, the walkthrough will be written as if it was taken from a professional penetration test report.
 #### Background
-FakeCompany contracted the penetration tester to perform an [[internal scope|internal]] [[network penetration test]] on FakeCompany's [[domain controller]] in their [[Active Directory]] environment. The tester was given valid credentials (`j.fleischman:<PASSWORD_REDACTED>`) for a user on the [[domain controller]] and tasked to demonstrate the full impact of the [[vulnerability|vulnerabilities]] discovered.
+FakeCompany contracted the penetration tester to perform an [[internal penetration test|internal]] [[network penetration test]] on FakeCompany's [[domain controller]] in their [[Active Directory]] environment. The tester was given valid credentials (`j.fleischman:<PASSWORD_REDACTED>`) for a user on the [[domain controller]] and tasked to demonstrate the full impact of the [[vulnerability|vulnerabilities]] discovered.
 
 #### Walkthrough
 The tester began by exporting the target’s [[external scope|external]] IP address to a terminal variable named IP. This ensures that the commands used in this walkthrough can be copy-pasted even if the [[external scope|external]] IP changes.
