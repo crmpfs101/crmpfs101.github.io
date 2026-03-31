@@ -2,8 +2,8 @@
   {
     "id": "access-control",
     "term": "Access Control",
-    "technical": "The mechanisms and policies that determine who or what is allowed to access resources and what actions they can perform.",
-    "layman": "The rules that decide who can access something and what they are allowed to do."
+    "technical": "A security mechanism that controls which users, accounts, or systems can access a resource and what actions they are allowed to perform on it.",
+    "layman": "A security mechanism that controls who can access what resource and how they can use the resource."
   },
   {
     "id": "access-control-entry-ace",
@@ -36,12 +36,6 @@
     "layman": "A local network method that helps devices figure out which physical device matches a network address."
   },
   {
-    "id": "administrative-privileges",
-    "term": "Administrative Privileges",
-    "technical": "Elevated permissions that allow a user or process to manage system settings, users, services, or security controls.",
-    "layman": "High-level access that allows someone to make important changes to a system."
-  },
-  {
     "id": "agent",
     "term": "Agent",
     "technical": "A software component running on a compromised host that communicates with an attacker-controlled system ([[C2])) and performs assigned tasks.",
@@ -51,7 +45,7 @@
     "id": "application",
     "term": "Application",
     "technical": "A software program or service designed to perform specific tasks for users or other systems.",
-    "layman": "A piece of software that helps users or systems perform a specific job."
+    "layman": "A software program with a purpose. An example would be Microsoft Excel. A mobile application could be Airbnb. A web application could be Amazon.com."
   },
   {
     "id": "aquatone",
@@ -63,7 +57,7 @@
     "id": "as-rep-roasting",
     "term": "AS-REP Roasting",
     "technical": "An attack technique in which an attacker requests AS-REP data for accounts that do not require <span class=\"glossary-term--ref\" data-id=\"kerberos-2\">Kerberos</span> preauthentication and attempts to crack that data offline. It is possible because the account can return <span class=\"glossary-term--ref\" data-id=\"authentication\">authentication</span> material before fully verifying identity.",
-    "layman": "An attack technique that targets accounts with weaker <span class=\"glossary-term--ref\" data-id=\"kerberos-2\">Kerberos</span> login protection by collecting password-related data and cracking it offline. It is dangerous because the attacker may be able to obtain crackable data without first proving who they are. It is like finding badge records that skip an extra identity check and then trying to break them in private."
+    "layman": "An attack that targets <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> accounts that are misconfigured to skip an important early login check. This allows an attacker to request login-related data without knowing the password first and try many password guesses offline. Imagine that to get into a room, the security desk is supposed to check who you are before handing you the badge to the room. But for this room, the security desk gives out the badge even before verifying your identity. The attacker can take that badge home and use it to guess the room’s secret phrase. If they guess correctly, they now know the real password."
   },
   {
     "id": "assessment-summary",
@@ -254,8 +248,8 @@
   {
     "id": "credential-dumping",
     "term": "Credential Dumping",
-    "technical": "The extraction of credentials such as passwords or hashes from systems.",
-    "layman": "Stealing passwords or authentication data from a system."
+    "technical": "An attack technique where an attacker extracts credentials, hashes, <span class=\"glossary-term--ref\" data-id=\"kerberos-2\">Kerberos</span> tickets, etc. from memory, databases, credential managers, and etc.",
+    "layman": "An attack technique where an attacker steals credentials that are saved on the computer."
   },
   {
     "id": "credential-stuffing",
@@ -326,8 +320,8 @@
   {
     "id": "dcsync",
     "term": "DCSync",
-    "technical": "A technique that replicates domain controller credential data.",
-    "layman": "Pulling password data from a domain controller."
+    "technical": "An attack technique that abuses <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> replication rights to impersonate a <span class=\"glossary-term--ref\" data-id=\"domain-controller-dc\">domain controller</span> and request credential data from the target <span class=\"glossary-term--ref\" data-id=\"domain-controller-dc\">domain controller</span>. The information it retrieves is similar to dumping the NTDS.dit file. The attack requires the user to have the <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">Replicating Directory Changes</span> and <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">Replicating Directory Changes All</span> rights.",
+    "layman": "An attack technique where an attacker pretends to be a trusted server (<span class=\"glossary-term--ref\" data-id=\"domain-controller-dc\">domain controller</span>) in an <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> environment to retrieve sensitive login data of any user in the environment."
   },
   {
     "id": "defense-in-depth",
@@ -386,8 +380,8 @@
   {
     "id": "dns-poisoning",
     "term": "DNS Poisoning",
-    "technical": "An attack manipulating DNS responses to redirect traffic.",
-    "layman": "Tricking systems into connecting to malicious destinations."
+    "technical": "An attack technique where an attacker inserts false records into a <span class=\"glossary-term--ref\" data-id=\"dns\">DNS</span> so <span class=\"glossary-term--ref\" data-id=\"domain\">domain</span> names will resolve to an incorrect <span class=\"glossary-term--ref\" data-id=\"internet-protocol-ip\">IP</span>. Attackers often use this technique to trick systems into connecting to an attacker-controlled system.",
+    "layman": "An attack technique where an attacker tricks the internet’s address system (<span class=\"glossary-term--ref\" data-id=\"dns\">DNS</span>) into sending someone to the wrong location, such as a fake website controlled by the attacker instead of the real one."
   },
   {
     "id": "domain",
@@ -400,6 +394,12 @@
     "term": "Domain Controller (DC)",
     "technical": "The server that stores and manages <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> data and handles both authentication and authorization.",
     "layman": "A server that verifies logins and keeps track of important directory information for the <span class=\"glossary-term--ref\" data-id=\"domain\">domain</span>. It is like the main security desk that checks badges and maintains official office records."
+  },
+  {
+    "id": "domain-name",
+    "term": "Domain Name",
+    "technical": "A name registered in <span class=\"glossary-term--ref\" data-id=\"dns\">DNS</span> that represents internet resources such as websites, services, or hosts. The periods in the name denote the boundaries between levels in the <span class=\"glossary-term--ref\" data-id=\"dns\">DNS</span> hierarchy. Moving from left to right in the name goes higher up in the hierarchy.",
+    "layman": "A readable internet name, such as google.com, that people and computers use to find websites, services, or other online resources."
   },
   {
     "id": "dropper",
@@ -483,7 +483,7 @@
     "id": "exploit-chain",
     "term": "Exploit Chain",
     "technical": "A sequence of vulnerabilities, misconfigurations, or techniques combined to achieve a larger goal such as full <span class=\"glossary-term--ref\" data-id=\"domain\">domain</span> compromise.",
-    "layman": "When an attacker links several smaller weaknesses together to achieve a bigger result."
+    "layman": "The sequence of weaknesses or attack steps to cause greater <span class=\"glossary-term--ref\" data-id=\"impact\">impact</span> to a system."
   },
   {
     "id": "exploitation",
@@ -500,8 +500,8 @@
   {
     "id": "external-scope",
     "term": "External Scope",
-    "technical": "The portion of an assessment that includes systems, applications, or services accessible from outside the organization, typically from the internet.",
-    "layman": "The part of a security test that focuses on systems exposed to the outside world or the internet."
+    "technical": "Systems or network resources that are reachable from outside an organization’s environment.",
+    "layman": "Systems that are accessible from outside an organization’s own environment, such as the public internet."
   },
   {
     "id": "eyewitness",
@@ -548,8 +548,8 @@
   {
     "id": "foothold",
     "term": "Foothold",
-    "technical": "A stable point of access established on a compromised system that allows further actions within the environment.",
-    "layman": "A point of access an attacker keeps after getting into a system so they can continue operating."
+    "technical": "A maintained initial point of access into a system, network, or environment. In a security assessment, it often refers to the tester gaining shell access on a system. It can also refer to the tester gaining access to an internal system after starting from an <span class=\"glossary-term--ref\" data-id=\"external-scope\">external scope</span>. Foothold is sometimes used interchangeably with <span class=\"glossary-term--ref\" data-id=\"initial-access\">initial access</span>, but has an emphasis on maintaining the access.",
+    "layman": "An initial point of access into a system or environment. Foothold is sometimes used interchangeably with <span class=\"glossary-term--ref\" data-id=\"initial-access\">initial access</span>, but has an emphasis on maintaining the access."
   },
   {
     "id": "forced-browsing",
@@ -608,8 +608,8 @@
   {
     "id": "golden-ticket",
     "term": "Golden Ticket",
-    "technical": "An attack that forges <span class=\"glossary-term--ref\" data-id=\"kerberos-2\">Kerberos</span> <span class=\"glossary-term--ref\" data-id=\"ticket-granting-ticket-tgt\">ticket-granting tickets (TGT)</span> by using the secret of the KRBTGT account in an <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> <span class=\"glossary-term--ref\" data-id=\"domain\">domain</span>. Because the KRBTGT account is used to sign <span class=\"glossary-term--ref\" data-id=\"ticket-granting-ticket-tgt\">TGTs</span>, a forged ticket can let an attacker create <span class=\"glossary-term--ref\" data-id=\"kerberos-2\">Kerberos</span> access for nearly any user in the domain.",
-    "layman": "An attack where someone creates fake top-level <span class=\"glossary-term--ref\" data-id=\"kerberos-2\">Kerberos</span> access tickets for an <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> <span class=\"glossary-term--ref\" data-id=\"domain\">domain</span>. The tickets let an attacker pretend to be almost any user and gain broad access across the environment."
+    "technical": "An attack that forges a <span class=\"glossary-term--ref\" data-id=\"kerberos-2\">Kerberos</span> <span class=\"glossary-term--ref\" data-id=\"ticket-granting-ticket-tgt\">ticket-granting tickets (TGT)</span> by using the secret of the <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">KRBTGT</span> account in an <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> <span class=\"glossary-term--ref\" data-id=\"domain\">domain</span>. Because the <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">KRBTGT</span> account is used to sign all <span class=\"glossary-term--ref\" data-id=\"ticket-granting-ticket-tgt\">TGTs</span> in the <span class=\"glossary-term--ref\" data-id=\"domain\">domain</span>, the forged ticket can let an attacker create <span class=\"glossary-term--ref\" data-id=\"kerberos-2\">Kerberos</span> access for nearly any user in the <span class=\"glossary-term--ref\" data-id=\"domain\">domain</span>.",
+    "layman": "An attack technique where an attacker forges the top-level access ticket in an <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> environment. The ticket lets the attacker pretend to be almost any user across the environment."
   },
   {
     "id": "gray-box-test",
@@ -656,8 +656,8 @@
   {
     "id": "hash",
     "term": "Hash",
-    "technical": "A fixed-length value produced by a mathematical algorithm from input data, often used for integrity checking, password storage, or authentication.",
-    "layman": "A scrambled value created from data, often used to help protect passwords or verify that information has not changed."
+    "technical": "A usually fixed-length value produced by a mathematical algorithm from input data. It is designed to be irreversible, and so is often used for integrity checking, password storage, or <span class=\"glossary-term--ref\" data-id=\"authentication\">authentication</span>.",
+    "layman": "A scrambled value created from data, often used to help protect passwords or verify that information has not changed. It should ideally be infeasible to determine the original data from a hash unless the original data is guessed. In <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span>, hashes like the <span class=\"glossary-term--ref\" data-id=\"nt-hash\">NT hash</span> can be used in place of a user's password to log in to systems. This way, even if the hash is recovered, it is still difficult for the attacker to recover the password."
   },
   {
     "id": "hashcat",
@@ -674,8 +674,8 @@
   {
     "id": "host",
     "term": "Host",
-    "technical": "Any device or system connected to a network and identified by an IP address or hostname.",
-    "layman": "Any computer or device connected to a network."
+    "technical": "A computer connected to a network.",
+    "layman": "A computer connected to a network."
   },
   {
     "id": "hostname",
@@ -770,8 +770,8 @@
   {
     "id": "internal-scope",
     "term": "Internal Scope",
-    "technical": "The portion of an assessment that includes systems, applications, or networks accessible from within the organization’s internal environment.",
-    "layman": "The part of a security test that focuses on systems inside the organization’s network."
+    "technical": "Systems or network resources that are only reachable from inside an organization’s environment rather than from the public internet. There is usually a firewall segmenting the public internet from the internal systems.",
+    "layman": "Systems that are only accessible from within an organization’s own environment and not the public internet."
   },
   {
     "id": "internet-protocol-ip",
@@ -807,13 +807,13 @@
     "id": "kerberoasting",
     "term": "Kerberoasting",
     "technical": "An attack technique in which an attacker requests <span class=\"glossary-term--ref\" data-id=\"kerberos-2\">Kerberos</span> service tickets for accounts with <span class=\"glossary-term--ref\" data-id=\"service-principal-name-spn\">SPN</span> values and attempts to crack the ticket data offline to recover account credentials. It is especially effective against <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">service accounts</span> with weak or long-lived passwords.",
-    "layman": "An attack that targets certain <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">service accounts</span> in <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> by collecting <span class=\"glossary-term--ref\" data-id=\"kerberos-2\">Kerberos</span> ticket data and trying to crack it offline. It is dangerous because attackers can test guesses privately without repeatedly interacting with the target system, especially if the account has a weak password. It is like copying encrypted service badge data and testing guesses in private until one works."
+    "layman": "An attack that targets certain <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">service accounts</span> in <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> by requesting <span class=\"glossary-term--ref\" data-id=\"kerberos-2\">Kerberos</span> ticket data and trying to crack the password offline. It is dangerous because attackers can test guesses privately without repeatedly interacting with the target system. Imagine that the security desk will give any valid employee a badge for a specific room. The attacker can take that badge home and use it to guess the room’s secret phrase. If they guess correctly, they now know the real password."
   },
   {
     "id": "kerberos",
     "term": "Kerberos",
     "technical": "A network authentication protocol that uses ticket-based authentication to verify identities securely.",
-    "layman": "A Windows login system that verifies your identity once and then gives you temporary digital proof so you can access other services without repeatedly sending your password."
+    "layman": "A Windows login system that verifies your identity once and then gives you temporary digital proof so you can access other services without repeatedly sending your password. It is like a security desk that verifies your secret phrase once and then issues temporary badges so you can access specific rooms without repeatedly giving your secret phrase."
   },
   {
     "id": "kerberos-2",
@@ -1046,8 +1046,8 @@
   {
     "id": "ntlm-relay",
     "term": "NTLM Relay",
-    "technical": "An attack relaying NTLM authentication to another service.",
-    "layman": "Forwarding login attempts to gain access elsewhere."
+    "technical": "An <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> attack technique where an attacker intercepts a valid <span class=\"glossary-term--ref\" data-id=\"ntlm\">NTLM</span> authentication attempt and forwards it to the target service. This technique is often used when <span class=\"glossary-term--ref\" data-id=\"pass-the-hash-pth\">PtH</span> fails and the attacker doesn't have the password.",
+    "layman": "An <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> attack technique where an attacker tricks a system into sending them a login attempt. The attacker then forwards that login attempt to another system to gain access to that system as the user."
   },
   {
     "id": "ntlmv2-net-ntlmv2",
@@ -1094,8 +1094,8 @@
   {
     "id": "overpass-the-hash-pass-the-key",
     "term": "Overpass-the-Hash (Pass-the-Key)",
-    "technical": "An attack that uses stolen <span class=\"glossary-term--ref\" data-id=\"nt-hash\">NT hashes</span> to obtain <span class=\"glossary-term--ref\" data-id=\"kerberos-2\">Kerberos</span> tickets without knowing the plaintext password.",
-    "layman": "An attack where stolen password-related data is used to get real <span class=\"glossary-term--ref\" data-id=\"kerberos-2\">Kerberos</span> access tickets without knowing the actual password. It lets an attacker turn one kind of stolen login secret into another form of access that the system will trust."
+    "technical": "An attack that uses stolen <span class=\"glossary-term--ref\" data-id=\"nt-hash\">NT hashes</span> to obtain <span class=\"glossary-term--ref\" data-id=\"kerberos-2\">Kerberos</span> tickets without knowing the plaintext password. This is helpful for when services require <span class=\"glossary-term--ref\" data-id=\"kerberos-2\">Kerberos</span> tickets for <span class=\"glossary-term--ref\" data-id=\"authentication\">authentication</span> instead of <span class=\"glossary-term--ref\" data-id=\"nt-hash\">NT hashes</span>.",
+    "layman": "An attack technique where a stolen password <span class=\"glossary-term--ref\" data-id=\"hash\">hash</span> is used to get legitimate access tickets that are then used to login without knowing the real password. This can be useful when using the stolen <span class=\"glossary-term--ref\" data-id=\"hash\">hash</span> directly (<span class=\"glossary-term--ref\" data-id=\"pass-the-hash-pth\">Pass-the-Hash</span>), does not work because the target system requires ticket-based login. Imagine that to get into a room, you can either provide an authorized user's secret phrase (password), stamp derived from the secret phrase <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">(hash</span>), or badge issued by the security desk (ticket). However, security has decided to disable the stamp scanners for each room. In this case, the attacker can submit the stamp to the security desk instead and request a legitimate badge. The badge would then be used to access the room without ever knowing the secret phrase."
   },
   {
     "id": "owasp",
@@ -1107,13 +1107,13 @@
     "id": "pass-the-hash-pth",
     "term": "Pass-the-Hash (PtH)",
     "technical": "An attack technique in which an attacker uses a stolen <span class=\"glossary-term--ref\" data-id=\"ntlm\">NTLM</span> hash to authenticate without knowing the plaintext password. It is commonly associated with <span class=\"glossary-term--ref\" data-id=\"ntlm\">NTLM</span> because the protocol can accept the hash-derived material as proof of identity.",
-    "layman": "An attack technique where a stolen password hash is used to log in without learning the real password. This is one reason <span class=\"glossary-term--ref\" data-id=\"ntlm\">NTLM</span> is often abused by attackers. Attackers can steal the hash alone and impersonate the user without knowing their password. It is like using a copied badge token that the building accepts even though you never learned the badge owner’s secret code."
+    "layman": "An attack technique where a stolen password <span class=\"glossary-term--ref\" data-id=\"hash\">hash</span> is used to log in without knowing the real password. This is one reason <span class=\"glossary-term--ref\" data-id=\"ntlm\">NTLM</span> is often abused by attackers. Attackers can steal the <span class=\"glossary-term--ref\" data-id=\"hash\">hash</span> alone and impersonate the user without knowing their password. Imagine that to get into a room, you can either provide an authorized user's secret phrase (password) or stamp derived from the secret phrase (<span class=\"glossary-term--ref\" data-id=\"hash\">hash</span>). In this case, the attacker can steal the stamp and access the room without ever knowing the secret phrase."
   },
   {
     "id": "pass-the-ticket-ptt",
     "term": "Pass-the-Ticket (PtT)",
     "technical": "An attack technique in which an attacker steals and reuses <span class=\"glossary-term--ref\" data-id=\"kerberos-2\">Kerberos</span> tickets to authenticate as another user or service. It works because possession of a valid ticket may be enough to access services until the ticket expires.",
-    "layman": "An attack technique where a stolen <span class=\"glossary-term--ref\" data-id=\"kerberos-2\">Kerberos</span> ticket is reused to impersonate someone else. This is dangerous because a valid ticket can sometimes be used directly without needing the user’s password. It is like finding a valid temporary access pass and using it before it expires."
+    "layman": "An attack technique where a stolen access ticket is used to log in without knowing the real password. Imagine that to get into a room, you can either provide an authorized user's secret phrase (password), stamp derived from the secret phrase <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">(hash</span>), or badge issued by the security desk (ticket). In this case, the attacker can steal the badge and access the room without ever knowing the secret phrase nor possess the stamp."
   },
   {
     "id": "password-policy",
@@ -1208,8 +1208,8 @@
   {
     "id": "printer-bug-petitpotam",
     "term": "Printer Bug (PetitPotam)",
-    "technical": "An attack abusing MS-RPRN to coerce authentication.",
-    "layman": "Forcing a system to authenticate to the attacker."
+    "technical": "An <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> attack technique that forces a system to authenticate to an attacker-controlled system. This can be used to capture the <span class=\"glossary-term--ref\" data-id=\"ntlmv2-net-ntlmv2\">Net-NTLMv2</span> hash for offline cracking or to perform a <span class=\"glossary-term--ref\" data-id=\"ntlm-relay\">NTLM Relay</span> attack.",
+    "layman": "An <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> attack technique where an attacker tricks a system into sending them a login attempt. This login attempt contains a password <span class=\"glossary-term--ref\" data-id=\"hash\">hash</span> that can be cracked to recover the system's password."
   },
   {
     "id": "privilege",
@@ -1316,8 +1316,8 @@
   {
     "id": "resource-based-constrained-delegation-rbcd",
     "term": "Resource-Based Constrained Delegation (RBCD)",
-    "technical": "A delegation configuration where resource owners define delegation rights.",
-    "layman": "A delegation model controlled by the resource server."
+    "technical": "An <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> attack technique that involves the target object’s msDS-AllowedToActOnBehalfOfOtherIdentity <span class=\"glossary-term--ref\" data-id=\"attribute\">attribute</span>. If an attacker can modify this <span class=\"glossary-term--ref\" data-id=\"attribute\">attribute</span>, they can authorize an account to be able to request <span class=\"glossary-term--ref\" data-id=\"ticket-granting-service-tgs\">TGS</span> tickets on behalf of other users to the target.",
+    "layman": "An <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> attack technique where an attacker sets which accounts a system trusts to act on behalf of users. This can let the attacker make one of their own accounts trusted and then access that server as other users."
   },
   {
     "id": "responder",
@@ -1454,7 +1454,7 @@
   {
     "id": "server",
     "term": "Server",
-    "technical": "A system that provides resources, services, or functionality to other systems over a network.",
+    "technical": "A computer that provides resources, services, or functionality to other computers over a network. In a client-server architecture, the server hosts the data or services while the client connects to the server for the data or services.",
     "layman": "A computer that provides services or data to other computers."
   },
   {
@@ -1514,8 +1514,8 @@
   {
     "id": "shadow-coerce-ms-fsrvp",
     "term": "Shadow Coerce (MS-FSRVP)",
-    "technical": "An attack abusing MS-FSRVP to coerce authentication.",
-    "layman": "Forcing a system to authenticate using file share protocols."
+    "technical": "An <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> attack technique that abuses the MS-FSRVP protocol to force a system to authenticate to an attacker-controlled system. This can be used to capture the <span class=\"glossary-term--ref\" data-id=\"ntlmv2-net-ntlmv2\">Net-NTLMv2</span> hash for offline cracking or to perform a <span class=\"glossary-term--ref\" data-id=\"ntlm-relay\">NTLM Relay</span> attack.",
+    "layman": "An <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> attack technique where an attacker tricks a system into sending them a login attempt. This login attempt contains a password <span class=\"glossary-term--ref\" data-id=\"hash\">hash</span> that can be cracked to recover the system's password."
   },
   {
     "id": "shadow-credentials",
@@ -1550,8 +1550,8 @@
   {
     "id": "silver-ticket",
     "term": "Silver Ticket",
-    "technical": "An attack that forges a <span class=\"glossary-term--ref\" data-id=\"kerberos-2\">Kerberos</span> service ticket for a specific service by using the secret of that service’s account. Because the forged ticket is only for one service, it can let an attacker access that service as another user without needing to contact the <span class=\"glossary-term--ref\" data-id=\"domain-controller-dc\">domain controller</span> for validation.",
-    "layman": "An attack where someone creates a fake access ticket for one specific service. If the service accepts it, the attacker can use that service as though they were a legitimate user."
+    "technical": "An attack that forges a <span class=\"glossary-term--ref\" data-id=\"kerberos-2\">Kerberos</span> <span class=\"glossary-term--ref\" data-id=\"ticket-granting-service-tgs\">ticket-granting service (TGS)</span> for a specific service by using the secret of that service’s account. Because the forged ticket is only for one service, it can let an attacker access that service as another user without needing to contact the <span class=\"glossary-term--ref\" data-id=\"domain-controller-dc\">domain controller</span> for validation.",
+    "layman": "An attack technique where an attacker forges a service ticket that claims to represent a legitimate user for one specific service in an <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> environment. If the service accepts it, the attacker can use that service as the legitimate user."
   },
   {
     "id": "sliver",
@@ -1628,8 +1628,8 @@
   {
     "id": "subdomain",
     "term": "Subdomain",
-    "technical": "A subordinate DNS name under a parent domain, such as admin.example.com under example.com.",
-    "layman": "An additional web address under a main website name, such as admin.example.com."
+    "technical": "A <span class=\"glossary-term--ref\" data-id=\"domain-name\">domain</span> under a parent <span class=\"glossary-term--ref\" data-id=\"domain-name\">domain</span>, such as play.google.com under google.com.",
+    "layman": "A website that falls under the main website, such as play.google.com under google.com."
   },
   {
     "id": "subfinder",
@@ -1724,8 +1724,8 @@
   {
     "id": "unconstrained-delegation",
     "term": "Unconstrained Delegation",
-    "technical": "A delegation setting allowing services to impersonate users to any service.",
-    "layman": "A risky setting allowing broad impersonation rights."
+    "technical": "An <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> privilege that allows a computer to store and reuse the <span class=\"glossary-term--ref\" data-id=\"ticket-granting-ticket-tgt\">TGTs</span> of users authenticating to it. Compromising the computer would allow an attacker to impersonate the authenticated users to access other services or computers.",
+    "layman": "An <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> setting that allows a computer to act on behalf of any user who connects to it. This includes allowing the computer to connect to other computers the user has privileges to."
   },
   {
     "id": "unicode-encoding",
@@ -1754,8 +1754,8 @@
   {
     "id": "uv",
     "term": "uv",
-    "technical": "",
-    "layman": ""
+    "technical": "A python package and project manager that automatically manages python dependencies and uses virtual environments to isolate python environments so that compatibility issues are avoided.",
+    "layman": "A tool that makes it easier to work with the programming language Python by managing the Python environment and preventing compatibility issues."
   },
   {
     "id": "vhost",
@@ -1766,7 +1766,7 @@
   {
     "id": "vulnerability",
     "term": "Vulnerability",
-    "technical": "A weakness in software, hardware, configuration, or process that can be exploited to compromise confidentiality, integrity, or availability.",
+    "technical": "A security flaw or weakness that can be exploited to compromise <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">confidentiality</span>, <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">integrity</span>, or <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">availability</span>.",
     "layman": "A security flaw or weakness that attackers could take advantage of."
   },
   {
