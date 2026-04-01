@@ -21,19 +21,19 @@
     "id": "active-directory",
     "term": "Active Directory",
     "technical": "A Windows directory service that centrally manages identities, systems, <span class=\"glossary-term--ref\" data-id=\"authentication\">Authentication</span>, <span class=\"glossary-term--ref\" data-id=\"authorization\">Authorization</span>, and policies within an organization's  domain environment. It allows administrators to control who has access to which network resources, such as computers or printers.",
-    "layman": "A system that helps an organization manage users, computers, and access rules across its network. It is like the company’s central office directory and badge-access system combined."
+    "layman": "The central Windows system many organizations use to manage user accounts, computers, logins, permissions, and security rules across the network. It acts like a shared control center for who can sign in and what they are allowed to access."
   },
   {
     "id": "active-directory-certificate-services-ad-cs",
     "term": "Active Directory Certificate Services (AD CS)",
-    "technical": "A Windows Server role that provides certificate issuance, management, and related public key infrastructure services for Active Directory environments.",
-    "layman": "A Windows service that issues and manages digital certificates for an organization."
+    "technical": "It is <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory’s</span> <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">public key infrastructure</span> collection of services that issues, manages, and validates digital certificates used for authentication, encryption, and digital signatures.",
+    "layman": "The <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> system many organizations use to create and manage digital certificates, which act like trusted digital IDs for users, computers, and services. Those certificates can be used to prove identity, protect communications, and sometimes login without the password."
   },
   {
     "id": "address-resolution-protocol-arp",
     "term": "Address Resolution Protocol (ARP)",
-    "technical": "A protocol used on local networks to map IP addresses to MAC addresses.",
-    "layman": "A local network method that helps devices figure out which physical device matches a network address."
+    "technical": "A Layer 2 (or \"Layer 2.5\") protocol used on local networks to map <span class=\"glossary-term--ref\" data-id=\"internet-protocol-ip\">IP</span> addresses to <span class=\"glossary-term--ref\" data-id=\"media-access-control-mac\">MAC</span> addresses. It finds these mappings by sending broadcast requests on the network that ask for the device who owns the target <span class=\"glossary-term--ref\" data-id=\"internet-protocol-ip\">IP</span> address. When the device with the target <span class=\"glossary-term--ref\" data-id=\"internet-protocol-ip\">IP</span> address responds, the original host now knows the target's <span class=\"glossary-term--ref\" data-id=\"media-access-control-mac\">MAC</span> address and can start sending messages to the target.",
+    "layman": "A protocol that helps devices figure out which physical device matches a network address (<span class=\"glossary-term--ref\" data-id=\"internet-protocol-ip\">IP</span> address) so that they know which physical device to talk to."
   },
   {
     "id": "agent",
@@ -74,8 +74,8 @@
   {
     "id": "attack-surface",
     "term": "Attack Surface",
-    "technical": "The total set of locations, services, interfaces, and entry points through which a system or organization can be targeted.",
-    "layman": "All of the places where an attacker might try to interact with or break into a system."
+    "technical": "All possible systems, networks, or environments an attacker can check to exploit the target.",
+    "layman": "All the places or systems that an attacker might try to interact with or break into. Imagine a house being the target. The doors, windows, chimney, and cellar could all possibly be used to get in, making up the attack surface for the house."
   },
   {
     "id": "attribute",
@@ -123,13 +123,13 @@
     "id": "bloodhound-ce",
     "term": "BloodHound-CE",
     "technical": "A graph-based <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> and Azure AD attack path analysis platform that models relationships between users, groups, computers, permissions, and trusts. BloodHound-CE ingests collected directory data and uses graph queries to identify privilege escalation paths, delegated rights abuse, and shortest paths to high-value targets such as Domain Admins.",
-    "layman": "A tool that maps how users, computers, and permissions are connected inside a company’s Windows account management system (<span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span>). It shows the step-by-step paths an attacker could take to move through the organization and gain powerful administrative access. It helps both attackers and defenders understand where risky permission chains exist."
+    "layman": "A tool that maps how users, computers, and permissions are connected inside a company’s Windows account management system (<span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span>). It shows the step-by-step paths an attacker could take to move through the organization and gain powerful administrative access. It helps both attackers and defenders understand where risky configurations exist."
   },
   {
     "id": "bloodhound-legacy",
     "term": "BloodHound-Legacy",
     "technical": "A graph-based <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> and Azure AD attack path analysis platform that models relationships between users, groups, computers, permissions, and trusts. BloodHound-Legacy ingests collected directory data and uses graph queries to identify privilege escalation paths, delegated rights abuse, and shortest paths to high-value targets such as Domain Admins. BloodHound-Legacy is the predecessor to <span class=\"glossary-term--ref\" data-id=\"bloodhound-ce\">BloodHound-CE</span>.",
-    "layman": "The older version of <span class=\"glossary-term--ref\" data-id=\"bloodhound-ce\">BloodHound-CE</span> that maps how users, computers, and permissions connect inside a company’s Windows account system, showing how someone could gain higher access step by step."
+    "layman": "The older version of <span class=\"glossary-term--ref\" data-id=\"bloodhound-ce\">BloodHound-CE</span> that maps how users, computers, and permissions are connected inside a company’s Windows account management system (<span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span>)."
   },
   {
     "id": "bloodhound-py",
@@ -182,8 +182,8 @@
   {
     "id": "certipy",
     "term": "Certipy",
-    "technical": "A tool used to enumerate and abuse Active Directory Certificate Services, including certificate templates and certificate-based authentication paths.",
-    "layman": "A tool used to find and exploit weaknesses in Windows certificate services."
+    "technical": "A toolkit for enumerating and abusing <span class=\"glossary-term--ref\" data-id=\"active-directory-certificate-services-ad-cs\">AD CS</span>. It can grab the certificate authorities while also identifying misconfigurations and forging certificates.",
+    "layman": "A tool used to find and exploit weaknesses in the system Windows organizations use to issue and manage digital certificates for logins (<span class=\"glossary-term--ref\" data-id=\"active-directory-certificate-services-ad-cs\">AD CS</span>)."
   },
   {
     "id": "cewl",
@@ -226,6 +226,12 @@
     "term": "Command Injection",
     "technical": "An attack that causes an application to pass attacker-controlled input to a system shell or command interpreter.",
     "layman": "An attack where user input is turned into real system commands. These commands could lead to attackers gaining control over the computers running the website or application."
+  },
+  {
+    "id": "common-vulnerabilities-and-exposures-cve",
+    "term": "Common Vulnerabilities and Exposures (CVE)",
+    "technical": "An identifier for publicly known <span class=\"glossary-term--ref\" data-id=\"vulnerability\">vulnerabilities</span> with the format CVE-YYYY-XXXXX (YYYY represents the year it was assigned).",
+    "layman": "An identifier for publicly known <span class=\"glossary-term--ref\" data-id=\"vulnerability\">vulnerabilities</span> with the format CVE-YYYY-XXXXX (YYYY represents the year it was assigned)."
   },
   {
     "id": "content-spoofing",
@@ -280,12 +286,6 @@
     "term": "CSV Injection",
     "technical": "An injection attack that places spreadsheet formulas into CSV data so they execute when the file is opened in spreadsheet software.",
     "layman": "An attack where harmful spreadsheet instructions or formulas are hidden inside exported data so they execute when the file is opened in spreadsheet software."
-  },
-  {
-    "id": "cve",
-    "term": "CVE",
-    "technical": "A Common Vulnerabilities and Exposures identifier that uniquely names a publicly disclosed security vulnerability.",
-    "layman": "A standard ID used to identify a known security vulnerability."
   },
   {
     "id": "cvss-common-vulnerability-scoring-system",
@@ -387,19 +387,19 @@
     "id": "domain",
     "term": "Domain",
     "technical": "A logical boundary in <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> that contains objects such as users, computers, groups, and policies under a shared security and directory structure.",
-    "layman": "An <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> grouping where a set of users and computers are organized under the same central login system and access rules. It is like one company office where everyone uses the same badge system and follows the same building policies."
+    "layman": "An <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> grouping where a set of users and computers are managed under the same central login system and access rules. It is like one organization-wide account environment where everyone follows the same sign-in and security structure."
   },
   {
     "id": "domain-controller-dc",
     "term": "Domain Controller (DC)",
-    "technical": "The server that stores and manages <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> data and handles both authentication and authorization.",
-    "layman": "A server that verifies logins and keeps track of important directory information for the <span class=\"glossary-term--ref\" data-id=\"domain\">domain</span>. It is like the main security desk that checks badges and maintains official office records."
+    "technical": "A high-value <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> server that stores directory data and provides core identity services such as <span class=\"glossary-term--ref\" data-id=\"authentication\">authentication</span>, <span class=\"glossary-term--ref\" data-id=\"authorization\">authorization</span>, and <span class=\"glossary-term--ref\" data-id=\"replication\">replication</span>. Because it controls logons, permissions, and <span class=\"glossary-term--ref\" data-id=\"domain\">domain</span>-wide account data, it is a primary target in <span class=\"glossary-term--ref\" data-id=\"domain\">domain</span> compromise.",
+    "layman": "The most important server in <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span>, responsible for handling logins and controlling access across the <span class=\"glossary-term--ref\" data-id=\"domain\">domain</span>. Attackers highly value it because compromising it can give them broad control over user accounts, computers, and security settings."
   },
   {
     "id": "domain-name",
     "term": "Domain Name",
     "technical": "A name registered in <span class=\"glossary-term--ref\" data-id=\"dns\">DNS</span> that represents internet resources such as websites, services, or hosts. The periods in the name denote the boundaries between levels in the <span class=\"glossary-term--ref\" data-id=\"dns\">DNS</span> hierarchy. Moving from left to right in the name goes higher up in the hierarchy.",
-    "layman": "A readable internet name, such as google.com, that people and computers use to find websites, services, or other online resources."
+    "layman": "A readable internet name, such as google.com, that people and computers use to find websites or other online resources."
   },
   {
     "id": "dropper",
@@ -428,8 +428,8 @@
   {
     "id": "evasion",
     "term": "Evasion",
-    "technical": "Techniques used to avoid detection by security controls.",
-    "layman": "Methods attackers use to stay hidden."
+    "technical": "The practice of incorproating techniques to avoid detection by security controls.",
+    "layman": "The practice of incorproating techniques to avoid detection by security controls."
   },
   {
     "id": "evidence",
@@ -459,7 +459,7 @@
     "id": "exfiltration",
     "term": "Exfiltration",
     "technical": "The unauthorized transfer of data from a system.",
-    "layman": "Stealing data from a system."
+    "layman": "The stealing of data from a system."
   },
   {
     "id": "exfiltration-channel",
@@ -560,8 +560,8 @@
   {
     "id": "forest",
     "term": "Forest",
-    "technical": "The top-level structure in <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> that contains one or more domains and shares a common <span class=\"glossary-term--ref\" data-id=\"schema\">Schema</span>, configuration, and trust framework.",
-    "layman": "An <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> grouping that connects multiple related <span class=\"glossary-term--ref\" data-id=\"domain\">domains</span> into one broader system. It is like a parent company that oversees several office locations that still share common rules and records."
+    "technical": "The top-level structure in <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> that contains one or more domains and shares a common <span class=\"glossary-term--ref\" data-id=\"schema\">schema</span>, configuration, and trust framework.",
+    "layman": "An <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> grouping that connects multiple related <span class=\"glossary-term--ref\" data-id=\"domain\">domains</span> into one broader system. It is like several organization-wide account environments that each manage their own users and computers, but all still belong to the same overall organization."
   },
   {
     "id": "fping",
@@ -578,20 +578,20 @@
   {
     "id": "fully-qualified-domain-name-fqdn",
     "term": "Fully Qualified Domain Name (FQDN)",
-    "technical": "A complete domain name that specifies the full DNS path to a host, including the hostname and domain, such as server.example.com.",
-    "layman": "The full internet or network name of a computer, including both its name and domain."
+    "technical": "A complete <span class=\"glossary-term--ref\" data-id=\"domain-name\">domain name</span> that specifies the full DNS path to a host, including all parent domains.",
+    "layman": "The readable internet name for a computer that is more specific than <span class=\"glossary-term--ref\" data-id=\"domain-name\">domain name</span>. For example, a FQDN could be www.youtube.com while the <span class=\"glossary-term--ref\" data-id=\"domain-name\">domain name</span> would just be youtube.com."
   },
   {
     "id": "genericall",
     "term": "GenericAll",
-    "technical": "An Active Directory permission that grants full control over an object, including modification of its attributes, permissions, and ownership.",
-    "layman": "A permission that gives nearly complete control over an account, group, or other object."
+    "technical": "An <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> permission that gives full control over an object. This a commonly abused permission because it allows an attacker to modify the <span class=\"glossary-term--ref\" data-id=\"attribute\">attributes</span> of the object, reset passwords, or change permissions.",
+    "layman": "An <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> permission that gives someone full control over an account, computer, or other directory object."
   },
   {
     "id": "genericwrite",
     "term": "GenericWrite",
-    "technical": "An Active Directory permission that allows modification of certain attributes on an object without full control.",
-    "layman": "A permission that allows someone to change important details on an account or object."
+    "technical": "An <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> permission that allows modification of an object’s writable <span class=\"glossary-term--ref\" data-id=\"attribute\">attributes</span> without granting full control over the object. This is a commonly abused permission because it can help in impersonating the object or even recovering the object's credentials.",
+    "layman": "An <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> permission that lets someone change details on an account, computer, or other directory object without granting full control."
   },
   {
     "id": "global-catalog-gc",
@@ -680,8 +680,8 @@
   {
     "id": "hostname",
     "term": "Hostname",
-    "technical": "The specific name assigned to a device or system on a network.",
-    "layman": "The name given to a computer or device on a network."
+    "technical": "The name given to a computer or device within a network. The leftmost part of a <span class=\"glossary-term--ref\" data-id=\"fully-qualified-domain-name-fqdn\">FQDN</span> is often the hostname of the computer. For example, if the device's <span class=\"glossary-term--ref\" data-id=\"fully-qualified-domain-name-fqdn\">FQDN</span> is mail.google.com, the hostname could be mail.",
+    "layman": "The name given to a computer or device within a network, such as Johns-iMac."
   },
   {
     "id": "http",
@@ -776,8 +776,8 @@
   {
     "id": "internet-protocol-ip",
     "term": "Internet Protocol (IP)",
-    "technical": "The network-layer protocol responsible for addressing and routing packets between hosts across networks.",
-    "layman": "The basic system that allows computers to send data to each other across networks using addresses."
+    "technical": "A Layer 3 protocol responsible for addressing and routing packets between hosts across networks.",
+    "layman": "A protocol that gives computers and devices a network address so that they can communicate over the internet or within <span class=\"glossary-term--ref\" data-id=\"internal-scope\">internal</span> networks."
   },
   {
     "id": "inveigh",
@@ -912,10 +912,10 @@
     "layman": "Malicious software made to interfere with systems, steal information, or help attackers gain control."
   },
   {
-    "id": "media-access-control-address-mac",
-    "term": "Media Access Control Address (MAC)",
-    "technical": "A hardware address assigned to a network interface that uniquely identifies it on a local network segment.",
-    "layman": "A unique physical network address assigned to a device’s network card."
+    "id": "media-access-control-mac",
+    "term": "Media Access Control (MAC)",
+    "technical": "A unique Layer 2 hardware address assigned to a device's <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">NIC</span> to identify the hardware during local network communications. It is typically assigned by the manufacturer, but the active MAC address can be spoofed, allowing a device to impersonate another device.",
+    "layman": "A unique hardware address used to identify a device. It is typically assigned by the manufacturer, but an attacker can fake the address during communication to impersonate other devices."
   },
   {
     "id": "memory-corruption",
@@ -986,7 +986,7 @@
   {
     "id": "netexec",
     "term": "NetExec",
-    "technical": "A  network service enumeration and exploitation tool designed primarily for <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> environments. NetExec interacts with protocols such as <span class=\"glossary-term--ref\" data-id=\"smb\">SMB</span>, <span class=\"glossary-term--ref\" data-id=\"ldap\">LDAP</span>, <span class=\"glossary-term--ref\" data-id=\"winrm\">WinRM</span>, <span class=\"glossary-term--ref\" data-id=\"rdp\">RDP</span>, and others to perform credential validation, <span class=\"glossary-term--ref\" data-id=\"password-spraying\">password spraying</span>, domain enumeration, remote command execution, and service abuse.",
+    "technical": "A network service enumeration and exploitation tool designed primarily for <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> environments. NetExec interacts with protocols such as <span class=\"glossary-term--ref\" data-id=\"smb\">SMB</span>, <span class=\"glossary-term--ref\" data-id=\"ldap\">LDAP</span>, <span class=\"glossary-term--ref\" data-id=\"winrm\">WinRM</span>, <span class=\"glossary-term--ref\" data-id=\"rdp\">RDP</span>, and others to perform credential validation, <span class=\"glossary-term--ref\" data-id=\"password-spraying\">password spraying</span>, domain enumeration, remote command execution, and service abuse.",
     "layman": "A tool used to interact with and test many Windows network services at once. It can check whether user credentials are valid, gather information about users and their permissions, connect to remote systems, and abuse weak configurations. It is most commonly used to attack <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> environments."
   },
   {
@@ -1028,8 +1028,8 @@
   {
     "id": "nt-hash",
     "term": "NT Hash",
-    "technical": "The NTLM password hash format derived from a user’s password and used in Windows authentication processes.",
-    "layman": "A Windows password hash that can sometimes be reused for authentication without knowing the actual password."
+    "technical": "A type of <span class=\"glossary-term--ref\" data-id=\"hash\">hash</span> used in Windows <span class=\"glossary-term--ref\" data-id=\"ntlm\">NTLM</span> authentication. In <span class=\"glossary-term--ref\" data-id=\"kerberos-2\">Kerberos</span> authentication, it is the <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">RC4-HMAC key</span>.",
+    "layman": "A Windows password <span class=\"glossary-term--ref\" data-id=\"hash\">hash</span> created from the user's or computer's password. It can sometimes be used to log in to computers or other services without the password."
   },
   {
     "id": "ntlm",
@@ -1076,8 +1076,8 @@
   {
     "id": "operational-security-opsec",
     "term": "Operational Security (OpSec)",
-    "technical": "The practice of protecting information about methods, plans, tools, or activities so that others cannot use those details against you.",
-    "layman": "Steps taken to avoid being detected during an attack."
+    "technical": "The practice of being careful so important information or suspicious activity is not accidentally revealed. During an attack, the attacker practices this to avoid leaving clues that would show who they are or what they are doing. During a <span class=\"glossary-term--ref\" data-id=\"penetration-test\">penetration test</span>, the tester practices this to avoid leaking sensitive data.",
+    "layman": "The practice of being careful so important information or suspicious activity is not accidentally revealed. During an attack, the attacker practices this to avoid leaving clues that would show who they are or what they are doing. During a <span class=\"glossary-term--ref\" data-id=\"penetration-test\">penetration test</span>, the tester practices this to avoid leaking sensitive data."
   },
   {
     "id": "oracle-tns",
@@ -1166,8 +1166,8 @@
   {
     "id": "pkinit",
     "term": "PKINIT",
-    "technical": "Public Key Cryptography for Initial Authentication in Kerberos, an extension that allows certificate-based initial Kerberos authentication.",
-    "layman": "A way for Windows logins to use digital certificates instead of only passwords during initial authentication."
+    "technical": "It stands for Public Key Cryptography for Initial Authentication. It is an extension to <span class=\"glossary-term--ref\" data-id=\"kerberos-2\">Kerberos</span> that allows a client to authenticate with a certificate instead of a password-derived secret.",
+    "layman": "A way for a user or system to prove who they are with a digital ID instead of a password when logging in through the <span class=\"glossary-term--ref\" data-id=\"kerberos-2\">Kerberos</span> protocol."
   },
   {
     "id": "pkinittools",
@@ -1446,12 +1446,6 @@
     "layman": "The overall strength of an organization's security in detecting threats, preventing security breaches, and fixing security issues."
   },
   {
-    "id": "sensitive-data",
-    "term": "Sensitive Data",
-    "technical": "Information that could cause harm, legal issues, or security impact if exposed, altered, or misused.",
-    "layman": "Information that could cause harm, legal issues, or security impact if exposed, altered, or misused."
-  },
-  {
     "id": "server",
     "term": "Server",
     "technical": "A computer that provides resources, services, or functionality to other computers over a network. In a client-server architecture, the server hosts the data or services while the client connects to the server for the data or services.",
@@ -1520,8 +1514,8 @@
   {
     "id": "shadow-credentials",
     "term": "Shadow Credentials",
-    "technical": "A persistence and privilege escalation technique that abuses certificate-based authentication by adding alternate key material to an account.",
-    "layman": "A technique that lets an attacker set up certificate-based access to log in as another account without knowing its password."
+    "technical": "An <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> attack technique where an attacker adds alternate key material to an account, typically through the msDS-KeyCredentialLink <span class=\"glossary-term--ref\" data-id=\"attribute\">Attribute</span>. This allows the attacker to authenticate as that account by using <span class=\"glossary-term--ref\" data-id=\"pkinit\">PKINIT</span> without needing the password.",
+    "layman": "An <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> attack technique where an attacker secretly adds their own login method to another account. This lets them sign in as that account without needing the password."
   },
   {
     "id": "sharpview",
@@ -1532,14 +1526,14 @@
   {
     "id": "shell",
     "term": "Shell",
-    "technical": "A command-line interface that allows interactive execution of commands on a system.",
-    "layman": "A text-based window that lets someone type commands directly into a system."
+    "technical": "A command-line interface that accepts user input and executes commands on the target system.",
+    "layman": "A text-based window where a user can control the computer by typing commands instead of clicking buttons. In attacks, getting a shell often means the attacker has gained direct access to the computer."
   },
   {
     "id": "shellcode",
     "term": "Shellcode",
     "technical": "Copmact machine-level code used as part of exploitation, often to start a shell, load another payload, or take control of execution flow.",
-    "layman": "A small chunk of code designed to run as part of an <span class=\"glossary-term--ref\" data-id=\"exploit\">exploit</span>."
+    "layman": "A small piece of code used during an attack to make the compromised system do something useful for the attacker, such as running more malicious code."
   },
   {
     "id": "shodan",
@@ -1592,8 +1586,8 @@
   {
     "id": "source-code",
     "term": "Source Code",
-    "technical": "The human-readable code written by developers that defines how software behaves and functions.",
-    "layman": "The original code written by developers to build a program."
+    "technical": "Human readable text that define a software program. It is written in a format to be compiled or interpreted into a form the computer can read and run.",
+    "layman": "The code software developers write to create a program. If an attacker gets their hands on the source code of the <span class=\"glossary-term--ref\" data-id=\"application\">application</span> they are attacking, it increases their chances of breaking in because they now know exactly how the application is built."
   },
   {
     "id": "spyware",
@@ -1676,8 +1670,8 @@
   {
     "id": "threat",
     "term": "Threat",
-    "technical": "Any circumstance, event, actor, or condition with the potential to exploit a vulnerability and cause harm.",
-    "layman": "Anything that could take advantage of a weakness and cause damage."
+    "technical": "Anything, anyone, or any event that could <span class=\"glossary-term--ref\" data-id=\"exploit\">exploit</span> a <span class=\"glossary-term--ref\" data-id=\"vulnerability\">vulnerability</span> and cause harm, such as malware.",
+    "layman": "Anything, anyone, or any event that could take advantage of a security weakness and cause harm, such as malware."
   },
   {
     "id": "threat-actor",
@@ -1688,8 +1682,8 @@
   {
     "id": "ticket-granting-service-tgs",
     "term": "Ticket-Granting Service (TGS)",
-    "technical": "The Kerberos service responsible for issuing service tickets after a user or system presents a valid Ticket-Granting Ticket.",
-    "layman": "The part of the Kerberos system that gives out tickets to access specific services after login."
+    "technical": "The <span class=\"glossary-term--ref\" data-id=\"kerberos-2\">Kerberos</span> service that issues service tickets after a user or system presents a valid <span class=\"glossary-term--ref\" data-id=\"ticket-granting-ticket-tgt\">Ticket-Granting Ticket (TGT)</span>. These service tickets are then used to authenticate to specific services without sending the password again.",
+    "layman": "The part of the <span class=\"glossary-term--ref\" data-id=\"kerberos-2\">Kerberos</span> login system that gives out access tickets for specific services after someone has already logged in. It is like a security desk that takes your employee badge and hands you a different badge for the exact room or service you want to use."
   },
   {
     "id": "ticket-granting-ticket-tgt",
@@ -1701,7 +1695,7 @@
     "id": "transport-layer-security-tls",
     "term": "Transport Layer Security (TLS)",
     "technical": "A cryptographic protocol that provides confidentiality, integrity, and authentication for data transmitted over a network.",
-    "layman": "A security technology that encrypts network traffic so others cannot easily read or tamper with it."
+    "layman": "A protocol that secures the communication between systems by encrypting the data and preventing it from being secretly altered."
   },
   {
     "id": "trojan",
@@ -1736,8 +1730,8 @@
   {
     "id": "universal-naming-convention-unc",
     "term": "Universal Naming Convention (UNC)",
-    "technical": "A standardized path format used to identify shared files, folders, printers, or other resources on Windows networks, such as \\\\server\\share.",
-    "layman": "A standard way Windows systems refer to shared folders or resources on a network."
+    "technical": "A standard Windows naming format representing network resources, such as external <span class=\"glossary-term--ref\" data-id=\"smb\">SMB</span> shares. The format looks like \\\\server\\share.",
+    "layman": "A standard Windows naming format to find a shared folder, file, or printer using a path like \\\\computer\\share. UNC is often used for destinations that are on another computer, but it can also be used to access files on the same computer."
   },
   {
     "id": "use-after-free",
@@ -1761,7 +1755,7 @@
     "id": "vhost",
     "term": "Vhost",
     "technical": "A virtual host configuration that allows a web server to serve different websites or content based on the requested hostname.",
-    "layman": "A way for one web server to host multiple websites or web applications."
+    "layman": "A configuration that allows a computer to host multiple websites and return content based on which website name was provided."
   },
   {
     "id": "vulnerability",
@@ -1874,7 +1868,7 @@
   {
     "id": "zone-transfer",
     "term": "Zone Transfer",
-    "technical": "A DNS operation that transfers DNS records from a primary server to a secondary server for synchronization.",
-    "layman": "A DNS feature that copies website or domain records from one server to another."
+    "technical": "A <span class=\"glossary-term--ref\" data-id=\"dns\">DNS</span> operation that copies DNS records from one DNS server to another so the servers stay synchronized. It can be used to discover an organization's <span class=\"glossary-term--ref\" data-id=\"subdomain\">subdomains</span> and <span class=\"glossary-term--ref\" data-id=\"domain-name\">domains</span>, expanding the <span class=\"glossary-term--ref\" data-id=\"attack-surface\">attack surface</span>.",
+    "layman": "A process where one <span class=\"glossary-term--ref\" data-id=\"dns\">DNS</span> server copies its records to another. If the server is misconfigured, it can expose an organization’s <span class=\"glossary-term--ref\" data-id=\"subdomain\">subdomains</span> and <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">domain names</span>, expanding the <span class=\"glossary-term--ref\" data-id=\"attack-surface\">attack surface</span>."
   }
 ]
