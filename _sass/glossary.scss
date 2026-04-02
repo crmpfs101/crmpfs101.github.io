@@ -107,6 +107,19 @@
       margin-left: 0;
     }
   }
+
+  .glossary-download {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+  }
+  
+  .glossary-separator {
+    color: #ffffff;
+    opacity: 0.75;
+    margin: 0 0.2rem;
+  }
   
   /* Optional: tighten vertical rhythm between term sections */
   .glossary-item {

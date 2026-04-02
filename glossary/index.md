@@ -4,10 +4,6 @@ title: Glossary
 permalink: /glossary/
 ---
 
-<strong>
-  This page is under construction. The start of this glossary is in tandem with my capstone project at Georgia Tech. The page will be finished by the end of the semester with 300 cybersecurity terms. Following the semester, I will continue adding new terms.
-</strong>
-
 <h2>Overview</h2>
 
 <p>
@@ -37,11 +33,13 @@ permalink: /glossary/
     download="laymansec-glossary.json">
     Download Glossary (JSON)
   </a>
+  <span class="glossary-separator">|</span>
   <a class="glossary-download-link"
     href="{{ '/assets/data/glossary.csv' | relative_url }}"
     download="laymansec-glossary.csv">
     Download Glossary (CSV)
   </a>
+  <span class="glossary-separator">|</span>
   <a href="#"
     class="glossary-download-link"
     onclick="window.print(); return false;">
@@ -58,7 +56,7 @@ permalink: /glossary/
 </p>
 
 <p>
-  Participants would view sample reports and complete a short questionnaire.
+  Participants would view sample reports and complete a questionnaire.
 </p>
 
 <div class="glossary-download">

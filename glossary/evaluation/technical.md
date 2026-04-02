@@ -38,7 +38,7 @@ permalink: /glossary/evaluation/technical/
 
 This technical walkthrough sample is actually a walkthrough of HTB's [Fluffy](https://www.hackthebox.com/machines/fluffy) machine. However, the walkthrough will be written as if it was taken from a professional penetration test report.
 #### Background
-FakeCompany contracted the penetration tester to perform an [[internal penetration test|internal]] [[network penetration test]] on FakeCompany's [[domain controller]] in their [[Active Directory]] environment. The tester was given valid credentials (`j.fleischman:<PASSWORD_REDACTED>`) for a user on the [[domain controller]] and tasked to demonstrate the full impact of the [[vulnerability|vulnerabilities]] discovered.
+FakeCompany contracted the penetration tester to perform an [[internal penetration test|internal]] [[network penetration test]] on FakeCompany's [[domain controller]] in their [[Active Directory]] environment. The tester was given valid credentials (`j.fleischman:<PASSWORD_REDACTED>`) for a user in the [[domain]] and tasked to demonstrate the full impact of the [[vulnerability|vulnerabilities]] discovered.
 
 #### Walkthrough
 The tester began by exporting the target’s [[external scope|external]] IP address to a terminal variable named IP. This ensures that the commands used in this walkthrough can be copy-pasted even if the [[external scope|external]] IP changes.
@@ -48,7 +48,7 @@ The tester began by exporting the target’s [[external scope|external]] IP addr
 └─$ export IP=10.129.232.88
 ```
 
-The tester then scanned all TCP ports using [[nmap|Nmap]] to identify open services.
+The tester then scanned all TCP ports using [[nmap|Nmap]] to identify open ports on the target.
 ```bash
 ┌──(kali㉿kali)-[~/htb/fluffy]
 └─$ nmap -sC -sV -p- $IP -T4
@@ -118,7 +118,7 @@ The [[Nmap]] scan revealed the [[FQDN]] of the target, `DC01.fluffy.htb`, and th
 10.129.232.88   dc01.fluffy.htb fluffy.htb
 ```
 
-Based on the [[Nmap]] scan results, the tester decided to enumerate the following network services and protocols:
+Based on the [[Nmap]] scan results, the tester decided to identified some interesting ports that were open.
 1. [[DNS]]
 2. [[Kerberos]]
 3. [[SMB]]
@@ -126,7 +126,7 @@ Based on the [[Nmap]] scan results, the tester decided to enumerate the followin
 5. [[LDAP]]
 6. [[WinRM]]
 
-The tester queried the [[DNS]] server for records related to the `fluffy.htb` zone.
+The tester queried the [[DNS]] server for records related to the `fluffy.htb` zone using [dig](https://linux.die.net/man/1/dig).
 
 ```bash
 ┌──(kali㉿kali)-[~/htb/fluffy]
@@ -479,7 +479,7 @@ Output file: exploit.zip
 Run this file on the victim machine and you will see the effects of the vulnerability such as using ftp smb to send files etc.
 ```
 
-The [[exploit]] generated `exploit.zip`, which contains the malicious `.library-ms` file. Because `j.fleischman` has write privileges over the `IT` [[SMB]] share, the tester is able to upload the zip file to the share. However, before uploading, the tester started [[responder|Responder]] on the tester's machine to listen for [[SMB]] authentication attempts.
+The [[exploit]] generated `exploit.zip`, which contains the malicious `.library-ms` file. Because `j.fleischman` has [[write permission|write]] privileges over the `IT` [[SMB]] share, the tester is able to upload the zip file to the share. However, before uploading, the tester started [[responder|Responder]] on the tester's machine to listen for [[SMB]] authentication attempts.
 
 
 The tester uploaded the malicious `exploit.zip` file using [[SMBMap]]

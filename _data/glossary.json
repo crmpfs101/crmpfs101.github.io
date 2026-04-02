@@ -87,13 +87,13 @@
     "id": "authentication",
     "term": "Authentication",
     "technical": "The process of verifying the identity of a user, computer, or service by checking credentials such as passwords, certificates, or tickets.",
-    "layman": "The process of proving that someone or something really is who it claims to be. It is like showing a badge at the front desk to confirm your identity."
+    "layman": "The process of proving that someone or something really is who it claims to be. Imagine a security desk checking a people's drivers licenses to confirm their identities."
   },
   {
     "id": "authorization",
     "term": "Authorization",
     "technical": "The process of determining what an authenticated identity is allowed to access or do based on permissions, policy, and group membership.",
-    "layman": "The process of deciding what a user or system is allowed to access after identity has been verified. It is like deciding which rooms a valid badge is allowed to open."
+    "layman": "The process of deciding what a user or system is allowed to access after identity has been verified. Imagine a security desk that has already verified the person's identity and is now checking the person is an employee and allowed to enter the building."
   },
   {
     "id": "backdoor",
@@ -134,8 +134,8 @@
   {
     "id": "bloodhound-py",
     "term": "BloodHound.py",
-    "technical": "A Python-based Active Directory data collector for BloodHound.",
-    "layman": "A tool that collects information about how user accounts, computers, and permissions are connected inside a company’s Windows account system so it can be analyzed in BloodHound."
+    "technical": "A Python-based Active Directory data collection tool that gathers Active Directory information such as users, groups, computers, sessions, trusts, and permissions so it can be imported into BloodHound-CE or BloodHound-Legacy and analyzed for potential attack paths.",
+    "layman": "A tool that collects information from Active Directory about users, computers, groups, and permissions so it can be analyzed in BloodHound-CE or BloodHound-Legacy. It is used to help map how an attacker could move through the environment or gain more access."
   },
   {
     "id": "bloodyad",
@@ -182,8 +182,8 @@
   {
     "id": "certipy",
     "term": "Certipy",
-    "technical": "A toolkit for enumerating and abusing AD CS. It can grab the certificate authorities while also identifying misconfigurations and forging certificates.",
-    "layman": "A tool used to find and exploit weaknesses in the system Windows organizations use to issue and manage digital certificates for logins (AD CS)."
+    "technical": "An Active Directory toolkit for enumerating and abusing AD CS. It can grab the certificate authorities while also identifying misconfigurations and forging certificates.",
+    "layman": "An Active Directory tool used to find and exploit weaknesses in the system Windows organizations use to issue and manage digital certificates for logins (AD CS)."
   },
   {
     "id": "cewl",
@@ -530,8 +530,8 @@
   {
     "id": "finding",
     "term": "Finding",
-    "technical": "A specific security issue identified during a security test.",
-    "layman": "A specific problem discovered during a security test."
+    "technical": "A specific security issue identified during a security assessment.",
+    "layman": "A specific security issue identified during a security assessment."
   },
   {
     "id": "finger",
@@ -621,19 +621,13 @@
     "id": "group",
     "term": "Group",
     "technical": "An Active Directory object that groups accounts together so permissions, rights, and administration can be assigned to multiple principals at once.",
-    "layman": "An Active Directory collection of users, computers, or other groups that can be managed together. This makes it easier to assign access to many accounts at once instead of configuring each one individually. It is like a team list that lets a company grant room access to a whole department at once."
+    "layman": "An Active Directory collection of users, computers, or other groups that can be managed together. This makes it easier to assign access to many accounts at once instead of configuring each one individually."
   },
   {
     "id": "group-managed-service-account-gmsa",
     "term": "Group Managed Service Account (gMSA)",
     "technical": "A managed domain service account whose password is automatically maintained by Active Directory and can be used by approved systems. Its automatic password rotation helps reduce the risk associated with long-lived or manually managed service account credentials.",
     "layman": "A service account whose password is automatically managed by Active Directory. This makes it safer than many traditional service accounts because the password is regularly changed without administrators having to do it manually. It is like a machine badge that office security automatically updates so it is less likely to become stale or easy to misuse."
-  },
-  {
-    "id": "group-membership",
-    "term": "Group Membership",
-    "technical": "An Active Directory relationship that makes an account or group part of another group and influences permissions, rights, and policy application.",
-    "layman": "An Active Directory relationship where an account or group is part of another group and inherits the permissions, rights, and policy application from that group. This matters because belonging to a group can automatically give access to resources or apply certain rules. It is like being placed on a department roster that determines which rooms and tools you can use."
   },
   {
     "id": "group-policy",
@@ -662,7 +656,7 @@
   {
     "id": "hashcat",
     "term": "hashcat",
-    "technical": "A GPU-accelerated password cracking tool supporting numerous hashing algorithms and attack modes. It can also be used to expand wordlists by mutating words based on common password patterns.",
+    "technical": "A GPU-accelerated password cracking tool supporting numerous hashing algorithms and attack modes. It can also be used to expand wordlists by mutating words based on common patterns.",
     "layman": "A password cracking tool that can try billions of guesses per second against stolen password data."
   },
   {
@@ -770,8 +764,8 @@
   {
     "id": "internal-scope",
     "term": "Internal Scope",
-    "technical": "Systems or network resources that are only reachable from inside an organization’s environment rather than from the public internet. There is usually a firewall segmenting the public internet from the internal systems.",
-    "layman": "Systems that are only accessible from within an organization’s own environment and not the public internet."
+    "technical": "Systems or network resources that are only reachable from inside an organization’s environment rather than from the public internet. There is usually a firewall segmenting the public internet from the internal systems. The term can also refer more generally to parts of an environment that are intended for internal use and not meant to be publicly accessible.",
+    "layman": "Systems that are only accessible from within an organization’s own environment and not the public internet. The term can also refer more generally to parts of an environment that are intended for internal use and not meant to be publicly accessible."
   },
   {
     "id": "internet-protocol-ip",
@@ -926,7 +920,7 @@
   {
     "id": "metasploit-framework",
     "term": "Metasploit Framework",
-    "technical": "A modular penetration testing framework for exploit development, payload delivery, and post-exploitation.",
+    "technical": "A modular penetration testing framework for exploit development, payload delivery, and [[post-exploitation].",
     "layman": "A massive toolkit used to carry out security tests that can maintain all data and results in one place. It contains a vast number of attacks that a tester can configure and launch on a target."
   },
   {
@@ -1028,8 +1022,8 @@
   {
     "id": "nt-hash",
     "term": "NT Hash",
-    "technical": "A type of hash used in Windows NTLM authentication. In Kerberos authentication, it is the RC4-HMAC key.",
-    "layman": "A Windows password hash created from the user's or computer's password. It can sometimes be used to log in to computers or other services without the password."
+    "technical": "A type of hash used in Windows NTLM authentication. In Kerberos authentication, it is the RC4-HMAC key. It can be used in PtH attacks or cracked to recover the account's password.",
+    "layman": "A Windows password hash created from the account's password. It can sometimes be used to log in to computers or other services without the password. It could also be cracked to recover the account's password."
   },
   {
     "id": "ntlm",
@@ -1052,7 +1046,7 @@
   {
     "id": "ntlmv2-net-ntlmv2",
     "term": "NTLMv2 (Net-NTLMv2)",
-    "technical": "A challenge-response authentication protocol used in Windows environments for identity verification. It was introduced to replace NTLMv1 and includes stronger cryptographic hashing and improved challenge structures. However, it is still vulnerable to some relay attacks and offline cracking. Net-NTLMv2 is sometimes used interchangeably with NTLMv2, but it more accurately refers to the network authentication data of a NTLMv2 login attempt. The hash in Net-NTLMv2 also cannot be used direcly in a PtH attack.",
+    "technical": "A challenge-response authentication protocol used in Windows environments for identity verification. It was introduced to replace NTLMv1 and includes stronger cryptographic hashing and improved challenge structures. However, it is still vulnerable to some relay attacks and offline cracking. Net-NTLMv2 is sometimes used interchangeably with NTLMv2, but it more accurately refers to the network authentication data of a NTLMv2 login attempt. The hash in Net-NTLMv2 also cannot be used directly in a PtH attack.",
     "layman": "A Windows login protocol where a server sends a random test, and the user’s computer responds in a way that proves it knows the correct password."
   },
   {
@@ -1215,7 +1209,7 @@
     "id": "privilege",
     "term": "Privilege",
     "technical": "A system-level or administrative right that allows a user, account, process, or service to perform specific actions, such as changing settings, managing accounts, or controlling resources.",
-    "layman": "A special level of authority that allows someone or something to perform powerful actions, such as changing settings, managing users, or controlling important parts of a system. It goes beyond simply opening one file or folder. It is like having the authority to not only join a meeting, but also approve who can join the meeting."
+    "layman": "A special level of authority that allows someone or something to perform powerful actions, such as changing settings, managing users, or controlling important parts of a system. It is like having the authority to not only join a meeting, but also approve who can join the meeting."
   },
   {
     "id": "privilege-escalation",
@@ -1226,7 +1220,7 @@
   {
     "id": "proof-of-concept-poc",
     "term": "Proof of Concept (PoC)",
-    "technical": "A minimal demonstration showing that a vulnerability is exploitable.",
+    "technical": "A minimal demonstration showing that a vulnerability is exploitable. This could be in the form of a software script.",
     "layman": "A demonstration proving a flaw or weakness can be exploited."
   },
   {
@@ -1322,8 +1316,8 @@
   {
     "id": "responder",
     "term": "Responder",
-    "technical": "An LLMNR/NBT-NS poisoning tool used to capture NTLM authentication hashes on local networks.",
-    "layman": "A tool that tricks same network computers into sending password hashes by impersonating trusted network services."
+    "technical": "A network poisoning tool that listens for and answers local name-resolution and authentication requests. It is commonly used to abuse protocols such as NetBIOS, LLMNR, and mDNS to capture or relay NTLM authentication data. This authentication data is often Net-NTLMv2 challenge-response material which can be used to perform a NTLM Relay attack or cracked offline to recover the password.",
+    "layman": "A tool that tricks devices on a local network into talking to the attacker instead of the real service. This can cause those devices to send login-related data that the attacker can capture or use in other attacks."
   },
   {
     "id": "reverse-shell",
@@ -1335,7 +1329,7 @@
     "id": "risk",
     "term": "Risk",
     "technical": "The potential for harm resulting from a vulnerability. It considers both the likelihood of exploitation and the impact if the vulnerability is successfully exploited.",
-    "layman": "The possibility that a security weakness (vulnerability) could cause damage, based on how likely it is to happen (Likelihood) and how serious the consequences would be (Impact)."
+    "layman": "The possibility that a security weakness (vulnerability) could cause damage, based on how likely it is to happen (likelihood) and how serious the consequences would be (impact)."
   },
   {
     "id": "risk-assessment",
@@ -1394,14 +1388,14 @@
   {
     "id": "rusthound",
     "term": "RustHound",
-    "technical": "A Rust-based high-performance BloodHound data collector.",
-    "layman": "A faster tool that collects information about how user accounts, computers, and permissions are connected inside a company’s Windows account system so it can be analyzed in BloodHound-Legacy."
+    "technical": "A Rust-based Active Directory data collection tool that gathers Active Directory information such as users, groups, computers, sessions, trusts, and permissions so it can be imported into BloodHound-Legacy and analyzed for potential attack paths.",
+    "layman": "A tool that collects information from Active Directory about users, computers, groups, and permissions so it can be analyzed in BloodHound-Legacy. It is used to help map how an attacker could move through the environment or gain more access."
   },
   {
     "id": "rusthound-ce",
     "term": "RustHound-CE",
-    "technical": "The community edition of RustHound used for BloodHound data collection.",
-    "layman": "A tool that collects information about how user accounts, computers, and permissions are connected inside a company’s Windows account system so it can be analyzed in BloodHound-CE."
+    "technical": "A Rust-based Active Directory data collection tool that gathers Active Directory information such as users, groups, computers, sessions, trusts, and permissions so it can be imported into BloodHound-CE and analyzed for potential attack paths.",
+    "layman": "A tool that collects information from Active Directory about users, computers, groups, and permissions so it can be analyzed in BloodHound-CE. It is used to help map how an attacker could move through the environment or gain more access."
   },
   {
     "id": "rustscan",
@@ -1808,8 +1802,8 @@
   {
     "id": "winrm",
     "term": "WinRM",
-    "technical": "Windows Remote Management protocol for remote command execution over HTTP/HTTPS.",
-    "layman": "A Windows protocol that allows remote management and command execution."
+    "technical": "Windows Remote Management protocol for remote command execution over HTTP/HTTPS. It is commonly used for remote administration and can provide command execution through interfaces such as PowerShell remoting.",
+    "layman": "A Windows protocol that lets an administrator control a computer from another computer over the network."
   },
   {
     "id": "wireshark",
