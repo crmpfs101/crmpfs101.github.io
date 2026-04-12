@@ -31,7 +31,7 @@ permalink: /glossary/evaluation/technical/
 
 
 <div class="evaluation-report">
-  <h2>Technical Walkthrough</h2>
+  <h2 id="technical-walkthrough">Technical Walkthrough</h2>
 
   {% capture report %}
 #### Introduction
@@ -830,6 +830,14 @@ With shell access as administrator, the tester had achieved full compromise of t
       Open Questionnaire
     </a>
   </div>
+
+  <p class="evaluation-return-link">
+    <a class="evaluation-back-link" href="#technical-walkthrough">
+      ↑ Return to beginning of Technical Walkthrough
+    </a>
+  </p>
+
 </div>
+
 
 <script defer src="{{ '/assets/js/glossary-tooltips.js' | relative_url }}"></script>
