@@ -732,18 +732,6 @@
     "layman": "Warning signs that suggest something may have been hacked or misused."
   },
   {
-    "id": "inherent-likelihood",
-    "term": "Inherent Likelihood",
-    "technical": "The likelihood that a threat will occur before security controls or mitigations are considered.",
-    "layman": "How likely a problem is to happen before protections are taken into account."
-  },
-  {
-    "id": "inherent-risk",
-    "term": "Inherent Risk",
-    "technical": "The level of risk that exists before any controls or mitigations are applied.",
-    "layman": "The amount of risk that exists before any protections or fixes are in place."
-  },
-  {
     "id": "initial-access",
     "term": "Initial Access",
     "technical": "The process of gaining the first point of entry into a target system.",
@@ -1290,22 +1278,10 @@
     "layman": "The process by which Active Directory keeps multiple domain controllers updated with the same information. This helps the environment stay consistent and available, but it also means harmful changes can spread if attackers alter the directory. It is like making sure every security desk in the company has the latest records, whether those updates are helpful or malicious."
   },
   {
-    "id": "residual-likelihood",
-    "term": "Residual Likelihood",
-    "technical": "The likelihood that a threat will occur after security controls or mitigations are considered.",
-    "layman": "How likely a problem is to happen after protections are taken into account."
-  },
-  {
     "id": "residual-risk",
     "term": "Residual Risk",
     "technical": "The reamining risk after taking into account an organization's security measures.",
     "layman": "The remaining risk after taking into account an organization's security measures."
-  },
-  {
-    "id": "residual-risk-2",
-    "term": "Residual Risk",
-    "technical": "The level of risk that remains after controls, mitigations, or remediation efforts have been applied.",
-    "layman": "The risk that still remains after protections or fixes are put in place."
   },
   {
     "id": "resource-based-constrained-delegation-rbcd",
