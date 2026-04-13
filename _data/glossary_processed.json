@@ -732,18 +732,6 @@
     "layman": "Warning signs that suggest something may have been hacked or misused."
   },
   {
-    "id": "inherent-likelihood",
-    "term": "Inherent Likelihood",
-    "technical": "The likelihood that a threat will occur before security controls or mitigations are considered.",
-    "layman": "How likely a problem is to happen before protections are taken into account."
-  },
-  {
-    "id": "inherent-risk",
-    "term": "Inherent Risk",
-    "technical": "The level of risk that exists before any controls or mitigations are applied.",
-    "layman": "The amount of risk that exists before any protections or fixes are in place."
-  },
-  {
     "id": "initial-access",
     "term": "Initial Access",
     "technical": "The process of gaining the first point of entry into a target system.",
@@ -752,7 +740,7 @@
   {
     "id": "insecure-direct-object-reference-idor",
     "term": "Insecure Direct Object Reference (IDOR)",
-    "technical": "An access control vulnerability where an application exposes a direct reference to an internal object, such as an ID or filename, that is modifiable by users. Attackers can abuse this vulnerability to reach restricted areas like other user's account information.",
+    "technical": "An <span class=\"glossary-term--ref\" data-id=\"access-control\">access control</span> vulnerability where an application exposes a direct reference to an internal object, such as an ID or filename, that is modifiable by users. Attackers can abuse this vulnerability to reach restricted areas like other user's account information.",
     "layman": "An attack where an attacker changes a reference, such as a number in a link or web request, to access something that belongs to someone else."
   },
   {
@@ -1290,22 +1278,10 @@
     "layman": "The process by which <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> keeps multiple <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">domain controllers</span> updated with the same information. This helps the environment stay consistent and available, but it also means harmful changes can spread if attackers alter the directory. It is like making sure every security desk in the company has the latest records, whether those updates are helpful or malicious."
   },
   {
-    "id": "residual-likelihood",
-    "term": "Residual Likelihood",
-    "technical": "The likelihood that a threat will occur after security controls or mitigations are considered.",
-    "layman": "How likely a problem is to happen after protections are taken into account."
-  },
-  {
     "id": "residual-risk",
     "term": "Residual Risk",
     "technical": "The reamining <span class=\"glossary-term--ref\" data-id=\"risk\">risk</span> after taking into account an organization's security measures.",
     "layman": "The remaining <span class=\"glossary-term--ref\" data-id=\"risk\">risk</span> after taking into account an organization's security measures."
-  },
-  {
-    "id": "residual-risk-2",
-    "term": "Residual Risk",
-    "technical": "The level of risk that remains after controls, mitigations, or remediation efforts have been applied.",
-    "layman": "The risk that still remains after protections or fixes are put in place."
   },
   {
     "id": "resource-based-constrained-delegation-rbcd",
@@ -1430,7 +1406,7 @@
   {
     "id": "security-identifier-sid",
     "term": "Security Identifier (SID)",
-    "technical": "A unique internal identifier assigned to a <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">security principal</span> such as a user, group, or computer and used in access control decisions.",
+    "technical": "A unique internal identifier assigned to a <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">security principal</span> such as a user, group, or computer and used in <span class=\"glossary-term--ref\" data-id=\"access-control\">access control</span> decisions.",
     "layman": "The unique internal ID <span class=\"glossary-term--ref\" data-id=\"active-directory\">Active Directory</span> uses to identify an <span class=\"glossary-term--ref glossary-term--missing\" data-id=\"\">account</span> or <span class=\"glossary-term--ref\" data-id=\"group\">group</span>. This matters because names can change, but the SID is what the system actually relies on to track identity and access. It is like the employee number behind a badge, not just the name printed on it."
   },
   {
@@ -1635,7 +1611,7 @@
     "id": "system-access-control-list-sacl",
     "term": "System Access Control List (SACL)",
     "technical": "A type of <span class=\"glossary-term--ref\" data-id=\"access-control-list-acl\">Access Control List (ACL)</span> that contains the <span class=\"glossary-term--ref\" data-id=\"access-control-entry-ace\">Access Control Entry (ACE)</span> rules used to specify which access attempts on an object should be logged for auditing. It is distinct because it does not grant or deny access; instead, it defines what activity should be recorded.",
-    "layman": "A type of access control list that tells the system which actions should be recorded in security logs. Unlike the rules that decide who can use something, its role is to track important activity for <span class=\"glossary-term--ref\" data-id=\"monitoring\">monitoring</span> and investigation. It is like configuring security cameras and alarms to record when certain doors are opened, certain rooms are entered, or certain people try to get in."
+    "layman": "A type of <span class=\"glossary-term--ref\" data-id=\"access-control-list-acl\">access control list</span> that tells the system which actions should be recorded in security logs. Unlike the rules that decide who can use something, its role is to track important activity for <span class=\"glossary-term--ref\" data-id=\"monitoring\">monitoring</span> and investigation. It is like configuring security cameras and alarms to record when certain doors are opened, certain rooms are entered, or certain people try to get in."
   },
   {
     "id": "sysvol",

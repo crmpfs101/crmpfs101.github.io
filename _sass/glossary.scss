@@ -129,6 +129,7 @@
   /* Optional: tighten vertical rhythm between term sections */
   .glossary-item {
     padding-top: 0.25rem;
+    scroll-margin-top: 5rem;
   }
 
   
@@ -258,4 +259,9 @@
   html[data-glossary-mode="0"] .glossary-tooltip .glossary-badge,
   html[data-glossary-mode="1"] .glossary-tooltip .glossary-badge {
     display: none;
+  }
+
+/* ===== Evaluation ===== */
+  .evaluation-return-link {
+    margin-top: 1.5rem;
   }
