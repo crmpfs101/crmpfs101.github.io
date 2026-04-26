@@ -176,7 +176,7 @@
   {
     "id": "callback",
     "term": "Callback",
-    "technical": "A connection initiated by compromised code back to an attacker-controlled system ([[C2])), often to establish remote access or continue execution.",
+    "technical": "A connection initiated by compromised code back to an attacker-controlled system (C2), often to establish remote access or continue execution.",
     "layman": "When malware or exploited code reaches back out to the attacker after it runs. It is like a compromised machine making a secret return phone call."
   },
   {
