@@ -1,6 +1,11 @@
 ---
 ---
 
+/*
+  This file was created with assistance from ChatGPT (GPT-5.4 Thinking, OpenAI)
+  and then reviewed and modified by the repository author.
+*/
+
 (() => {
   const GLOSSARY_URL = "{{ '/assets/data/glossary.json' | relative_url }}";
   const SHOW_DELAY = 300;

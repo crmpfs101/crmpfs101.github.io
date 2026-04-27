@@ -1,3 +1,8 @@
+<!--
+  This file was created with assistance from ChatGPT (GPT-5.4 Thinking, OpenAI)
+  and then reviewed and modified by the repository author.
+-->
+
 {%- assign chunks = include.content | split: "[[" -%}
 {{- chunks.first -}}
 {%- for chunk in chunks offset:1 -%}

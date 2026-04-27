@@ -16,6 +16,10 @@ Usage:
 
 Dependencies:
   pip install openpyxl
+
+AI Disclosure:
+  This file was created with assistance from ChatGPT (GPT-5.4 Thinking, OpenAI)
+  and then reviewed and modified by the repository author.
 """
 
 from __future__ import annotations
